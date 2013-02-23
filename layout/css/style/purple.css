@@ -1,0 +1,67 @@
+/* GENERAL TYPOGRAPHY */
+
+a {
+    color: #4c47a0;
+}
+
+a:hover {
+    color: #3a377a;
+}
+
+span.highlight {
+    color: #4c47a0;
+}
+
+/* MENU */
+
+#menu-wrapper,
+#menu-wrapper .menu,
+#menu-wrapper .menu li,
+#menu-wrapper .menu li a:hover {
+    background-image: url(../../images/style/purple/menu.png);
+}
+
+#menu-wrapper .menu li ul {
+    background-color: #6861d7;
+    border-color: #3a377a;
+    border-top-color: #98a1ff;
+}
+
+#menu-wrapper .menu li ul li a:hover {
+    background-color: #4b47a5;
+}
+
+#menu-wrapper .menu li ul ul {
+    border-color: #3a377a;
+}
+
+/* SLOGAN */
+
+#slogan span {
+    color: #4c47a0;
+}
+
+/* SIDEBAR */
+
+#sidebar .widget li a:hover {
+    color: #4c47a0;
+}
+
+/* FOOTER */
+
+#footer-top {
+    background-image: url(../../images/style/purple/footer-top.png);
+}
+
+/* BLOG */
+
+#content .entry h1 a:hover,
+#content .entry h2 a:hover {
+    color: #4c47a0;
+}
+
+/* PORTFOLIO */
+
+#full-width-content .portfolio-box h2 a:hover {
+    color: #4c47a0;
+}

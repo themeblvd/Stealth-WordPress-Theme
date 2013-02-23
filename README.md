@@ -1,2 +1,0 @@
-Stealth-WordPress-Theme
-=======================

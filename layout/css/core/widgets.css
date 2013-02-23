@@ -1,0 +1,160 @@
+/* THEMEBLVD SIMPLE CONTACT */
+
+#footer-boxes .widget ul.themeblvd-simple-contact li,
+.widget ul.themeblvd-simple-contact li {
+    padding: 0 0 0 30px;
+    background-image: url(../../images/shared/icons-contact.png);
+    background-repeat: no-repeat;
+    border: none;
+    line-height: 20px;
+    background-position: 0 0;
+    overflow: hidden;
+}
+
+.widget ul.themeblvd-simple-contact li a {
+    color: #cccccc;
+    padding: 0;
+}
+
+.widget ul.themeblvd-simple-contact li a:hover {
+    color: #ffffff;
+}
+
+.widget ul.themeblvd-simple-contact li {
+    overflow: hidden;
+}
+
+#footer-boxes .widget ul.themeblvd-simple-contact li.phone,
+.widget ul.themeblvd-simple-contact li.phone {
+    background-position: 0 -20px;
+}
+
+#footer-boxes .widget ul.themeblvd-simple-contact li.email,
+.widget ul.themeblvd-simple-contact li.email {
+    background-position: 0 -40px;
+}
+
+#footer-boxes .widget ul.themeblvd-simple-contact li.contact-form,
+.widget ul.themeblvd-simple-contact li.contact-form {
+    background-position: 0 -60px;
+}
+
+#footer-boxes .widget ul.themeblvd-simple-contact li.skype,
+.widget ul.themeblvd-simple-contact li.skype {
+    background-position: 0 -80px;
+}
+
+#footer-boxes .widget ul.themeblvd-simple-contact li.links,
+.widget ul.themeblvd-simple-contact li.links {
+    background-position: 0 4px;
+    padding: 5px 0 0 30px;
+}
+
+#footer-boxes .widget ul.themeblvd-simple-contact li.extra,
+.widget ul.themeblvd-simple-contact li.extra {
+    background-position: 0 -100px;
+}
+
+.widget ul.themeblvd-simple-contact ul.social-links {
+    float: left;
+    padding: 0;
+    margin: 0;
+    display: inline;
+    bordeR: none;
+}
+
+#footer-boxes .widget ul.themeblvd-simple-contact ul.social-links li,
+.widget ul.themeblvd-simple-contact ul.social-links li {
+    float: left;
+    padding: 0 1px;
+    background-image: none;
+    display: inline;
+    border: none;
+
+}
+
+.widget ul.themeblvd-simple-contact ul.social-links li a  {
+    display: block;
+    width: 16px;
+    height: 16px;
+    text-indent: -9999px;
+    background-image: url(../../images/shared/icons-social.png);
+    overflow: hidden;
+}
+
+.widget ul.themeblvd-simple-contact ul.social-links li a.rss {
+    background-position: 0 0;
+}
+
+.widget ul.themeblvd-simple-contact ul.social-links li a.twitter {
+    background-position: 0 -16px;
+}
+
+.widget ul.themeblvd-simple-contact ul.social-links li a.facebook {
+    background-position: 0 -32px;
+}
+
+.widget ul.themeblvd-simple-contact ul.social-links li a.myspace {
+    background-position: 0 -48px;
+}
+
+.widget ul.themeblvd-simple-contact ul.social-links li a.flickr {
+    background-position: 0 -64px;
+}
+
+.widget ul.themeblvd-simple-contact ul.social-links li a.linkedin {
+    background-position: 0 -80px;
+}
+
+/* THEMEBLVD RECENT POSTS */
+
+.themeblvd-recent-posts {
+    padding: 0;
+}
+
+.themeblvd-recent-posts .entry {
+    line-height: 14px;
+    margin: 0;
+    padding: 5px 0;
+}
+
+.themeblvd-recent-posts img {
+    border: 1px solid #cccccc;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    margin: 0 10px 0 0;
+    padding: 3px;
+    float: left;
+}
+
+.themeblvd-recent-posts .title {
+    display: block;
+    font-size: 11px;
+    padding: 10px 0 0 0;
+}
+
+.themeblvd-recent-posts .meta {
+    border: none;
+    display: block;
+    font-size: 10px;
+    font-style: italic;
+}
+
+/* THEMEBLVD ADS - 125x125 */
+
+.themeblvd-ad-square-buttons {
+    margin: 10px 0 0 0;
+}
+
+.themeblvd-ad-square-buttons a {
+    display: block;
+    float: left;
+    line-height: 100%;
+    margin: 2px;
+    _margin: 0; /* IE6 */
+}
+
+.themeblvd-ad-square-buttons a img {
+    display: inline;
+}

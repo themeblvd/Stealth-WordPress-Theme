@@ -1,0 +1,28 @@
+/*
+Theme Name: Stealth
+Version: 1.0
+Theme URI: http://www.jasonbobich.com/
+Description: Sleek, simple, and pretty stealthy.
+Author: Jason Bobich
+Author URI: http://www.jasonbobich.com
+
+Stealth by Jason Bobich || http://www.jasonbobich.com
+*/
+
+/* CSS RESET */
+@import url('layout/css/core/reset.css');
+
+/* CORE CSS */
+@import url('layout/css/core/core.css');
+
+/* TYPOGRAPHY & GENERAL CLASSES */
+@import url('layout/css/core/typography.css');
+
+/* SHORTCODES CSS */
+@import url('layout/css/core/shortcodes.css');
+
+/* NAVIGATION CSS */
+@import url('layout/css/core/nav.css');
+
+/* WIDGETS CSS */
+@import url('layout/css/core/widgets.css');

@@ -1,0 +1,1454 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Stealth\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-11-11 13:45-0800\n"
+"PO-Revision-Date: 2010-11-11 13:48-0800\n"
+"Last-Translator: Jason <jason_bobich@hotmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../404.php:18
+msgid "Page Not Found"
+msgstr ""
+
+#: ../404.php:23
+msgid "The page you requested does not exist."
+msgstr ""
+
+#: ../archive.php:63
+#: ../single.php:39
+msgid "No Comments"
+msgstr ""
+
+#: ../archive.php:63
+#: ../single.php:39
+msgid "1 Comment"
+msgstr ""
+
+#: ../archive.php:63
+#: ../single.php:39
+msgid "% Comments"
+msgstr ""
+
+#: ../archive.php:67
+#: ../single.php:43
+msgid "by "
+msgstr ""
+
+#: ../archive.php:84
+#: ../search.php:44
+#: ../taxonomy.php:124
+msgid "Read More"
+msgstr ""
+
+#: ../archive.php:99
+msgid "There are no posts to display."
+msgstr ""
+
+#: ../comments.php:15
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: ../comments.php:34
+#, php-format
+msgid "<span>%d</span> Comments"
+msgstr ""
+
+#: ../comments.php:34
+msgid "<span>One</span> Comment"
+msgstr ""
+
+#: ../comments.php:59
+#, php-format
+msgid "<span>%d</span> Trackbacks"
+msgstr ""
+
+#: ../comments.php:59
+msgid "<span>One</span> Trackback"
+msgstr ""
+
+#: ../comments.php:76
+msgid "Post a Comment"
+msgstr ""
+
+#: ../comments.php:76
+#, php-format
+msgid "Post a Reply to %s"
+msgstr ""
+
+#: ../comments.php:81
+#, php-format
+msgid "You must be <a href=\"%s\" title=\"Log in\">logged in</a> to post a comment."
+msgstr ""
+
+#: ../comments.php:90
+#, php-format
+msgid "<span class=\"loggedin\">Logged in as <a href=\"%1$s\" title=\"Logged in as %2$s\">%2$s</a>.</span> <span class=\"logout\"><a href=\"%3$s\" title=\"Log out of this account\">Log out?</a></span>"
+msgstr ""
+
+#: ../comments.php:97
+msgid "Your email is <em>never</em> published or shared."
+msgstr ""
+
+#: ../comments.php:97
+msgid "Required fields are marked <span class=\"required\">*</span>"
+msgstr ""
+
+#: ../comments.php:105
+msgid "Name"
+msgstr ""
+
+#: ../comments.php:105
+#: ../comments.php:114
+msgid "*"
+msgstr ""
+
+#: ../comments.php:106
+msgid "class=\"required\""
+msgstr ""
+
+#: ../comments.php:114
+msgid "Email"
+msgstr ""
+
+#: ../comments.php:123
+msgid "URL"
+msgstr ""
+
+#: ../comments.php:135
+msgid "Comment"
+msgstr ""
+
+#: ../comments.php:143
+msgid "You may use these <abbr title=\"HyperText Markup Language\">HTML</abbr> tags and attributes:"
+msgstr ""
+
+#: ../comments.php:153
+msgid "Post Comment"
+msgstr ""
+
+#: ../index.php:66
+#: ../index.php:103
+msgid "You need to select a page to pull content from for this area. You do this on your theme options page."
+msgstr ""
+
+#: ../page.php:35
+msgid "Edit Page"
+msgstr ""
+
+#: ../search.php:59
+msgid "There are no results that match your search."
+msgstr ""
+
+#: ../single.php:55
+msgid "Edit Post"
+msgstr ""
+
+#: ../taxonomy.php:87
+#: ../taxonomy.php:101
+msgid "Oops! You forgot set a featured image."
+msgstr ""
+
+#: ../taxonomy.php:145
+msgid "This portfolio contains no portfolio items."
+msgstr ""
+
+#: ../template_archives.php:36
+msgid "The Last 30 Posts"
+msgstr ""
+
+#: ../template_archives.php:42
+msgid "comments"
+msgstr ""
+
+#: ../template_archives.php:46
+msgid "Categories"
+msgstr ""
+
+#: ../template_archives.php:52
+msgid "Monthly Archives"
+msgstr ""
+
+#: ../template_contact.php:91
+msgid "Your Name"
+msgstr ""
+
+#: ../template_contact.php:95
+msgid "Your E-mail"
+msgstr ""
+
+#: ../template_contact.php:133
+msgid "Your Message"
+msgstr ""
+
+#: ../template_contact.php:154
+msgid "Your message has been sent!"
+msgstr ""
+
+#: ../template_sitemap.php:36
+msgid "Pages"
+msgstr ""
+
+#: ../template_sitemap.php:48
+msgid "Posts per category"
+msgstr ""
+
+#: ../template_sitemap.php:59
+msgid "Comments"
+msgstr ""
+
+#: ../framework/helper_items/comments.php:5
+msgid "ago"
+msgstr ""
+
+#: ../framework/helper_items/comments.php:50
+msgid "Reply"
+msgstr ""
+
+#: ../framework/helper_items/comments.php:51
+msgid "Log in to reply."
+msgstr ""
+
+#: ../framework/helper_items/comments.php:74
+#, php-format
+msgid "By %1$s on %2$s at %3$s"
+msgstr ""
+
+#: ../framework/helper_items/comments.php:78
+msgid "Edit"
+msgstr ""
+
+#: ../framework/helper_items/comments.php:79
+msgid "\\t\\t\\t\\t\\t<span class=\"unapproved\">Your trackback is awaiting moderation.</span>\\n"
+msgstr ""
+
+#: ../framework/helper_items/page_number.php:5
+msgid "Page "
+msgstr ""
+
+#: ../framework/helper_items/pagination.php:157
+msgid "Page %CURRENT_PAGE% of %TOTAL_PAGES%"
+msgstr ""
+
+#: ../framework/helper_items/pagination.php:160
+msgid "&laquo; First"
+msgstr ""
+
+#: ../framework/helper_items/pagination.php:161
+msgid "Last &raquo;"
+msgstr ""
+
+#: ../framework/helper_items/pagination.php:162
+msgid "&raquo;"
+msgstr ""
+
+#: ../framework/helper_items/pagination.php:163
+msgid "&laquo;"
+msgstr ""
+
+#: ../framework/helper_items/pagination.php:164
+#: ../framework/helper_items/pagination.php:165
+msgid "..."
+msgstr ""
+
+#: ../framework/helper_items/themeblvd_breadcrumbs.php:166
+msgid "Blog"
+msgstr ""
+
+#: ../framework/helper_items/themeblvd_breadcrumbs.php:168
+#: ../framework/helper_items/themeblvd_breadcrumbs.php:172
+#: ../framework/helper_items/themeblvd_breadcrumbs.php:196
+#: ../framework/helper_items/themeblvd_breadcrumbs.php:210
+msgid "<a title=\"Go to %title%.\" href=\"%link%\">"
+msgstr ""
+
+#: ../framework/helper_items/themeblvd_breadcrumbs.php:185
+msgid "<a title=\"Reload the current page.\" href=\"%link%\">"
+msgstr ""
+
+#: ../framework/helper_items/themeblvd_breadcrumbs.php:226
+msgid "404"
+msgstr ""
+
+#: ../framework/helper_items/themeblvd_breadcrumbs.php:229
+msgid "Search results for &#39;"
+msgstr ""
+
+#: ../framework/helper_items/themeblvd_breadcrumbs.php:233
+msgid "<a title=\"Go to the first page of search results for %title%.\" href=\"%link%\">"
+msgstr ""
+
+#: ../framework/helper_items/themeblvd_breadcrumbs.php:240
+msgid "<a title=\"Go to the %title% tag archives.\" href=\"%link%\">"
+msgstr ""
+
+#: ../framework/helper_items/themeblvd_breadcrumbs.php:243
+msgid "Articles by: "
+msgstr ""
+
+#: ../framework/helper_items/themeblvd_breadcrumbs.php:247
+msgid "<a title=\"Go to the first page of posts by %title%.\" href=\"%link%\">"
+msgstr ""
+
+#: ../framework/helper_items/themeblvd_breadcrumbs.php:256
+msgid "<a title=\"Go to the %title% category archives.\" href=\"%link%\">"
+msgstr ""
+
+#: ../framework/helper_items/themeblvd_breadcrumbs.php:259
+msgid "Archive by category &#39;"
+msgstr ""
+
+#: ../framework/helper_items/themeblvd_breadcrumbs.php:263
+msgid "Archive by tag &#39;"
+msgstr ""
+
+#: ../framework/helper_items/themeblvd_breadcrumbs.php:266
+msgid "<a title=\"Go to the %title% archives.\" href=\"%link%\">"
+msgstr ""
+
+#: ../framework/helper_items/themeblvd_breadcrumbs.php:437
+msgid "Untagged"
+msgstr ""
+
+#: ../framework/theme_hints/functions/theme_hints.php:26
+msgid "WP Admin: "
+msgstr ""
+
+#: ../framework/theme_options/classes/themeblvd_meta_box.php:811
+#: ../framework/theme_options/classes/themeblvd_options.php:1337
+msgid "Hide"
+msgstr ""
+
+#: ../framework/theme_options/classes/themeblvd_options.php:151
+msgid "A third-party SEO plugin has been detected which could cause problems with this theme's built in SEO plugin. It is advised that you disable this theme's SEO plugin or your third-party SEO plugin."
+msgstr ""
+
+#: ../framework/theme_options/classes/themeblvd_options.php:157
+msgid "Your site is currently set to Private. SEO is disabled. You can change this setting <a href='"
+msgstr ""
+
+#: ../framework/theme_options/classes/themeblvd_options.php:732
+msgid "Remove Image"
+msgstr ""
+
+#: ../framework/theme_options/classes/themeblvd_options.php:1190
+msgid "You can create up to three additional fields to go on your contact form before the user types their message. If you want your conact form to only include the typical Name, Email, and Message, simply leave the extra name fields blank. <a href=\"#contact-info\" title=\"Learn More\" class=\"jaybich-open\">Learn More</a>"
+msgstr ""
+
+#: ../framework/theme_options/classes/themeblvd_options.php:1196
+msgid "The form builder allows you to have more control over your Contact Page without you having to edit any code. Basically, by default, your contact form will show fields for the Name, E-mail, and Message. These three fields are not editable because they are needed for the contact form to work properly. You can add up to three additional fields to your contact form. These fields will show up after the E-mail field, but before the Message field."
+msgstr ""
+
+#: ../framework/theme_options/classes/themeblvd_options.php:1201
+msgid "This is the name of the field that will show up on your contact form. It will show exactly how you write it here. So, make sure to format it exactly how you'd like your users to see it."
+msgstr ""
+
+#: ../framework/theme_options/classes/themeblvd_options.php:1205
+msgid "This is the type of field you want to show. A \"Text Input\" is a standard single-line input field, and a \"Text Area\" would allow your user to type out an entire paragraph (similar to the Message field)."
+msgstr ""
+
+#: ../framework/theme_options/classes/themeblvd_options.php:1209
+msgid "If you make a field required, it means that the user cannot submit the form with that field empty."
+msgstr ""
+
+#: ../framework/theme_options/classes/themeblvd_options.php:1213
+msgid "If you're asking the user to enter something other than a standard piece of text, you may want to select an appropriate validation method."
+msgstr ""
+
+#: ../framework/theme_options/classes/themeblvd_options.php:1216
+msgid "Anything entered into the field is accepted."
+msgstr ""
+
+#: ../framework/theme_options/classes/themeblvd_options.php:1219
+msgid "Validates that it's an email address."
+msgstr ""
+
+#: ../framework/theme_options/classes/themeblvd_options.php:1222
+msgid "Validates it's a proper website address."
+msgstr ""
+
+#: ../framework/theme_options/classes/themeblvd_options.php:1225
+msgid "Validates that there are only numbers (ex: a phone number)."
+msgstr ""
+
+#: ../framework/theme_options/classes/themeblvd_options.php:1232
+msgid "If you require further customization of your form beyond the form builder, you can always manually add fields in the HTML code of template_contact.php. You DO NOT need to edit any PHP code. Any fields you manually add to the HTML form will automatically be included in the e-mail sent out."
+msgstr ""
+
+#: ../includes/theme_functions/general.php:60
+msgid "Primary Navigation"
+msgstr ""
+
+#: ../includes/theme_functions/general.php:64
+msgid "Footer Navigation"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:21
+msgid "Add New Portfolio Item"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:26
+#: ../includes/theme_options/general.php:716
+msgid "Portfolio Items"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:27
+msgid "Porfolio Item"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:46
+msgid "Portfolios"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:47
+msgid "All Portfolios"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:48
+msgid "Add New Portfolio"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:49
+msgid "New Portfolio Name"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:50
+msgid "Edit Portfolio"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:62
+msgid "Portfolio Tags"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:63
+msgid "All Portfolio Tags"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:64
+msgid "Add New Tag"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:65
+msgid "New Tag Name"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:106
+msgid "Not Assigned"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:120
+msgid "No Tags"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:129
+msgid "Oops! You forgot to set a featured image."
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:145
+msgid "You are currently creating a Portfolio Item, which can then be categorized into your Portfolios. <a href=\"#themeblvd_portfolio_item_description\" class=\"jaybich-open\">Learn More</a>"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:146
+msgid "<p>With custom post types and custom menus in WordPress 3.0, WordPress has totally changed the potential for theme making. Some concepts of how this theme manages portfolios may seem unusual at first, but once you get used to how things work, you'll see how much more efficient everything is.</p><h4 style=\"margin: 10px 0pt;\">The overall concept of creating your first portfolio.</h4><p>1. Create a new <em>Portfolio</em>. You can think of a <em>Portfolio</em> as a \"category\" if that helps you visualize it a bit better.</p><p>2. Create several <em>Portfolio Items</em> that each consist of:</p><ul><li>Title</li><li>Content</li><li>Excerpt</li><li>Media Link (Full URL to enlarged image, YouTube video, Vimeo video, .mov file, or .swf file)</li><li>Thumbnail (featured image)</li><li>Portfolio (i.e. Which portfolio is this portfolio item assigned to?)</li></ul><p>3. Add your <em>Portfolio</em> (i.e. \"category\" of portfolio items) to a menu under Appearance &gt; Menus.</p><p>4. Now that your <em>Portfolio</em> has been added to a menu, it's live on your website. When someone visit that <em>Portfolio</em>, they'll see all of that <em>Portfolios's</em> items displayed in a gallery view.</p><p><em>Note: Under Appearance &gt; Menus, if you do not see your Portfolios in the left column, it just means you have them hidden. Just click the Screen Options tab in the top right corner and then check off \"Portfolios.\"</em></p><h4 style=\"margin: 10px 0pt;\">Let's clear up one common misconception :-) </h4><p><em>\"I'm trying to add a portfolio page, but when I create a new page, there's no Portfolio page template? Why?\"</em></p><p>There's no need for that any more. Before WordPress 3.0, the only logical way to create a main menu was to list out WordPress pages. So, then the dilemma was that if you didn't want a \"blog\" for your homepage, how would you have a link to a \"blog\" from your main menu? So, theme authors started creating page templates that would list out the blog posts, and thus that \"page\" could be added to the main menu. Then, when theme authors started offering portfolios with their themes, the same thing needed to be done, as a portfolio would simply be another method of listing out \"posts.\"</p><p>With WordPress's menu builder you can add a blog's category, or in this case a \"Portfolio\", directly to your main menu. There's no need for creating a page in order to accomplish this.</p> "
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:149
+msgid "Portfolio Item"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:150
+msgid "Place the URL to your portfolio media item here. <a href=\"#themeblvd_media_item\" class=\"jaybich-open\">Learn More</a>"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:155
+msgid "<h4>Accepted Media Types</h4><h5>1. Images</h5><p>Insert the full URL to your image like this:<br>http://www.YourSite.com/wp-content/uploads/2010/06/image.jpg</p><h5>2. YouTube Videos</h5><p>Insert the full URL to the video page like this:<br>http://www.youtube.com/watch?v=qqXi8WmQ_WM</p><h5>3. Vimeo Videos</h5><p>Insert the full URL to the video page like this:<br>http://vimeo.com/7570458</p><h5>4. Standard Flash .SWF Files</h5><p><br>http://www.YourSite.com/wp-content/uploads/2010/06/flashfile.swf?width=792&amp;height=294</p><h5>5. Quicktime .MOV Files</h5><p>Insert the full URL to the .MOV file with the width and height attached like this:<br>http://www.YourSite.com/wp-content/uploads/2010/06/video.mov?width=480&amp;height=204</p>"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:160
+msgid "<em>Don't forget to set your thumbnail image, which is controlled by this post's \"featured image.\" It can be set in the Featured Image box generally located in the right column for editing this post.</em> <a href=\"#themeblvd_portfolio_item_thumb\" class=\"jaybich-open\">Learn More</a>"
+msgstr ""
+
+#: ../includes/theme_functions/portfolio.php:161
+msgid "Your thumbnail image (featured image) will be used on the Portfolio gallery style page for the user to click on. It will automatically be scaled and cropped to be 280x125. However, your resulting gallery of thumbnails will look better if you size your thumbnails before uploading them, or at least plan for them to be horizontally sized (meaning wider than they are tall)."
+msgstr ""
+
+#: ../includes/theme_functions/slide.php:21
+msgid "Add New Slide"
+msgstr ""
+
+#: ../includes/theme_functions/slide.php:25
+msgid "Slides"
+msgstr ""
+
+#: ../includes/theme_functions/slide.php:27
+msgid "Slide"
+msgstr ""
+
+#: ../includes/theme_functions/slide.php:47
+msgid "Slideshows"
+msgstr ""
+
+#: ../includes/theme_functions/slide.php:48
+msgid "All Slideshows"
+msgstr ""
+
+#: ../includes/theme_functions/slide.php:49
+msgid "Add New Slideshow"
+msgstr ""
+
+#: ../includes/theme_functions/slide.php:50
+msgid "New Slideshow Name"
+msgstr ""
+
+#: ../includes/theme_functions/slide.php:89
+msgid "Oops! This is an image slide, but you forgot a featured image."
+msgstr ""
+
+#: ../includes/theme_functions/slide.php:91
+msgid "No featured image."
+msgstr ""
+
+#: ../includes/theme_functions/slide.php:115
+#: ../includes/theme_functions/slide.php:132
+msgid "Image Slide"
+msgstr ""
+
+#: ../includes/theme_functions/slide.php:117
+#: ../includes/theme_functions/slide.php:133
+msgid "Content Slide"
+msgstr ""
+
+#: ../includes/theme_functions/slide.php:131
+msgid "What kind of slide is this?"
+msgstr ""
+
+#: ../includes/theme_functions/slide.php:134
+msgid "An image slide will use the featured image for the slide area, while a content slide will output the content entered above in the main content editor."
+msgstr ""
+
+#: ../includes/theme_functions/slide.php:156
+msgid "If you selected for this to be an \"Image Slide\" in the general option above, these options will configure this image slide. If you've selected this to be an image slide, and you leave the following options blank, nothing but your featured image set over to the right will show. The featured image will automatically be scaled and cropped to be 930x350. So, make sure you upload an image that is atleast that large. Completely ignore these options if this is a content slide."
+msgstr ""
+
+#: ../includes/theme_functions/slide.php:160
+msgid "Description (optional)"
+msgstr ""
+
+#: ../includes/theme_functions/slide.php:161
+msgid "Enter in a description you want to show over the image. Leave blank if you do not want a description to show."
+msgstr ""
+
+#: ../includes/theme_functions/slide.php:167
+msgid "Image Link (optional)"
+msgstr ""
+
+#: ../includes/theme_functions/slide.php:168
+msgid "Enter where you'd like this image slide to link to. Leave this option blank if you do not want this slide to be clickable."
+msgstr ""
+
+#: ../includes/theme_functions/stealth_slideshow.php:111
+msgid "There are no slides to display."
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:19
+msgid "These are breadcrumbs. They can be turned on or off from your theme options panel under \"General Settings.\""
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:34
+msgid "This is a dynamic widget area named \"Blog Sidebar.\" You can add and edit widgets in this area from your WP admin panel. This sidebar appears on all blog-related pages."
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:49
+msgid "This is a dynamic widget area named \"Pages Sidebar.\" You can add and edit widgets in this area from your WP admin panel. This sidebar appears on all \"Pages\" that aren't blog-related."
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:64
+msgid "This is a standard WordPress archive template. It's used to display posts filtered by category, tag, date, etc. It's controlled by archive.php."
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:71
+msgid "This is the template for displaying comments. It's controlled with two files: <ul><li>(1) comments.php</li><li>(2) framework/helper_items/comments.php</li></ul>"
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:78
+msgid "This is your global header, which is controlled by header.php. You have several different options for your header, including dynamically putting in a new logo image, choosing what displays to the right - a recent tweet, search form, or block of HTML code. This can all be set on your theme options page under \"Layout Settings.\" Also, below is a menu that you need to dynamically build from your Menu Builder. You then assign it to the \"Primary Navigation\" menu location."
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:97
+msgid "This is your global footer. It's controlled with footer.php. You can put widgets here by adding them to the \"Footer Area\" widget area in your Widgets panel. Your copyright message can be dynmaically set by going to your theme options page and going to \"Layout Settings.\" You can insert a menu in the lower right corner by going to your Menu Builder, creating a new menu, and assigning it to the \"Footer Navigation\" menu location."
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:120
+msgid "This is your default homepage, which is controlled by index.php. There are many options you can set for your homepage from your theme options page. So, make sure and explore those and customize this page to look the way you want. If you want to use this theme's alternate homepage, you can do so by creating a page, setting the \"Alternate Homepage\" template to that page, and then going to Settings > Reading > frontpage displays and setting that static page as your front page."
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:139
+msgid "Choose a static page's content to show here from your theme options panel under \"Homepage.\""
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:162
+msgid "This is dynamic sidebar. You can add widgets here from your Widgets panel by adding them to the \"Default Homepage Sidebar\" widget area. You can also completely hide this sidebar from your theme options panel."
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:181
+msgid "This is a standard WordPress page that's using the default page template. You can edit its format in page.php."
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:200
+msgid "This is a standard WordPress page using the page template \"Alternate Homepage.\" If you'd like to set this page as your homepage, you need to go to Settings > Reading > frontpage displays, and set this static page as your frontpage. Also, this page template has several dynamic settings you can set from your page template settings page. The format of this page template is controlled with template_alternate_home.php."
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:223
+msgid "This is a dynamic widget area. You can put widgets here by going to your Widgets page and adding widgets to the \"Alternate Homepage\" widget area."
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:238
+msgid "This is a standard WordPress page using the page template \"Archives.\" It simply displays links to all of your archived content. This is a good page template to use for SEO reasons. It's format is controlled with template_archives.php"
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:257
+msgid "This is a standard WordPress page using the page template \"Blog Page.\" This page template has several dynamic settings you can set from your page template settings page. The format of this page template is controlled with template_blog.php. If you'd like to edit the actual display of the blog posts, you can do so by editing /includes/stealth_blog.php"
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:280
+msgid "This is a standard WordPress page using the page template \"Magazine Page.\" This page template has several dynamic settings you can set from your page template settings page. The format of this page template is controlled with template_magazine.php. If you'd like to edit the actual display of the blog posts, you can do so by editing /includes/stealth_mag.php"
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:303
+msgid "This is the Contact page template. You can add fields to it from your template settings page, or you can manually edit the HTML in template_contact.php. The contact form uses sendmail.php to send the email. However, you shouldn't need to edit this file. Any manually edited fields added to template_contact.php will be picked up by sendmail.php."
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:326
+msgid "This is a page using the page template \"Full Width Page.\" You can edit its format in template_fullwidth.php."
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:345
+msgid "This is a standard WordPress page using the page template \"Sitemap.\" It simply displays links to important areas of your site. This is a good page template to use for SEO reasons. It's format is controlled with template_sitemap.php"
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:364
+msgid "This is a standard WordPress post. You can edit its format in single.php."
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:383
+msgid "This is a standard WordPress search results page. You can edit its format in search.php."
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:390
+msgid "This is a slideshow using the jQuery plugin, Cycle. In this theme, the individual images or chunks of content are referred to as \"Slides\" and if you're using multiple slideshows throughout your website, you can categorize \"Slides\" into \"Slideshows\" -- If you do this, you can select which \"Slideshow\" will actually show in different areas of your website from your theme option pages."
+msgstr ""
+
+#: ../includes/theme_functions/theme_hints.php:421
+msgid "This is the display of a group of \"Portfolio Items\" and you can edit its format in taxonomy.php."
+msgstr ""
+
+#: ../includes/theme_meta/seo.php:26
+msgid "Title Tag"
+msgstr ""
+
+#: ../includes/theme_meta/seo.php:27
+msgid "Enter in the title as you'd like to be displayed.  <a href='#"
+msgstr ""
+
+#: ../includes/theme_meta/seo.php:31
+msgid "<p>This is the title that gets inserted within the &lt;title&gt; tag of this page's &lt;head&gt; section. It then gets displayed at the top of most web browsers when a user visits your site. It also, in most cases, gets used on a search engine results page when displaying your page as a result. It's also very important in how search engines determine what this page is about. So, it's important to put a couple of your most important keywords here along with your site's name in a user-friendly, NON-spammy format.</p><p>Here's what the final result will look like in your source code:</p><p>&lt;title&gt;Your title ends up here&lt;/title&gt;</p>"
+msgstr ""
+
+#: ../includes/theme_meta/seo.php:34
+msgid "Meta Keywords"
+msgstr ""
+
+#: ../includes/theme_meta/seo.php:35
+msgid "Enter a comma-separated list of keywords you'd like to associate with this page.  <a href='#"
+msgstr ""
+
+#: ../includes/theme_meta/seo.php:39
+msgid "<p>Meta keywords are words or phrases that you can use to describe your page or post. They definitely do not have the same impact on SEO that they did in the past, however they can still be helpful. According to <a href=\"http://www.mattcutts.com/blog/\" target=\"_blank\">Matt Cutts</a>, head of Google's Webspam team, Google does not use meta keywords to determine rankings in their organic search results. However, many other search engines still do. So, it's a never a bad idea to include them.</p><p>Here's what the final result will look like in your source code:</p><p>&lt;meta name=\"keywords\" content=\"keyword1, keyword2, keyword3\" /&gt;</p>"
+msgstr ""
+
+#: ../includes/theme_meta/seo.php:42
+msgid "Meta Description"
+msgstr ""
+
+#: ../includes/theme_meta/seo.php:43
+msgid "Enter a description you'd like to associate with this page. <a href='#"
+msgstr ""
+
+#: ../includes/theme_meta/seo.php:47
+msgid "<p>The meta description is a short paragraph that sums up what a particular page or post is about. Google and other search engines will often display this description in their search results. Without this snippet of text, generally, search engines will simply pull relevant chunks of text from your site to display.</p><p>Here's what the final result will look like in your source code:</p><p>&lt;meta name=\"description\" content=\"This is your SEO description of your site.\" /&gt;</p>"
+msgstr ""
+
+#: ../includes/theme_meta/seo.php:50
+msgid "Do you want this page to be indexed by search engines?"
+msgstr ""
+
+#: ../includes/theme_meta/seo.php:51
+msgid "Yes, I want search engins to find this page."
+msgstr ""
+
+#: ../includes/theme_meta/seo.php:52
+msgid "No, hide this page form search engines."
+msgstr ""
+
+#: ../includes/theme_meta/seo.php:53
+msgid "If you choose to hide this page from search engines, nofollow and noindex tags will be added to this page so search engines will not index it."
+msgstr ""
+
+#: ../includes/theme_options/general.php:33
+msgid "Theme Style"
+msgstr ""
+
+#: ../includes/theme_options/general.php:34
+msgid "Select the overall style color you'd like to use for your website."
+msgstr ""
+
+#: ../includes/theme_options/general.php:73
+msgid "Custom Link Color"
+msgstr ""
+
+#: ../includes/theme_options/general.php:74
+msgid "Enter in a link color hex value. If you leave this blank, it will default to the color of the style you chose above.<br />Ex: 000000"
+msgstr ""
+
+#: ../includes/theme_options/general.php:80
+msgid "General Body Font"
+msgstr ""
+
+#: ../includes/theme_options/general.php:81
+msgid "Choose which font stack you'd like to use for your general body font. <a href=\"#themeblvd_font_body\" class=\"jaybich-open\">Learn More</a>"
+msgstr ""
+
+#: ../includes/theme_options/general.php:84
+msgid "Font stacks are prioritized lists of fonts, defined in the CSS font-family attribute, that the browser will cycle through until it finds a font that is installed on the user's system. The font stacks listed here were put together by <a href='http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/'>Nathan Ford</a>."
+msgstr ""
+
+#: ../includes/theme_options/general.php:195
+msgid "Headers Font"
+msgstr ""
+
+#: ../includes/theme_options/general.php:196
+msgid "Choose which font you'd like to use from the Google Font Directory. Select 'None' if you'd like the header font to default to the body font. <a href=\"#themeblvd_font_headers\" class=\"jaybich-open\">Learn More</a>"
+msgstr ""
+
+#: ../includes/theme_options/general.php:321
+msgid "Custom CSS"
+msgstr ""
+
+#: ../includes/theme_options/general.php:324
+msgid "Feel free to throw in some of your own CSS code if you're feeling like you want to spruce things up a bit. You <strong>do not</strong> need &lt;style&gt; tags."
+msgstr ""
+
+#: ../includes/theme_options/general.php:338
+msgid "Show breadcrumbs?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:339
+msgid "Specify whether or not you'd like breadcrumbs to show throughout your website."
+msgstr ""
+
+#: ../includes/theme_options/general.php:343
+msgid "Yes, show breadcrumbs."
+msgstr ""
+
+#: ../includes/theme_options/general.php:344
+#: ../includes/theme_options/general.php:362
+#: ../includes/theme_options/general.php:689
+#: ../includes/theme_options/general.php:806
+#: ../includes/theme_options/general.php:822
+#: ../includes/theme_options/general.php:830
+msgid "No, hide them."
+msgstr ""
+
+#: ../includes/theme_options/general.php:347
+msgid "Show title on archive pages?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:348
+#: ../includes/theme_options/general.php:357
+msgid "This option applies to standard WordPress archive pages that show posts by tag, category, date, etc."
+msgstr ""
+
+#: ../includes/theme_options/general.php:352
+msgid "Yes, show titles on archive pages."
+msgstr ""
+
+#: ../includes/theme_options/general.php:353
+#: ../includes/theme_options/general.php:371
+msgid "No, hide titles."
+msgstr ""
+
+#: ../includes/theme_options/general.php:356
+msgid "Show featured images on archive pages?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:361
+msgid "Yes, show featured images on archive pages."
+msgstr ""
+
+#: ../includes/theme_options/general.php:365
+msgid "Show title on search pages?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:366
+msgid "This option applies to search result pages."
+msgstr ""
+
+#: ../includes/theme_options/general.php:370
+msgid "Yes, show titles on search result pages."
+msgstr ""
+
+#: ../includes/theme_options/general.php:385
+msgid "<h4>Header</h4>"
+msgstr ""
+
+#: ../includes/theme_options/general.php:388
+msgid "Header Logo"
+msgstr ""
+
+#: ../includes/theme_options/general.php:389
+msgid "Select whether you want your main logo to be an image or text. If you select 'image' you can put in the image url in the next option, and if you select 'text' your <a href='options-general.php' target='_blank'>Site Title</a> will show instead."
+msgstr ""
+
+#: ../includes/theme_options/general.php:415
+msgid "Header - Right Section"
+msgstr ""
+
+#: ../includes/theme_options/general.php:416
+msgid "Select what you'd like to show in the right side of your header."
+msgstr ""
+
+#: ../includes/theme_options/general.php:445
+msgid "Header Twitter Account"
+msgstr ""
+
+#: ../includes/theme_options/general.php:446
+msgid "If you selected to show a recent tweet above, enter in your Twitter account username."
+msgstr ""
+
+#: ../includes/theme_options/general.php:452
+msgid "Header HTML Block"
+msgstr ""
+
+#: ../includes/theme_options/general.php:453
+msgid "If you selected to show a block of HTML code above, put your code in here.<br /><br />This block is 500px wide and positioned absolute. This means that the height of this block will not effect the overall height of the header area. The logo is what controls the height of your header."
+msgstr ""
+
+#: ../includes/theme_options/general.php:460
+msgid "<h4>Footer</h4>"
+msgstr ""
+
+#: ../includes/theme_options/general.php:463
+msgid "Copyright Text"
+msgstr ""
+
+#: ../includes/theme_options/general.php:464
+msgid "Enter in your copyright text. '%year%' will show the current year and '%site_title%' will show your current Site Title."
+msgstr ""
+
+#: ../includes/theme_options/general.php:483
+msgid "Analytics Code"
+msgstr ""
+
+#: ../includes/theme_options/general.php:484
+msgid "Enter in your Analytics code to be inserted just before the closing &lt;/body&gt; tag of your website."
+msgstr ""
+
+#: ../includes/theme_options/general.php:501
+msgid "<h4>Slideshow Options</h4>"
+msgstr ""
+
+#: ../includes/theme_options/general.php:504
+msgid "Show slideshow?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:505
+msgid "Choose whether or not you want to show the slideshow at the top of the homepage."
+msgstr ""
+
+#: ../includes/theme_options/general.php:506
+msgid "Yes, show slideshow."
+msgstr ""
+
+#: ../includes/theme_options/general.php:507
+msgid "No, hide slideshow."
+msgstr ""
+
+#: ../includes/theme_options/general.php:513
+msgid "Slideshow feed from where?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:514
+msgid "Choose the slideshow you'd like to pull from. Slideshows are setup <a href='edit-tags.php?taxonomy=slideshows&post_type=slide'>here</a>."
+msgstr ""
+
+#: ../includes/theme_options/general.php:521
+msgid "Slideshow transition"
+msgstr ""
+
+#: ../includes/theme_options/general.php:522
+msgid "Here you can select how you want each slide to transition to the next. The most typical options would be \"fade\" and \"scrollHorz\"."
+msgstr ""
+
+#: ../includes/theme_options/general.php:670
+msgid "Slideshow auto height"
+msgstr ""
+
+#: ../includes/theme_options/general.php:671
+msgid "If you turn this on, it means the slideshow will animate to a new height for each slide. If turned off, the slideshow will take on the height of the tallest slide and stay that height."
+msgstr ""
+
+#: ../includes/theme_options/general.php:672
+msgid "Yes, turn on auto height animated scaling."
+msgstr ""
+
+#: ../includes/theme_options/general.php:673
+msgid "No, let the slideshow take on the height of the tallest slide."
+msgstr ""
+
+#: ../includes/theme_options/general.php:678
+msgid "Slideshow autoplay duration"
+msgstr ""
+
+#: ../includes/theme_options/general.php:679
+msgid "Enter the time you would like in between transitions in seconds. Use '0' to deactivate automatic transitioning."
+msgstr ""
+
+#: ../includes/theme_options/general.php:684
+msgid "Show next/previous arrows?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:685
+msgid "These are the arrows that allow the user to navigate the slideshow to the next slide or back to the previous slide."
+msgstr ""
+
+#: ../includes/theme_options/general.php:688
+msgid "Yes show next/previous buttons."
+msgstr ""
+
+#: ../includes/theme_options/general.php:694
+msgid "<h4>Featured Posts Options</h4>"
+msgstr ""
+
+#: ../includes/theme_options/general.php:697
+msgid "Show featured posts?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:698
+msgid "Choose whether or not you want to show the featured posts in the middle of the homepage."
+msgstr ""
+
+#: ../includes/theme_options/general.php:699
+msgid "Yes, show featured posts."
+msgstr ""
+
+#: ../includes/theme_options/general.php:700
+msgid "No, hide featured posts."
+msgstr ""
+
+#: ../includes/theme_options/general.php:706
+msgid "Featured posts tag"
+msgstr ""
+
+#: ../includes/theme_options/general.php:707
+msgid "Enter the tag you'd like to assign to posts in order for them to show here."
+msgstr ""
+
+#: ../includes/theme_options/general.php:713
+msgid "Pull blog posts or portfolio items?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:714
+msgid "Chose whether you want the featured tag to pull from blog posts or portfolio items."
+msgstr ""
+
+#: ../includes/theme_options/general.php:715
+msgid "Blog Posts"
+msgstr ""
+
+#: ../includes/theme_options/general.php:724
+msgid "<h4>Bottom Content Area Options</h4>"
+msgstr ""
+
+#: ../includes/theme_options/general.php:727
+msgid "Show bottom content area?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:728
+msgid "Choose whether or not you want the entire bottom content area to show."
+msgstr ""
+
+#: ../includes/theme_options/general.php:729
+msgid "Yes, show bottom content area."
+msgstr ""
+
+#: ../includes/theme_options/general.php:730
+msgid "No, hide bottom content area."
+msgstr ""
+
+#: ../includes/theme_options/general.php:736
+msgid "Use which page's content?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:737
+msgid "Choose which page you want to pull content from to fill this area."
+msgstr ""
+
+#: ../includes/theme_options/general.php:742
+msgid "Show page's title?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:743
+msgid "Choose whether or not you want the title of the page selected in the previous option to show before the page's content."
+msgstr ""
+
+#: ../includes/theme_options/general.php:744
+msgid "Yes, show page's title."
+msgstr ""
+
+#: ../includes/theme_options/general.php:745
+msgid "No, hide page's title."
+msgstr ""
+
+#: ../includes/theme_options/general.php:751
+msgid "Show bottom content sidebar?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:752
+msgid "Choose whether to show the sidebar or not. If the sidebar is hidden, the selected page's content will stretch full-width."
+msgstr ""
+
+#: ../includes/theme_options/general.php:753
+msgid "Yes, show sidebar."
+msgstr ""
+
+#: ../includes/theme_options/general.php:754
+msgid "No, hide sidebar."
+msgstr ""
+
+#: ../includes/theme_options/general.php:771
+msgid "You can have an unlimited number of portfolio pages on your site. The following options will take effect across <strong>all</strong> of your portfolio pages.<br /><br />To sum it all up, this theme uses a custom post type of <a href=\"edit.php?post_type=portfolio-item\">Portfolio Items</a> which are categorized into a custom taxonomy, <a href=\"edit-tags.php?taxonomy=portfolio&post_type=portfolio-item\">Portfolios</a>. To make a Portfolio live, you simply add that Portfolio (i.e. group of Portfolio Items) to a menu with the <a href=\"nav-menus.php\">Menu Builder</a>. <br /><br /><em>Hint: If you don't see \"Portfolios\" in the left column while building a menu, it just means you need to unhide it under the Screen Options tab in the top right corner of the screen.</em>"
+msgstr ""
+
+#: ../includes/theme_options/general.php:774
+msgid "Show title of the page?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:775
+msgid "Yes, show main title."
+msgstr ""
+
+#: ../includes/theme_options/general.php:776
+#: ../includes/theme_options/general.php:784
+msgid "No, hide it."
+msgstr ""
+
+#: ../includes/theme_options/general.php:777
+msgid "This is referring to the main title of the Portfolio, NOT the titles of the individual portfolio items."
+msgstr ""
+
+#: ../includes/theme_options/general.php:782
+msgid "Show Portfolio description?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:783
+msgid "Yes, show the portfolio's description."
+msgstr ""
+
+#: ../includes/theme_options/general.php:785
+msgid "This is referring to the main description of the Portfolio, NOT the excerpts of the individual portfolio items."
+msgstr ""
+
+#: ../includes/theme_options/general.php:790
+msgid "How many items per page?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:791
+msgid "Enter the number of portfolio items you'd like displayed on each page. Most likely you'd want to pick a number divisible by 3 (i.e. 3, 6, 9, 12)."
+msgstr ""
+
+#: ../includes/theme_options/general.php:796
+msgid "Item thumbnails link where?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:797
+msgid "Link to lightbox popup of the media item."
+msgstr ""
+
+#: ../includes/theme_options/general.php:798
+msgid "Link to the portfolio post."
+msgstr ""
+
+#: ../includes/theme_options/general.php:799
+msgid "This is referring to the thumbnails of each portfolio item."
+msgstr ""
+
+#: ../includes/theme_options/general.php:804
+msgid "Show item titles?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:805
+msgid "Yes, show titles."
+msgstr ""
+
+#: ../includes/theme_options/general.php:807
+msgid "This is referring to the titles of portfolio items on the portfolio gallery page."
+msgstr ""
+
+#: ../includes/theme_options/general.php:812
+msgid "Item titles are links?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:813
+msgid "Yes, item titles link to the portfolio posts."
+msgstr ""
+
+#: ../includes/theme_options/general.php:814
+msgid "No, item titles are not links."
+msgstr ""
+
+#: ../includes/theme_options/general.php:815
+msgid "This is referring to the title of portfolio items on the portfolio gallery page."
+msgstr ""
+
+#: ../includes/theme_options/general.php:820
+msgid "Show item descriptions?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:821
+msgid "Yes, show descriptions."
+msgstr ""
+
+#: ../includes/theme_options/general.php:823
+msgid "This is referring to the description of a portfolio item on the portfolio gallery page."
+msgstr ""
+
+#: ../includes/theme_options/general.php:828
+msgid "Show item \"Read More\" links?"
+msgstr ""
+
+#: ../includes/theme_options/general.php:829
+msgid "Yes, show links."
+msgstr ""
+
+#: ../includes/theme_options/general.php:831
+msgid "This is referring to a \"Read More\" link that links to the portfolio item's post."
+msgstr ""
+
+#: ../includes/theme_options/help.php:33
+msgid "Don't you hate when you first install a premium WordPress theme and everything looks blank? You wonder why it doesn't look like that awesome live demo you saw before you bought it? Well, now your journey to setting up your site begins, and <a href=\"http://jasonbobich.com/theme_hints.php\">Jason's <em>Theme Hints</em></a> can help. When turned on, <em>Theme Hints</em> will help you setup your website by giving you little hints as you browse the front-end of your website that explain how different elements of your website are effected and where to edit them. Then, simply switch <em>Theme Hints</em> off when you're ready to go live to the world!"
+msgstr ""
+
+#: ../includes/theme_options/help.php:37
+msgid "Show Theme Hints?"
+msgstr ""
+
+#: ../includes/theme_options/help.php:38
+msgid "When turned on, you can browse the front-end of your website and see clues on editing all the different areas of your site."
+msgstr ""
+
+#: ../includes/theme_options/help.php:42
+msgid "Yes, turn on Theme Hints."
+msgstr ""
+
+#: ../includes/theme_options/help.php:43
+msgid "No, turn them off."
+msgstr ""
+
+#: ../includes/theme_options/seo.php:33
+msgid "This theme includes a built-in SEO plugin, which is a part of the ThemeBlvd WordPress theme framework. These options will help you setup your site's search engine optimization by allowing you to customize your meta information and title tags. Additionally, you can edit title tags and meta information individually for pages and posts when you're working on them in their edit screens."
+msgstr ""
+
+#: ../includes/theme_options/seo.php:37
+msgid "Enable this theme's built-in SEO plugin?"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:38
+msgid "Yes, enable ThemeBlvd SEO."
+msgstr ""
+
+#: ../includes/theme_options/seo.php:39
+msgid "No, disable it."
+msgstr ""
+
+#: ../includes/theme_options/seo.php:40
+msgid "If you're using a third-party SEO plugin, you should disable built-in SEO."
+msgstr ""
+
+#: ../includes/theme_options/seo.php:55
+msgid "These options will be used on your homepage. The keywords and descriptions will also be used on any other places within the theme that default meta information is needed, such as 404 pages, archives, etc."
+msgstr ""
+
+#: ../includes/theme_options/seo.php:59
+msgid "Homepage Title Tag"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:60
+msgid "Enter in the title as you'd like to be displayed. <a href='#"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:64
+msgid "<p>This is your homepage title that gets inserted within the &lt;title&gt; tag of your homepage's &lt;head&gt; section. It then gets displayed at the top of most web browsers when a user visits your site. It also, in most cases, gets used on a search engine results page when displaying your page as a result. It's also very important in determining what your website is about.</p><p>So, it's important to put a couple of your most important keywords here along with your site's name in a user-friendly, NON-spammy format.</p><p>&lt;title&gt;Your title ends up here&lt;/title&gt;</p><h4>Accepted title format macros for your homepage title</h4>%blog_title% - Your site title<br />%blog_description% - Your site description"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:67
+msgid "Homepage Meta Keywords"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:68
+msgid "Enter a comma-separated list of keywords you'd like to associate with your homepage. <br /><br /> Ex: keyword1, keyword2, keyword3 <br /><br /><a href='#"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:72
+msgid "<p>Meta keywords are words or phrases that you can use to describe your page or post. They definitely do not have the same impact on SEO that they did in the past, however they can still be helpful. According to <a href='http://www.mattcutts.com/blog/' target='_blank'>Matt Cutts</a>, head of Google's Webspam team, Google does not use meta keywords to determine rankings in their organic search results. However, many other search engines still do. So, it's a never a bad idea to include them.</p><p>&lt;meta name=&quot;keywords&quot; content=&quot;keyword1, keyword2, keyword3&quot; /&gt;</p>"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:75
+msgid "Homepage Meta Description"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:76
+msgid "Enter a description you'd like to associate with your homepage. In most cases this is what gets displayed on a Search Engine results page. <br /><br /><a href='#"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:80
+msgid "<p>The meta description is a short paragraph that sums up what a particular page or post is about. Google and other search engines will often display this description in their search results. Without this snippet of text, generally, search engines will simply pull relevant chunks of text from your site to display.</p><p>&lt;meta name=&quot;description&quot; content=&quot;This is your SEO description of your site.&quot; /&gt;</p>"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:92
+msgid "These are the titles that get inserted within the &lt;title&gt; tags in the &lt;head&gt; sections throughout your site. They then get displayed at the top of most web browsers when a user visits your site. Also, in most cases, they get used on search engine result pages when displaying your site as a result. They're also very important in how search engines determine what a particular page on your site is about. So, it's important to put a couple of your most important keywords in there along with your site's name in a user-friendly, NON-spammy format."
+msgstr ""
+
+#: ../includes/theme_options/seo.php:96
+msgid "Posts"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:97
+msgid "Enter the format you'd like the default titles of your Posts displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:101
+msgid "<h4>Accepted title format macros for Posts</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%post_title% - The original title of the post<br />%category_title% - The (main) category of the post<br />%category_slug% - Alias for %category_title%<br />%post_author_username% - This post's author login<br />%post_author_firstname% - This post's author first name<br />%post_author_lastname% - This post's author last name"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:105
+msgid "Enter the format you'd like the default titles of your Pages displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:109
+msgid "<h4>Accepted title format macros for Pages</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%page_title% - The original title of the page<br />%page_author_username% - This page's author login<br />%page_author_firstname% - This page's author first name<br />%page_author_lastname% - This page's author last name"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:113
+msgid "Enter the format you'd like the default titles of your Category pages displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:117
+msgid "<h4>Accepted title format macros for Category pages</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%category_title% - The original title of the category<br />%category_description% - The description of the category"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:121
+msgid "Enter the format you'd like the default titles of your portfolio item pages displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:125
+msgid "<h4>Accepted title format macros for Portfolio Items</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%item_title% - The original title of the portfolio item<br />%portfolio_title% - The (main) portfolio of the portfolio item<br />%portfolio_slug% - Alias for %portfolio_title%"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:129
+msgid "Enter the format you'd like the default titles of your portfolio pages displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:133
+msgid "<h4>Accepted title format macros for Portfolio pages</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%portfolio_title% - The original title of the portfolio<br />%portfolio_description% - The description of the category"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:136
+msgid "Archives"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:137
+msgid "Enter the format you'd like the default titles of your Archive pages displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:141
+msgid "<h4>Accepted title format macros for Archive pages</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%date% - The original archive title given by WordPess, e.g. '2010' or '2010 September'"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:144
+#: ../includes/theme_options/seo.php:152
+msgid "Tags"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:145
+msgid "Enter the format you'd like the default titles of your Tags pages displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:149
+msgid "<h4>Accepted title format macros for Tag pages</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%tag% - The name of the tag"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:153
+msgid "Enter the format you'd like the default titles of your Author pages displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:157
+msgid "<h4>Accepted title format macros for Author pages</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%author% - The public name of the author"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:160
+msgid "Search Results"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:161
+msgid "Enter the format you'd like the default titles of your Search Results pages displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:165
+msgid "<h4>Accepted title format macros for Search Results pages</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%search_term% - What was searched for"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:169
+msgid "Enter the format you'd like the default titles of your 404 pages displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:173
+msgid "<h4>Accepted title format macros for 404 pages</h4>%blog_title% - Your site title<br />%blog_description% - Your site description"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:185
+msgid "Where would you like meta keywords to run?"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:186
+msgid "Select the sections of the theme's front-end you'd like meta keywords to be inserted into the &lt;head&gt;. <br /><br /><a href='#"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:237
+msgid "<p>Meta keywords are words or phrases that you can use to describe your page or post. They definitely do not have the same impact on SEO that they did in the past, however they can still be helpful. According to <a href='http://www.mattcutts.com/blog/' target='_blank'>Matt Cutts</a>, head of Google's Webspam team, Google does not use meta keywords to determine rankings in their organic search results. However, many other search engines still do. So, it's a never a bad idea to include them.</p><p>&lt;meta name=&quot;keywords&quot; content=&quot;keyword1, keyword2, keyword3&quot; /&gt;</p> <ul><li><strong>Homepage:</strong> Meta keywords entered in the homepage SEO section will be used on your homepage if this option is checked.</li><li><strong>Pages:</strong> Meta keywords for pages are taken from the custom option you can put in when editing a page. If this is left blank, the keywords used in your homepage keyword list will be used. Check this option to activate this.</li><li><strong>Posts:</strong> Meta keywords for posts are taken from the custom option you can put in when editing a post. If this is left blank, the keywords used in your homepage keyword list will be used. Check this option to activate this.</li><li><strong>Categories:</strong> This option applies to category pages. The associated category name(s) and slug(s) are the keywords used.</li><li><strong>Portfolio Items:</strong> Meta keywords for portfolio items are taken from the custom option you can put in when editing a portfolio item. If this is left blank, the keywords used in your homepage keyword list will be used. Check this option to activate this.</li><li><strong>Portfolios:</strong> This option applies to portfolio pages (e.g. groups of portfolio items). Keywords returned are the name(s) and slug(s) of the associated portfolio.</li><li><strong>Archives:</strong> This option applies to archive pages. Keywords are taken from your homepage keyword list if this option is enabled.</li><li><strong>Tags:</strong> This option applies to tags pages. The associated tag is used as a single keyword.</li><li><strong>Author Pages:</strong> This option applies to pages of posts filtered by an author. The author's public name will be used as a single keyword.</li><li><strong>Search Results:</strong> This option applies to search result pages. Keywords are taken from the words searched for if this option is enabled.</li><li><strong>404 Page:</strong> This option applies to 404 pages (not found pages). Keywords are taken from your homepage keyword list if this option is enabled.</li></ul>"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:249
+msgid "Where would you like meta descriptions to run?"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:250
+msgid "Select the sections of the theme's front-end you'd like meta descriptions to be inserted into the &lt;head&gt;. <br /><br /><a href='#"
+msgstr ""
+
+#: ../includes/theme_options/seo.php:301
+msgid "<p>The meta description is a short paragraph that sums up what a particular page or post is about. Google and other search engines will often display this description in their search results. Without this snippet of text, generally, search engines will simply pull relevant chunks of text from your site to display.</p><p>&lt;meta name=&quot;description&quot; content=&quot;This is your SEO description of your site.&quot; /&gt;</p> <ul><li><strong>Homepage:</strong> The meta description entered in the homepage SEO section will be used on your homepage if this option is checked.</li><li><strong>Pages:</strong> The meta description for pages is taken from the custom option you can put in when editing a page. If this is left blank, the description used for your homepage description list will be used. Check this option to activate this.</li><li><strong>Posts:</strong>The meta description for posts is taken from the custom option you can put in when editing a post. If this is left blank, the description used for your homepage description will be used. Check this option to activate this.</li><li><strong>Categories:</strong> This option applies to category pages. The description is taken from the description entered when creating a category, and if it's left blank, the homepage description is used.</li><li><strong>Portfolio Items:</strong>The meta description for portfolio items is taken from the custom option you can put in when editing a portfolio item. If this is left blank, the description used for your homepage description will be used. Check this option to activate this.</li><li><strong>Portfolios:</strong> This option applies to portfolio pages (e.g. groups of portfolio items). The description is taken from the description entered when creating a portfolio, and if it's left blank, the homepage description is used.</li><li><strong>Archives:</strong> This option applies to archive pages. The description is taken from your homepage description if this option is enabled.</li><li><strong>Tags:</strong> This option applies to tags pages. The description is taken from your homepage description if this option is enabled.</li><li><strong>Author Pages:</strong> This option applies to pages of posts filtered by an author. The author's bio will be used for description and if that's blank, the homepage description will be used.</li><li><strong>Search Results:</strong> This option applies to search result pages. The description is taken from the words searched for if this option is enabled.</li><li><strong>404 Page:</strong> This option applies to 404 pages (not found pages). The description is taken from your homepage description if this option is enabled.</li></ul>"
+msgstr ""
+
+#: ../includes/theme_options/templates.php:39
+msgid "Choose whether or not you want to show the slideshow at the top of the home2 page."
+msgstr ""
+
+#: ../includes/theme_options/templates.php:213
+#: ../includes/theme_options/templates.php:442
+#: ../includes/theme_options/templates.php:672
+msgid "Enter the time you would like in between transitions in seconds. Use '0' to deactivate automatic transitioning"
+msgstr ""
+
+#: ../includes/theme_options/templates.php:228
+msgid "<h4>Slogan</h4>"
+msgstr ""
+
+#: ../includes/theme_options/templates.php:231
+msgid "Slogan"
+msgstr ""
+
+#: ../includes/theme_options/templates.php:232
+msgid "Leave this blank if you don't want the slogan to show at all."
+msgstr ""
+
+#: ../includes/theme_options/templates.php:246
+msgid "Exclude categories from blog page?"
+msgstr ""
+
+#: ../includes/theme_options/templates.php:247
+msgid "Choose which categories you'd like not to show on your blog page."
+msgstr ""
+
+#: ../includes/theme_options/templates.php:253
+msgid "Show content or excerpts?"
+msgstr ""
+
+#: ../includes/theme_options/templates.php:254
+msgid "Choose whether you want the full content of each post to show or just the excerpts."
+msgstr ""
+
+#: ../includes/theme_options/templates.php:255
+msgid "Show full content."
+msgstr ""
+
+#: ../includes/theme_options/templates.php:256
+msgid "Show only excerpts."
+msgstr ""
+
+#: ../includes/theme_options/templates.php:268
+msgid "Choose whether or not you want to show the slideshow at the top of the blog page."
+msgstr ""
+
+#: ../includes/theme_options/templates.php:285
+#: ../includes/theme_options/templates.php:515
+msgid "Here you can select how you want each slide to transition to the next. The most typical options would be \"fade\" and \"scrollLeft\"."
+msgstr ""
+
+#: ../includes/theme_options/templates.php:453
+msgid "Choose whether or not you want to show the featured posts in the middle of the blog page."
+msgstr ""
+
+#: ../includes/theme_options/templates.php:485
+msgid "Exclude categories from magazine page?"
+msgstr ""
+
+#: ../includes/theme_options/templates.php:486
+msgid "Choose which categories you'd like not to show on your magazine page."
+msgstr ""
+
+#: ../includes/theme_options/templates.php:498
+msgid "Choose whether or not you want to show the slideshow at the top of the magazine page."
+msgstr ""
+
+#: ../includes/theme_options/templates.php:683
+msgid "Choose whether or not you want to show the featured posts in the middle of the magazine page."
+msgstr ""
+
+#: ../includes/theme_options/templates.php:719
+msgid "Enter the e-mail address where you would like to receive messages from this contact form."
+msgstr ""
+
+#: ../includes/theme_widgets/widget_recent_posts.php:64
+msgid "Posted on "
+msgstr ""
+
+#: ../includes/theme_widgets/widget_simple_contact.php:127
+msgid "Get in Touch"
+msgstr ""
+
+#: ../includes/theme_widgets/widgets.php:39
+msgid "These widgets will get shown in the sidebar of all Posts and blog-related pages."
+msgstr ""
+
+#: ../includes/theme_widgets/widgets.php:49
+msgid "These widget will get shown in the sidebar on all 2-column \"Pages\" that are NOT posts or blog-related things."
+msgstr ""
+
+#: ../includes/theme_widgets/widgets.php:59
+msgid "These widgets will get shown four to a row in the footer of your site. You can place an unlimited number of widgets here, however it will look best to put a number divisible by 4 (i.e. 4, 8, 12, etc)."
+msgstr ""
+
+#: ../includes/theme_widgets/widgets.php:69
+msgid "These widgets will get shown in the sidebar in the bottom content area of the default homepage if you have it enabled on your theme options page."
+msgstr ""
+
+#: ../includes/theme_widgets/widgets.php:79
+msgid "These widgets will get shown four to a row when using the page template \"Alternate Homepage\". You can place an unlimited number of widgets here, however it will look best to put a number divisible by 4 (i.e. 4, 8, 12, etc)."
+msgstr ""
+
