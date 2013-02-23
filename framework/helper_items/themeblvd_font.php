@@ -11,10 +11,10 @@
  *
  */
 
-function themeblvd_font($headers, $body){
+function themeblvd_font($headers, $body, $size){
 
     //Font stack list
-    $fontStacks = array(
+    $font_stacks = array(
         "arial" => 'Arial, "Helvetica Neue", Helvetica, sans-serif',
         "baskerville" => 'Baskerville, "Times New Roman", Times, serif',
         "cambria" => 'Cambria, Georgia, Times, "Times New Roman", serif',
@@ -39,31 +39,37 @@ function themeblvd_font($headers, $body){
     );
 
     //Body font
-    $bodyFont = $fontStacks[$body];
+    $body_font = $font_stacks[$body];
 
     //Header font
-    if($headers == 'none') {
+    if($headers != 'none') {
 
-        //Set equal to body font
-        $headerFont = $bodyFont;
+        //Format font value
+        $header_font_value = $headers;
 
-    } else {
-
-        //Format header Google font name
-        $headerFont = $headers;
-        $headerFontInclude = str_replace(' ', '+', $headers);
+        //Format font name
+        $header_font_family = str_replace('+', ' ', $headers);
+        $header_font_family = explode(':', $header_font_family);
+        $header_font_family = explode('?', $header_font_family[0]);
+        $header_font_family = $header_font_family[0];
         
     }
 
     ?>
-    <?php if($headerFont != $bodyFont) : ?>
-    <link href="http://fonts.googleapis.com/css?family=<?php echo $headerFontInclude; ?>&subset=latin" rel="stylesheet" type="text/css">
+
+    <?php if($headers != 'none') : ?>
+    <link href="http://fonts.googleapis.com/css?family=<?php echo $header_font_value; ?>" rel="stylesheet" type="text/css" />
     <?php endif; ?>
     
     <style type="text/css">
-    body { font-family: <?php echo $bodyFont; ?>; }
-    h1, h2, h3, h4, h5, h6 { font-family: '<?php echo $headerFont; ?>'; }
+    body { font-family: <?php echo $body_font; ?>; font-size: <?php echo $size; ?>; }
+    <?php if($headers != 'none') : ?>
+    h1, h2, h3, h4, h5, h6 { font-family: '<?php echo $header_font_family; ?>'; }
+    <?php endif; ?>
     </style>
+    
 <?php
-}
+
+} //End Function
+
 ?>

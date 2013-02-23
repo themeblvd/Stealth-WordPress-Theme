@@ -335,3 +335,17 @@
 .toggle-fancy .active span {
     background-position: 0 -20px;
 }
+
+/* VIDEO */
+
+#content .themeblvd-video,
+#full-width-content .themeblvd-video{
+    margin-bottom: 14px;
+}
+
+/* AUDIO */
+
+#content .themeblvd-audio,
+#full-width-content .themeblvd-audio{
+    margin-bottom: 14px;
+}

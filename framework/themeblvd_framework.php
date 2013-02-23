@@ -50,9 +50,13 @@ include_once(HELPERITEMS . "/limit.php");
 include_once(HELPERITEMS . "/page_number.php");
 include_once(HELPERITEMS . "/sandbox.php");
 include_once(HELPERITEMS . "/pagination.php");
+include_once(HELPERITEMS . "/themeblvd_audio.php");
 include_once(HELPERITEMS . "/themeblvd_breadcrumbs.php");
 include_once(HELPERITEMS . "/themeblvd_copyright.php");
+include_once(HELPERITEMS . "/themeblvd_columns.php");
 include_once(HELPERITEMS . "/themeblvd_font.php");
+include_once(HELPERITEMS . "/themeblvd_media.php");
 include_once(HELPERITEMS . "/themeblvd_title.php");
-
+include_once(HELPERITEMS . "/themeblvd_video.php");
+include_once(HELPERITEMS . "/themeblvd_widget_columns.php");
 ?>

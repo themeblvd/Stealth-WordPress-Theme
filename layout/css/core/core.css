@@ -85,9 +85,10 @@ body {
 }
 
 #header .searchform #searchsubmit {
-    background: url(../../images/shared/search-submit.png) no-repeat;
+    background: url(../../images/shared/search-submit.png) center 0 no-repeat;
     cursor: pointer;
     text-indent: -9999px;
+    width: 30px;
 }
 
 #header #html-block {
@@ -427,6 +428,38 @@ body {
 
 #news-ticker .readmore:hover {
     border-color: #666666;
+}
+
+/* LOWER HOMEPAGE GRID */
+
+.full-width .one-half {
+    float: left;
+    margin: 0 10px;
+    width: 460px;
+}
+
+.full-width .one-third {
+    float: left;
+    margin: 0 10px;
+    width: 300px;
+}
+
+.full-width .two-third {
+    float: left;
+    margin: 0 10px;
+    width: 620px;
+}
+
+.full-width .one-fourth {
+    float: left;
+    margin: 0 10px;
+    width: 220px;
+}
+
+.full-width .three-fourth {
+    float: left;
+    margin: 0 10px;
+    width: 700px;
 }
 
 /* 2-COLUMN LAYOUT */

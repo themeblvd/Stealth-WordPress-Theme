@@ -17,32 +17,75 @@ class themeblvd_Simple_Contact extends WP_Widget {
 	}
 	
 	//How widget shows on front end 
-	function widget($args, $instance) {
+	function widget($args, $instance){
             extract($args, EXTR_SKIP);
 
             //Retrieve Options
-            $title = $instance['title'];
-            $phone = $instance['phone'];
-            $email = $instance['email'];
-            $contact_form = $instance['contact_form'];
-            $skype = $instance['skype'];
-            $rss = $instance['rss'];
-            $twitter = $instance['twitter'];
-            $facebook = $instance['facebook'];
-            $myspace = $instance['myspace'];
-            $flickr = $instance['flickr'];
-            $linkedin = $instance['linkedin'];
+            if( isset($instance['title']) ){
+                $title = $instance['title'];
+            } else {
+                $title = "";
+            }
+            if( isset($instance['phone']) ){
+                $phone = $instance['phone'];
+            } else {
+                $phone = "";
+            }
+            if( isset($instance['email']) ){
+                $email = $instance['email'];
+            } else {
+                $email = "";
+            }
+            if( isset($instance['contact_form']) ){
+                $contact_form = $instance['contact_form'];
+            } else {
+                $contact_form = "";
+            }
+            if( isset($instance['skype']) ){
+                $skype = $instance['skype'];
+            } else {
+                $skype = "";
+            }
+            if( isset($instance['rss']) ){
+                $rss = $instance['rss'];
+            } else {
+                $rss = "";
+            }
+            if( isset($instance['twitter']) ){
+                $twitter = $instance['twitter'];
+            } else {
+                $twitter = "";
+            }
+            if( isset($instance['facebook']) ){
+                $facebook = $instance['facebook'];
+            } else {
+                $facebook = "";
+            }
+            if( isset($instance['myspace']) ){
+                $myspace = $instance['myspace'];
+            } else {
+                $myspace = "";
+            }
+            if( isset($instance['flickr']) ){
+                $flickr = $instance['flickr'];
+            } else {
+                $flickr = "";
+            }
+            if( isset($instance['linkedin']) ){
+                $linkedin = $instance['linkedin'];
+            } else {
+                $linkedin = "";
+            }
 
             echo $before_widget;
 
             if($title) {
 
-                    echo $before_title . $title . $after_title;
+                echo $before_title . $title . $after_title;
 
             }
 
 ?>
-
 
             <ul class="themeblvd-simple-contact">
                     <?php if( $phone ) : ?>
@@ -129,27 +172,27 @@ class themeblvd_Simple_Contact extends WP_Widget {
 
 ?>
 
-        <p><label for="<?php echo $this->get_field_id('title'); ?>">Title: <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php echo $instance['title']; ?>" /></label></p>
+        <p><label for="<?php echo $this->get_field_id('title'); ?>">Title: <input class="widefat" id="<?php echo $this->get_field_id('title'); ?>" name="<?php echo $this->get_field_name('title'); ?>" type="text" value="<?php if( isset($instance['title']) ) echo $instance['title']; ?>" /></label></p>
 
-        <p><label for="<?php echo $this->get_field_id('phone'); ?>">Phone: <input class="widefat" id="<?php echo $this->get_field_id('phone'); ?>" name="<?php echo $this->get_field_name('phone'); ?>" type="text" value="<?php echo $instance['phone']; ?>" /></label></p>
+        <p><label for="<?php echo $this->get_field_id('phone'); ?>">Phone: <input class="widefat" id="<?php echo $this->get_field_id('phone'); ?>" name="<?php echo $this->get_field_name('phone'); ?>" type="text" value="<?php if( isset($instance['phone']) ) echo $instance['phone']; ?>" /></label></p>
 
-        <p><label for="<?php echo $this->get_field_id('email'); ?>">Email: <input class="widefat" id="<?php echo $this->get_field_id('email'); ?>" name="<?php echo $this->get_field_name('email'); ?>" type="text" value="<?php echo $instance['email']; ?>" /></label></p>
+        <p><label for="<?php echo $this->get_field_id('email'); ?>">Email: <input class="widefat" id="<?php echo $this->get_field_id('email'); ?>" name="<?php echo $this->get_field_name('email'); ?>" type="text" value="<?php if( isset($instance['email']) ) echo $instance['email']; ?>" /></label></p>
 
-        <p><label for="<?php echo $this->get_field_id('contact_form'); ?>">Contact Page URL: <input class="widefat" id="<?php echo $this->get_field_id('contact_form'); ?>" name="<?php echo $this->get_field_name('contact_form'); ?>" type="text" value="<?php echo $instance['contact_form']; ?>" /></label></p>
+        <p><label for="<?php echo $this->get_field_id('contact_form'); ?>">Contact Page URL: <input class="widefat" id="<?php echo $this->get_field_id('contact_form'); ?>" name="<?php echo $this->get_field_name('contact_form'); ?>" type="text" value="<?php if( isset($instance['contact_form']) ) echo $instance['contact_form']; ?>" /></label></p>
 
-        <p><label for="<?php echo $this->get_field_id('skype'); ?>">Skype Username: <input class="widefat" id="<?php echo $this->get_field_id('skype'); ?>" name="<?php echo $this->get_field_name('skype'); ?>" type="text" value="<?php echo $instance['skype']; ?>" /></label></p>
+        <p><label for="<?php echo $this->get_field_id('skype'); ?>">Skype Username: <input class="widefat" id="<?php echo $this->get_field_id('skype'); ?>" name="<?php echo $this->get_field_name('skype'); ?>" type="text" value="<?php if( isset($instance['skype']) ) echo $instance['skype']; ?>" /></label></p>
 
-        <p><label for="<?php echo $this->get_field_id('rss'); ?>">RSS URL: <input class="widefat" id="<?php echo $this->get_field_id('rss'); ?>" name="<?php echo $this->get_field_name('rss'); ?>" type="text" value="<?php echo $instance['rss']; ?>" /></label></p>
+        <p><label for="<?php echo $this->get_field_id('rss'); ?>">RSS URL: <input class="widefat" id="<?php echo $this->get_field_id('rss'); ?>" name="<?php echo $this->get_field_name('rss'); ?>" type="text" value="<?php if( isset($instance['rss']) ) echo $instance['rss']; ?>" /></label></p>
 
-        <p><label for="<?php echo $this->get_field_id('twitter'); ?>">Twitter URL: <input class="widefat" id="<?php echo $this->get_field_id('twitter'); ?>" name="<?php echo $this->get_field_name('twitter'); ?>" type="text" value="<?php echo $instance['twitter']; ?>" /></label></p>
+        <p><label for="<?php echo $this->get_field_id('twitter'); ?>">Twitter URL: <input class="widefat" id="<?php echo $this->get_field_id('twitter'); ?>" name="<?php echo $this->get_field_name('twitter'); ?>" type="text" value="<?php if( isset($instance['twitter']) ) echo $instance['twitter']; ?>" /></label></p>
 
-        <p><label for="<?php echo $this->get_field_id('facebook'); ?>">Facebook URL: <input class="widefat" id="<?php echo $this->get_field_id('facebook'); ?>" name="<?php echo $this->get_field_name('facebook'); ?>" type="text" value="<?php echo $instance['facebook']; ?>" /></label></p>
+        <p><label for="<?php echo $this->get_field_id('facebook'); ?>">Facebook URL: <input class="widefat" id="<?php echo $this->get_field_id('facebook'); ?>" name="<?php echo $this->get_field_name('facebook'); ?>" type="text" value="<?php if( isset($instance['facebook']) ) echo $instance['facebook']; ?>" /></label></p>
 
-        <p><label for="<?php echo $this->get_field_id('myspace'); ?>">MySpace URL: <input class="widefat" id="<?php echo $this->get_field_id('myspace'); ?>" name="<?php echo $this->get_field_name('myspace'); ?>" type="text" value="<?php echo $instance['myspace']; ?>" /></label></p>
+        <p><label for="<?php echo $this->get_field_id('myspace'); ?>">MySpace URL: <input class="widefat" id="<?php echo $this->get_field_id('myspace'); ?>" name="<?php echo $this->get_field_name('myspace'); ?>" type="text" value="<?php if( isset($instance['myspace']) ) echo $instance['myspace']; ?>" /></label></p>
 
-        <p><label for="<?php echo $this->get_field_id('flickr'); ?>">Flickr URL: <input class="widefat" id="<?php echo $this->get_field_id('flickr'); ?>" name="<?php echo $this->get_field_name('flickr'); ?>" type="text" value="<?php echo $instance['flickr']; ?>" /></label></p>
+        <p><label for="<?php echo $this->get_field_id('flickr'); ?>">Flickr URL: <input class="widefat" id="<?php echo $this->get_field_id('flickr'); ?>" name="<?php echo $this->get_field_name('flickr'); ?>" type="text" value="<?php if( isset($instance['flickr']) ) echo $instance['flickr']; ?>" /></label></p>
 
-        <p><label for="<?php echo $this->get_field_id('linkedin'); ?>">LinkedIn URL: <input class="widefat" id="<?php echo $this->get_field_id('linkedin'); ?>" name="<?php echo $this->get_field_name('linkedin'); ?>" type="text" value="<?php echo $instance['linkedin']; ?>" /></label></p>
+        <p><label for="<?php echo $this->get_field_id('linkedin'); ?>">LinkedIn URL: <input class="widefat" id="<?php echo $this->get_field_id('linkedin'); ?>" name="<?php echo $this->get_field_name('linkedin'); ?>" type="text" value="<?php if( isset($instance['linkedin']) ) echo $instance['linkedin']; ?>" /></label></p>
 
 <?php
 

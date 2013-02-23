@@ -32,8 +32,8 @@ if($_POST['checking']) {
 }
 
 //Hidden elements
-$to = $_POST['myemail'];
-$blog_name = $_POST['mysitename'];
+$to = str_replace("[ at ]", "@", $_POST['myemail']); //Email where the message is being sent
+$blog_name = $_POST['mysitename']; //Name of your site
 
 //Visible form elements
 $name = $_POST['name']; 

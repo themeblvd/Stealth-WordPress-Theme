@@ -1,21 +1,21 @@
 <?php 
 /**
  *
- * ThemeBlvd Recent Posts Widget
+ * ThemeBlvd Recent News Widget
  *
  * This widget displays a list of recent posts.
  * More options are given than the standard
- * WordPress Recent Posts widget.
+ * WordPress Recent News widget.
  *
  * @author  Jason Bobich
  *
  */
 
-class themeblvd_Recent_Posts extends WP_Widget {
+class themeblvd_Recent_News extends WP_Widget {
     
-    function themeblvd_Recent_Posts() {
-        $widget_ops = array('classname' => 'widget_recent_posts', 'description' => 'Lists out recent posts from a category of your choice. You can also set it to display posts from all categories. You can achieve a slightly different look than Wordpress\'s default "Recent Posts" widget.' );
-        $this->WP_Widget('recent_posts_widget', 'ThemeBlvd Recent Posts', $widget_ops);
+    function themeblvd_Recent_News() {
+        $widget_ops = array('classname' => 'widget_recet_news', 'description' => 'A feed of your most recent news items feed from a category that you pick.' );
+        $this->WP_Widget('recet_news_widget', 'ThemeBlvd Recent News', $widget_ops);
     }
 
     //How widget shows on front end
@@ -28,7 +28,6 @@ class themeblvd_Recent_Posts extends WP_Widget {
         $title = apply_filters('widget_title', $instance['title'] );
         $feed_num = $instance['num'];
         $meta = $instance['meta'];
-        $category = '';
         
         if( $instance['category'] != 'all' ) {
             $category = '&category=' . $instance['category'];
@@ -36,18 +35,22 @@ class themeblvd_Recent_Posts extends WP_Widget {
             $category = '';
         }
 
-        $query_string = "numberposts=$feed_num$category";
+        $query_string = 'numberposts='.$feed_num.$category;
         $news = get_posts($query_string);
 
         echo $before_widget;
 
         if($title){
-
-                echo $before_title . $title . $after_title;
-
+            echo $before_title . $title . $after_title;
         }
 
-        echo '<div class="themeblvd-recent-posts">';
+        if(!$news){
+            echo '<p>';
+            _e('There are no posts to display.', 'themeblvd');
+            echo '</p>';
+        }
+
+        echo '<div class="themeblvd-recent-news">';
 
 
         foreach($news as $post) {
@@ -56,17 +59,19 @@ class themeblvd_Recent_Posts extends WP_Widget {
             ?>
 
             <div class="tiny-entry">
-                <?php if ( has_post_thumbnail() ) : ?>
-                    <?php the_post_thumbnail('micro', array( "class" => "pretty" )); ?>
-                <?php endif; ?>
                 <span class="title">
                     <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
                     <?php if($meta == 'on') : ?>
                     <span class="meta">
-                            <?php print __('Posted on '); the_time( get_option( 'date_format' ) ); ?>
+                        <?php print __('Posted on '); the_time( get_option( 'date_format' ) ); ?>
                     </span>
                     <?php endif; ?>
                 </span>
+                <?php if ( has_post_thumbnail() ) : ?>
+                    <?php the_post_thumbnail('micro', array( "class" => "pretty" )); ?>
+                <?php endif; ?>
+                <?php the_excerpt(); ?>
+                <p><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>" class="button"><?php _e("Read More", "themeblvd"); ?></a>
                 <div class="clear"></div>
             </div>
 
@@ -74,7 +79,7 @@ class themeblvd_Recent_Posts extends WP_Widget {
 
         }
 
-        echo '</div><!-- .themeblvd-recent-posts (end) -->';
+        echo '</div><!-- .themeblvd-recent-news (end) -->';
 
         echo $after_widget;
 
@@ -154,6 +159,6 @@ class themeblvd_Recent_Posts extends WP_Widget {
 <?php
     }
 }
-register_widget('themeblvd_Recent_Posts');
+register_widget('themeblvd_Recent_News');
 
 ?>

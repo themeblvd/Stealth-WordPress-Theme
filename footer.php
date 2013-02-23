@@ -27,7 +27,7 @@ global $themeblvd_analytics;
 
             <div id="copyright">
 
-                <p class="info"><?php echo themeblvd_copyright($themeblvd_copyright); ?></p>
+                <p class="info"><?php echo themeblvd_copyright(stripslashes($themeblvd_copyright)); ?></p>
 
                 <?php wp_nav_menu( array('container' => '', 'theme_location' => 'footer-menu', 'fallback_cb' => '' ) ); ?>
 
@@ -40,6 +40,8 @@ global $themeblvd_analytics;
     </div><!-- #footer (end) -->
 
 </div><!-- #wrapper (end) -->
+
+<?php wp_footer(); ?>
 
 <?php echo $themeblvd_analytics; ?>
 

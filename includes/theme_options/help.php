@@ -2,9 +2,9 @@
 /**
  *
  * ThemeBlvd Theme Options
- * Search Engine Optimization (SEO)
+ * Theme Help
  *
- * This file constructs the SEO options page.
+ * This file constructs the Help page.
  *
  * @author  Jason Bobich
  *

@@ -11,8 +11,6 @@
  *
  */
 
-global $shortname;
-
 ##############################################################
 # Register custom post type
 ##############################################################
@@ -150,9 +148,9 @@ $portfolio_meta_box = array(
             "desc" => __("Place the URL to your portfolio media item here. <a href=\"#themeblvd_media_item\" class=\"jaybich-open\">Learn More</a>", "themeblvd"),
             "id" => "themeblvd_media_item",
             "std" => "",
-            "type" => "text",
+            "type" => "textarea",
             "upload" => "true",
-            "more-info" => __("<h4>Accepted Media Types</h4><h5>1. Images</h5><p>Insert the full URL to your image like this:<br>http://www.YourSite.com/wp-content/uploads/2010/06/image.jpg</p><h5>2. YouTube Videos</h5><p>Insert the full URL to the video page like this:<br>http://www.youtube.com/watch?v=qqXi8WmQ_WM</p><h5>3. Vimeo Videos</h5><p>Insert the full URL to the video page like this:<br>http://vimeo.com/7570458</p><h5>4. Standard Flash .SWF Files</h5><p><br>http://www.YourSite.com/wp-content/uploads/2010/06/flashfile.swf?width=792&amp;height=294</p><h5>5. Quicktime .MOV Files</h5><p>Insert the full URL to the .MOV file with the width and height attached like this:<br>http://www.YourSite.com/wp-content/uploads/2010/06/video.mov?width=480&amp;height=204</p>", "themeblvd")
+            "more-info" => __("<h4>Accepted Media Types</h4><h5>1. Images</h5><p>Insert the full URL to your image like this:<br>http://www.YourSite.com/wp-content/uploads/2010/06/image.jpg</p><h5>2. MP3 Files</h5><p>Insert the full URL to your audio mp3 file like this:<br>http://www.YourSite.com/wp-content/uploads/2010/06/song.mp3</p><h5>3. YouTube Videos</h5><p>Insert the full URL to the video page like this:<br>http://www.youtube.com/watch?v=qqXi8WmQ_WM</p><h5>4. Vimeo Videos</h5><p>Insert the full URL to the video page like this:<br>http://vimeo.com/7570458</p><h5>5. Flash SWF Files</h5><p>Insert the full URL to the .swf file with the width and height attached like this:<br>http://www.YourSite.com/wp-content/uploads/2010/06/flashfile.swf?width=792&amp;height=294</p><h5>6. MP4 Video Files</h5><p>Insert the full URL to the .mp4 file with the width and height attached like this:<br>http://www.YourSite.com/wp-content/uploads/2010/06/video.mp4?width=480&amp;height=204<h5>7. FLV Video Files</h5><p>Insert the full URL to the .flv file with the width and height attached like this:<br>http://www.YourSite.com/wp-content/uploads/2010/06/video.flv?width=480&amp;height=204<h5>8. F4V Video Files</h5><p>Insert the full URL to the .f4v file with the width and height attached like this:<br>http://www.YourSite.com/wp-content/uploads/2010/06/video.f4v?width=480&amp;height=204<h5>9. Quicktime MOV Files</h5><p>Insert the full URL to the .mov file with the width and height attached like this:<br>http://www.YourSite.com/wp-content/uploads/2010/06/video.mov?width=480&amp;height=204", "themeblvd")
     ),
 
     array(  "id" => "themeblvd_portfolio_item_thumb",
@@ -173,5 +171,4 @@ $portfolio_meta_info = array(
 );
 
 $themeblvd_portfolio = new themeblvd_meta_box($portfolio_meta_info , $portfolio_meta_box);
-
 ?>

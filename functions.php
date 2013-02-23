@@ -57,11 +57,13 @@ include_once(TEMPLATEPATH . '/includes/theme_meta/seo.php');
 ##############################################################
 
 include_once(TEMPLATEPATH . '/includes/theme_shortcodes/alert.php');
+include_once(TEMPLATEPATH . '/includes/theme_shortcodes/classic.php');
+include_once(TEMPLATEPATH . '/includes/theme_shortcodes/html.php');
 include_once(TEMPLATEPATH . '/includes/theme_shortcodes/layout.php');
+include_once(TEMPLATEPATH . '/includes/theme_shortcodes/media.php');
 include_once(TEMPLATEPATH . '/includes/theme_shortcodes/slideshow.php');
 include_once(TEMPLATEPATH . '/includes/theme_shortcodes/tabs.php');
 include_once(TEMPLATEPATH . '/includes/theme_shortcodes/toggle.php');
-include_once(TEMPLATEPATH . '/includes/theme_shortcodes/html.php');
 
 ##############################################################
 # Include widgets and setup widget areas

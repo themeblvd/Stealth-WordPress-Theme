@@ -110,16 +110,16 @@
     background: url(../images/themeblvd.png) no-repeat;
     display: block;
     position: absolute;
-    right: 20px;;
-    bottom: -40px;
-    width: 90px;
-    height: 90px;
+    right: 10px;;
+    bottom: 0;
+    width: 162px;
+    height: 39px;
     text-indent: -9999px;
 }
 
 #themeblvd-options .themeblvd-options-header ul {
     position: absolute;
-    right: 120px;
+    right: 175px;
     bottom: 0;
 }
 
@@ -164,7 +164,7 @@
     border-radius: 3px;
     position: absolute;
     top: 10px;
-    right: 125px;
+    right: 20px;
 }
 
 #themeblvd-options .themeblvd-entry {

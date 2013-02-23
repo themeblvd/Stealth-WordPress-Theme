@@ -14,19 +14,16 @@
 # Include Widgets
 ##############################################################
 
-include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_simple_contact.php");
-include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_recent_posts.php");
 include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_ad_square_buttons.php");
-//include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_news_scroller.php");
-//include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_twitter.php");
-//include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_sub_menu.php");
-//include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_simple_sub_menu.php"); //Sub with acrodian widget
-//include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_search.php");
-//include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_text.php");
-//include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_ad_skyscraper.php");
-//include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_ad_wide_skyscraper.php");
-//include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_ad_full_banner.php");
-//include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_ad_leaderboard.php");
+include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_audio.php");
+include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_author.php");
+include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_feedback.php");
+include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_news.php");
+include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_recent_posts.php");
+include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_simple_contact.php");
+include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_tabs.php");
+include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_twitter.php");
+include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_video.php");
 
 ##############################################################
 # Widget Areas

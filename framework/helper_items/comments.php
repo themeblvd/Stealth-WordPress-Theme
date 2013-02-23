@@ -37,7 +37,7 @@ function custom_comments($comment, $args, $depth) {
                     
                     	<p style="margin-top: 0;">
                         	<span class="name"><?php comment_author_link(); ?></span><br />
-	                        <span class="smaller date"><?php echo time_ago(); ?></span>
+	                        <span class="smaller date"><?php echo time_ago('comment'); ?></span>
 						</p>
 						
 						<?php comment_text(); ?>

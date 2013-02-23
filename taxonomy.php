@@ -73,12 +73,24 @@
             <?php query_posts("paged=$paged&portfolio=$term_slug&posts_per_page=$themeblvd_portfolio_page"); ?>
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
+                <?php
+                //Item to pass into themeblvd_media()
+                $input = get_post_meta($post->ID, 'themeblvd_media_item', true);
+                $autostart = 1;
+                $color = $themeblvd_media_color;
+                $logo = $themeblvd_video_logo;
+                $logo_width = $themeblvd_video_logo_width;
+                $logo_height = $themeblvd_video_logo_height;
+
+                $media_link = themeblvd_media($input, $autostart, $color, $logo, $logo_width, $logo_height);
+                ?>
+            
                 <?php get_permalink(); ?>
                 <div class="one-third portfolio-box<?php if($post_num % 3 == 0) { echo ' last'; } ?>">
 
                     <?php if( $themeblvd_portfolio_item_thumb == 'true' ) : ?>
 
-                    <a href="<?php echo get_post_meta($post->ID, 'themeblvd_media_item', true); ?>" title="<?php the_title(); ?>" class="thumb thumb-media loader" rel="lightbox[gallery]">
+                    <a href="<?php echo $media_link; ?>" title="<?php the_title(); ?>" class="thumb thumb-media loader" rel="lightbox[gallery]">
 
                         <span class="enlarge">
                             <?php if ( has_post_thumbnail() ) : ?>

@@ -20,6 +20,8 @@ Example:
 </li>
 
 */
+
+$email = str_replace("@", "[ at ]", $themeblvd_email_address);
 ?>
 
 <?php get_header(); ?>
@@ -140,7 +142,7 @@ Example:
                             </li>
                             <!-- Honeypot Captcha Spam Prevention from Bots (end) -->
                             <li>
-                                <input type="hidden" name="myemail" id="myemail" value="<?php echo $themeblvd_email_address; ?>" />
+                                <input type="hidden" name="myemail" id="myemail" value="<?php echo $email; ?>" />
                                 <input type="hidden" name="mysitename" id="mysitename" value="<?php bloginfo(); ?>" />
                                 <label for="submit" class="name"></label>
                                 <input id="submit" type="submit" value="Submit"/>

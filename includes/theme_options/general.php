@@ -76,247 +76,6 @@ $options_general = array (
             "std" => "",
             "type" => "color_picker"
     ),
-    
-    array(  "name" => __("General Body Font", $shortname),
-            "desc" => __("Choose which font stack you'd like to use for your general body font. <a href=\"#themeblvd_font_body\" class=\"jaybich-open\">Learn More</a>", $shortname),
-            "id" => $shortname."_font_body",
-            "std" => 'lucida',
-            "more-info" => __("Font stacks are prioritized lists of fonts, defined in the CSS font-family attribute, that the browser will cycle through until it finds a font that is installed on the user's system. The font stacks listed here were put together by <a href='http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/'>Nathan Ford</a>.", $shortname),
-            "type" => "select",
-            "data" => array(
-
-                array(
-                    "name" => 'Arial, "Helvetica Neue", Helvetica, sans-serif',
-                    "value" => 'arial'
-                ),
-
-                array(
-                    "name" => 'Baskerville, "Times New Roman", Times, serif',
-                    "value" => 'baskerville'
-                ),
-
-                array(
-                    "name" => 'Cambria, Georgia, Times, "Times New Roman", serif',
-                    "value" => 'cambria'
-                ),
-
-                array(
-                    "name" => '"Century Gothic", "Apple Gothic", sans-serif',
-                    "value" => 'century-gothic'
-                ),
-
-                array(
-                    "name" => 'Consolas, "Lucida Console", Monaco, monospace',
-                    "value" => 'consolas'
-                ),
-
-                array(
-                    "name" => '"Copperplate Light", "Copperplate Gothic Light", serif',
-                    "value" => 'copperplate-light'
-                ),
-
-                array(
-                    "name" => '"Courier New", Courier, monospace',
-                    "value" => 'courier-new'
-                ),
-
-                array(
-                    "name" => '"Franklin Gothic Medium", "Arial Narrow Bold", Arial, sans-serif',
-                    "value" => 'franklin'
-                ),
-
-                array(
-                    "name" => 'Futura, "Century Gothic", AppleGothic, sans-serif',
-                    "value" => 'futura'
-                ),
-
-                array(
-                    "name" => 'Garamond, "Hoefler Text", Times New Roman, Times, serif',
-                    "value" => 'garamond'
-                ),
-
-                array(
-                    "name" => 'Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif',
-                    "value" => 'geneva'
-                ),
-
-                array(
-                    "name" => 'Georgia, Palatino," Palatino Linotype", Times, "Times New Roman", serif',
-                    "value" => 'georgia'
-                ),
-
-                array(
-                    "name" => '"Gill Sans", Calibri, "Trebuchet MS", sans-serif',
-                    "value" => 'gill-sans'
-                ),
-
-                array(
-                    "name" => '"Helvetica Neue", Arial, Helvetica, sans-serif',
-                    "value" => 'helvetica'
-                ),
-
-                array(
-                    "name" => 'Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif',
-                    "value" => 'impact'
-                ),
-
-                array(
-                    "name" => '"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif',
-                    "value" => 'lucida'
-                ),
-
-                array(
-                    "name" => 'Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif',
-                    "value" => 'palatino'
-                ),
-
-                array(
-                    "name" => 'Tahoma, Geneva, Verdana',
-                    "value" => 'tahoma'
-                ),
-
-                array(
-                    "name" => 'Times, "Times New Roman", Georgia, serif',
-                    "value" => 'times'
-                ),
-
-                array(
-                    "name" => '"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande"," Lucida Sans", Arial, sans-serif',
-                    "value" => 'trebuchet'
-                ),
-
-                array(
-                    "name" => 'Verdana, Geneva, Tahoma, sans-serif',
-                    "value" => 'verdana'
-                )
-            )
-    ),
-
-    array(  "name" => __("Headers Font", $shortname),
-            "desc" => __("Choose which font you'd like to use from the Google Font Directory. Select 'None' if you'd like the header font to default to the body font. <a href=\"#themeblvd_font_headers\" class=\"jaybich-open\">Learn More</a>", $shortname),
-            "id" => $shortname."_font_headers",
-            "std" => "Cantarell",
-            "more-info" => "This theme uses the CSS3 @font-face for all of your headers (&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, etc.). The choices given are hosted from <a href='http://code.google.com/webfonts' target='_blank'>Google's Font Directory</a>. View the directory in order to preview all fonts listed here. This list is not a full list and doesn't include all fonts in the directory. Also note that older browsers do not support this method of font rendering. In these older browsers, the font will fall back to your general body font.",
-            "type" => "select",
-            "data" => array(
-
-                array(
-                    "name" => "None",
-                    "value" => "none"
-                ),
-
-                array(
-                    "name" => "Cantarell",
-                    "value" => "Cantarell"
-                ),
-
-                array(
-                    "name" => "Cardo",
-                    "value" => "Cardo"
-                ),
-
-                array(
-                    "name" => "Crimson Text",
-                    "value" => "Crimson Text"
-                ),
-
-                array(
-                    "name" => "Cuprum",
-                    "value" => "Cuprum"
-                ),
-
-                array(
-                    "name" => "Droid Sans",
-                    "value" => "Droid Sans"
-                ),
-
-                array(
-                    "name" => "Droid Sans Mono",
-                    "value" => "Droid Sans Mono"
-                ),
-
-                array(
-                    "name" => "Droid Serif",
-                    "value" => "Droid Serif"
-                ),
-
-                array(
-                    "name" => "Inconsolata",
-                    "value" => "Inconsolata"
-                ),
-
-                array(
-                    "name" => "Joesfin Sans Std Light",
-                    "value" => "Joesfin Sans Std Light"
-                ),
-
-                array(
-                    "name" => "Lobster",
-                    "value" => "Lobster"
-                ),
-
-                array(
-                    "name" => "Molengo",
-                    "value" => "Molengo"
-                ),
-
-                array(
-                    "name" => "Neucha",
-                    "value" => "Neucha"
-                ),
-
-                array(
-                    "name" => "Neuton",
-                    "value" => "Neuton"
-                ),
-
-                array(
-                    "name" => "Nobile",
-                    "value" => "Nobile"
-                ),
-
-                array(
-                    "name" => "OFL Sorts Mill Goudy TT",
-                    "value" => "OFL Sorts Mill Goudy TT"
-                ),
-
-                array(
-                    "name" => "Old Standard TT",
-                    "value" => "Old Standard TT"
-                ),
-
-                array(
-                    "name" => "PT Sans",
-                    "value" => "PT Sans"
-                ),
-
-                array(
-                    "name" => "Philosopher",
-                    "value" => "Philosopher"
-                ),
-
-                array(
-                    "name" => "Reenie Beanie",
-                    "value" => "Reenie Beanie"
-                ),
-
-                array(
-                    "name" => "Tangerine",
-                    "value" => "Tangerine"
-                ),
-
-                array(
-                    "name" => "Volkorn",
-                    "value" => "Volkorn"
-                ),
-
-                array(
-                    "name" => "Yanone Kaffeesatz",
-                    "value" => "Yanone Kaffeesatz"
-                )
-
-            )
-    ),
 
     array(  "name" => __("Custom CSS", $shortname),
             "type" => "textarea",
@@ -469,6 +228,327 @@ $options_general = array (
     ),
 
     array(  "type" => "end" ),
+
+    //Fonts
+    array(  "type" => "start",
+            "name" => __("Fonts", $shortname),
+            "id" => "fonts",
+            "icon" => "pencil"
+    ),
+
+    array(  "name" => __("General Body Font Size", $shortname),
+            "desc" => __("Choose the size in pixels that you'd like your body font to be.", $shortname),
+            "id" => $shortname."_font_size",
+            "std" => "12px",
+            "type" => "select",
+            "data" => array(
+
+                array(
+                    "name" => "10px",
+                    "value" => "10px"
+                ),
+
+                array(
+                    "name" => "11px",
+                    "value" => "11px"
+                ),
+
+                array(
+                    "name" => "12px",
+                    "value" => "12px"
+                ),
+
+                array(
+                    "name" => "13px",
+                    "value" => "13px"
+                ),
+
+                array(
+                    "name" => "14px",
+                    "value" => "14px"
+                ),
+
+                array(
+                    "name" => "15px",
+                    "value" => "15px"
+                ),
+
+            )
+    ),
+
+
+    array(  "name" => __("General Body Font", $shortname),
+            "desc" => __("Choose which font stack you'd like to use for your general body font. <a href=\"#themeblvd_font_body\" class=\"jaybich-open\">Learn More</a>", $shortname),
+            "id" => $shortname."_font_body",
+            "std" => 'lucida',
+            "more-info" => __("Font stacks are prioritized lists of fonts, defined in the CSS font-family attribute, that the browser will cycle through until it finds a font that is installed on the user's system. The font stacks listed here were put together by <a href='http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/'>Nathan Ford</a>.", $shortname),
+            "type" => "select",
+            "data" => array(
+
+                array(
+                    "name" => 'Arial, "Helvetica Neue", Helvetica, sans-serif',
+                    "value" => 'arial'
+                ),
+
+                array(
+                    "name" => 'Baskerville, "Times New Roman", Times, serif',
+                    "value" => 'baskerville'
+                ),
+
+                array(
+                    "name" => 'Cambria, Georgia, Times, "Times New Roman", serif',
+                    "value" => 'cambria'
+                ),
+
+                array(
+                    "name" => '"Century Gothic", "Apple Gothic", sans-serif',
+                    "value" => 'century-gothic'
+                ),
+
+                array(
+                    "name" => 'Consolas, "Lucida Console", Monaco, monospace',
+                    "value" => 'consolas'
+                ),
+
+                array(
+                    "name" => '"Copperplate Light", "Copperplate Gothic Light", serif',
+                    "value" => 'copperplate-light'
+                ),
+
+                array(
+                    "name" => '"Courier New", Courier, monospace',
+                    "value" => 'courier-new'
+                ),
+
+                array(
+                    "name" => '"Franklin Gothic Medium", "Arial Narrow Bold", Arial, sans-serif',
+                    "value" => 'franklin'
+                ),
+
+                array(
+                    "name" => 'Futura, "Century Gothic", AppleGothic, sans-serif',
+                    "value" => 'futura'
+                ),
+
+                array(
+                    "name" => 'Garamond, "Hoefler Text", Times New Roman, Times, serif',
+                    "value" => 'garamond'
+                ),
+
+                array(
+                    "name" => 'Geneva, "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif',
+                    "value" => 'geneva'
+                ),
+
+                array(
+                    "name" => 'Georgia, Palatino," Palatino Linotype", Times, "Times New Roman", serif',
+                    "value" => 'georgia'
+                ),
+
+                array(
+                    "name" => '"Gill Sans", Calibri, "Trebuchet MS", sans-serif',
+                    "value" => 'gill-sans'
+                ),
+
+                array(
+                    "name" => '"Helvetica Neue", Arial, Helvetica, sans-serif',
+                    "value" => 'helvetica'
+                ),
+
+                array(
+                    "name" => 'Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif',
+                    "value" => 'impact'
+                ),
+
+                array(
+                    "name" => '"Lucida Sans", "Lucida Grande", "Lucida Sans Unicode", sans-serif',
+                    "value" => 'lucida'
+                ),
+
+                array(
+                    "name" => 'Palatino, "Palatino Linotype", Georgia, Times, "Times New Roman", serif',
+                    "value" => 'palatino'
+                ),
+
+                array(
+                    "name" => 'Tahoma, Geneva, Verdana',
+                    "value" => 'tahoma'
+                ),
+
+                array(
+                    "name" => 'Times, "Times New Roman", Georgia, serif',
+                    "value" => 'times'
+                ),
+
+                array(
+                    "name" => '"Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande"," Lucida Sans", Arial, sans-serif',
+                    "value" => 'trebuchet'
+                ),
+
+                array(
+                    "name" => 'Verdana, Geneva, Tahoma, sans-serif',
+                    "value" => 'verdana'
+                )
+            )
+    ),
+
+    array(  "name" => __("Headers Font", $shortname),
+            "desc" => __("Choose which font you'd like to use from the Google Font Directory. Select 'None' if you'd like the header font to default to the body font. <a href=\"#flipblog_font_headers\" class=\"jaybich-open\">Learn More</a>", $shortname),
+            "id" => $shortname."_font_headers",
+            "std" => "Cantarell",
+            "more-info" => "This theme uses the CSS3 @font-face for all of your headers (&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, etc.). The choices given are hosted from <a href='http://code.google.com/webfonts' target='_blank'>Google's Font Directory</a>. View the directory in order to preview all fonts listed here. This list is not a full list and doesn't include all fonts in the directory. Also note that older browsers do not support this method of font rendering. In these older browsers, the font will fall back to your general body font.",
+            "type" => "select",
+            "data" => array(
+
+                array(
+                    "name" => "None",
+                    "value" => "none"
+                ),
+
+                array(
+                    "name" => "Arimo",
+                    "value" => "Arimo"
+                ),
+
+                array(
+                    "name" => "Arvo",
+                    "value" => "Arvo"
+                ),
+
+                array(
+                    "name" => "Cantarell",
+                    "value" => "Cantarell"
+                ),
+
+                array(
+                    "name" => "Cardo",
+                    "value" => "Cardo"
+                ),
+
+                array(
+                    "name" => "Cousine",
+                    "value" => "Cousine"
+                ),
+
+                array(
+                    "name" => "Crimson Text",
+                    "value" => "Crimson+Text"
+                ),
+
+                array(
+                    "name" => "Cuprum",
+                    "value" => "Cuprum"
+                ),
+
+                array(
+                    "name" => "Droid Sans",
+                    "value" => "Droid+Sans"
+                ),
+
+                array(
+                    "name" => "Droid Sans Mono",
+                    "value" => "Droid+Sans+Mono"
+                ),
+
+                array(
+                    "name" => "Droid Serif",
+                    "value" => "Droid+Serif"
+                ),
+
+                array(
+                    "name" => "IM Fell",
+                    "value" => "IM+Fell+DW+Pica"
+                ),
+
+                array(
+                    "name" => "Inconsolata",
+                    "value" => "Inconsolata"
+                ),
+
+                array(
+                    "name" => "Josefin Sans Std Light",
+                    "value" => "Josefin+Sans:100",
+                ),
+
+                array(
+                    "name" => "Josefin Slab",
+                    "value" => "Josefin+Slab:100"
+                ),
+
+                array(
+                    "name" => "Lobster",
+                    "value" => "Lobster"
+                ),
+
+                array(
+                    "name" => "Molengo",
+                    "value" => "Molengo"
+                ),
+
+                array(
+                    "name" => "Neucha",
+                    "value" => "Neucha"
+                ),
+
+                array(
+                    "name" => "Neuton",
+                    "value" => "Neuton"
+                ),
+
+                array(
+                    "name" => "Nobile",
+                    "value" => "Nobile"
+                ),
+
+                array(
+                    "name" => "OFL Sorts Mill Goudy TT",
+                    "value" => "OFL+Sorts+Mill+Goudy+TT"
+                ),
+
+                array(
+                    "name" => "Old Standard TT",
+                    "value" => "Old+Standard+TT"
+                ),
+
+                array(
+                    "name" => "PT Sans",
+                    "value" => "PT+Sans"
+                ),
+
+                array(
+                    "name" => "Philosopher",
+                    "value" => "Philosopher"
+                ),
+
+                array(
+                    "name" => "Reenie Beanie",
+                    "value" => "Reenie+Beanie"
+                ),
+
+                array(
+                    "name" => "Tangerine",
+                    "value" => "Tangerine"
+                ),
+
+                array(
+                    "name" => "Tinos",
+                    "value" => "Tinos"
+                ),
+
+                array(
+                    "name" => "Volkorn",
+                    "value" => "Volkorn"
+                ),
+
+                array(
+                    "name" => "Yanone Kaffeesatz",
+                    "value" => "Yanone+Kaffeesatz"
+                )
+
+            )
+    ),
+
+    array(  "type" => "end"),
 
     //Analytics
     array(  "type" => "start",
@@ -833,6 +913,34 @@ $options_general = array (
             "id" => $shortname."_portfolio_item_more",
             "std" => "true",
             "type" => "true_false_radio"),
+
+    array(  "name" => __("Media Player Color", $shortname),
+            "desc" => __("This is the color you'd like to apply to your audio and video players for self-hosted media in your portfolios.", $shortname),
+            "id" => $shortname."_media_color",
+            "std" => "000000",
+            "type" => "color_picker"
+    ),
+
+    array(  "name" => __("Video Player Logo URL", $shortname),
+            "desc" => __("Enter the URL to the logo you'd like to show in the lower right corner of your self-hosted videos. Leave blank if you don't want one to show.", $shortname),
+            "id" => $shortname."_video_logo",
+            "std" => "",
+            "type" => "upload"
+    ),
+
+    array(  "name" => __("Video Player Logo Width", $shortname),
+            "desc" => __("Enter the width of your logo used in the previous option.", $shortname),
+            "id" => $shortname."_video_logo_width",
+            "std" => "100",
+            "type" => "text"
+    ),
+
+    array(  "name" => __("Video Player Logo Height", $shortname),
+            "desc" => __("Enter the height of your logo used in the previous option.", $shortname),
+            "id" => $shortname."_video_logo_height",
+            "std" => "40",
+            "type" => "text"
+    ),
 
     array(  "type" => "end"),
     

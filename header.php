@@ -7,6 +7,7 @@ global $themeblvd_link_color;
 global $themeblvd_css;
 global $themeblvd_font_headers;
 global $themeblvd_font_body;
+global $themeblvd_font_size;
 global $themeblvd_logo;
 global $themeblvd_logo_image;
 global $themeblvd_header;
@@ -35,7 +36,7 @@ global $themeblvd_header_html;
     <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/layout/css/style/<?php echo $themeblvd_style; ?>.css" type="text/css" media="screen" />
 
     <!-- Font -->
-    <?php themeblvd_font($themeblvd_font_headers, $themeblvd_font_body); ?>
+    <?php themeblvd_font($themeblvd_font_headers, $themeblvd_font_body, $themeblvd_font_size); ?>
 
     <!-- Wordpress Header stuff -->
     <?php wp_enqueue_script("jquery"); ?>
@@ -65,6 +66,7 @@ global $themeblvd_header_html;
 
     <!-- JS -->
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/layout/plugins/prettyphoto/js/jquery.prettyPhoto.js"></script>
+    <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/layout/js/swfobject.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/layout/js/cycle.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/layout/js/superfish.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/layout/js/validate.js"></script>
@@ -135,19 +137,21 @@ global $themeblvd_header_html;
 
                     <div class="twitter_div"></div>
 
-                    <a href="http://www.twitter.com/jasonbobich" title="Follow Me!" class="twitter-follow">Follow Me!</a>
+                    <a href="http://www.twitter.com/<?php echo $themeblvd_header_twitter; ?>" title="Follow Me!" class="twitter-follow">Follow Me!</a>
 
                 </div><!-- .inner (end) -->
             </div><!-- #twitter (end) -->
 
             <?php elseif($themeblvd_header == 'search') : ?>
+            
             <div class="searchform">
                 <?php echo get_search_form(); ?>
             </div><!-- .search (end) -->
+
             <?php elseif($themeblvd_header == 'html') : ?>
 
             <div id="html-block">
-                <?php echo $themeblvd_header_html; ?>
+                <?php echo stripslashes($themeblvd_header_html); ?>
             </div><!-- #html-block -->
 
             <?php endif; ?>
