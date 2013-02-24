@@ -36,7 +36,7 @@ $blog_sidebar = array (
 	'name' => 'Blog Sidebar',
 	'description' => __('These widgets will get shown in the sidebar of all Posts and blog-related pages.', 'themeblvd'),
 	'id' => 'blog-sidebar',
-	'before_widget' => '<div class="widget">',
+	'before_widget' => '<div id="%1$s" class="widget %2$s">',
 	'after_widget' => '</div>',
 	'before_title' => '<h3>',
 	'after_title' => '</h3>'
@@ -46,7 +46,7 @@ $page_sidebar = array (
 	'name' => 'Page Sidebar',
 	'description' => __('These widget will get shown in the sidebar on all 2-column "Pages" that are NOT posts or blog-related things.', 'themeblvd'),
 	'id' => 'page-sidebar',
-	'before_widget' => '<div class="widget">',
+	'before_widget' => '<div id="%1$s" class="widget %2$s">',
 	'after_widget' => '</div>',
 	'before_title' => '<h3>',
 	'after_title' => '</h3>'
