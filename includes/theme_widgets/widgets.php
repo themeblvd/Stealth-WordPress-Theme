@@ -39,7 +39,7 @@ $blog_sidebar = array (
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
 	'before_title' => '<h3>',
-	'after_title' => '</h2>'
+	'after_title' => '</h3>'
 );
 
 $page_sidebar = array (
@@ -48,7 +48,7 @@ $page_sidebar = array (
 	'id' => 'page-sidebar',
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h2>',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>'
 );
 

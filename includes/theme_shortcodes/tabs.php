@@ -15,11 +15,14 @@ function tabs_shortcode($atts, $content = null) {
     $output .= '<div class="tab-menu">';
     $output .= '<ul>';
 
+	//Create unique ID for this tab set
+	$id = rand();
+
     //Build tab menu
     $numTabs = count($atts);
-
+	
     for($i = 1; $i <= $numTabs; $i++){
-        $output .= '<li><a href="#tab'.$i.'">'.$atts['tab'.$i].'</a></li>';
+        $output .= '<li><a href="#tab-'.$id.'-'.$i.'">'.$atts['tab'.$i].'</a></li>';
     }
 
     $output .= '</ul>';
@@ -28,14 +31,16 @@ function tabs_shortcode($atts, $content = null) {
     $output .= '<div class="tab-wrapper">';
 
     //Build content of tabs
+    $i = 1;
     $tabContent = do_shortcode($content);
     $find = array();
     $replace = array();
     foreach($atts as $key => $value){
         $find[] = '['.$key.']';
         $find[] = '[/'.$key.']';
-        $replace[] = '<div id="'.$key.'" class="tab">';
+        $replace[] = '<div id="tab-'.$id.'-'.$i.'" class="tab">';
         $replace[] = '</div><!-- .tab (end) -->';
+        $i++;
     }
 
     $tabContent = str_replace($find, $replace, $tabContent);

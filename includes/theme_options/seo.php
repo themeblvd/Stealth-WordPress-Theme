@@ -130,7 +130,7 @@ $options_seo = array (
             "id" => $shortname."_seo_title_portfolios",
             "std" => "%portfolio_title% | %blog_title%",
             "type" => "text",
-            "more-info" => __("<h4>Accepted title format macros for Portfolio pages</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%portfolio_title% - The original title of the portfolio<br />%portfolio_description% - The description of the category", $shortname)
+            "more-info" => __("<h4>Accepted title format macros for Portfolio pages</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%portfolio_title% - The original title of the portfolio<br />%portfolio_description% - The description of the category<br />%portfolio_slug% - Alias for %portfolio_title%", $shortname)
     ),
     
     "archive_title" => array(  "name" => __("Archives", $shortname),

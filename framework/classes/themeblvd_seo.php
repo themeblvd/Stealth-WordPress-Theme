@@ -622,6 +622,7 @@ class themeblvd_seo {
         $title = str_replace("%blog_description%", $this->blog_description(), $title);
         $title = str_replace("%item_title%", $this->post_title(), $title);
         $title = str_replace("%portfolio_title%", $this->portfolio_title(), $title);
+        $title = str_replace("%portfolio_description%", $this->portfolio_description(), $title);
         $title = str_replace("%portfolio_slug%", $this->portfolio_slug(), $title);
         
         $title = stripslashes($title);
@@ -642,6 +643,7 @@ class themeblvd_seo {
         $title = str_replace("%blog_description%", $this->blog_description(), $title);
         $title = str_replace("%portfolio_title%", $this->portfolio_title(), $title);
         $title = str_replace("%portfolio_description%", $this->portfolio_description(), $title);
+        $title = str_replace("%portfolio_slug%", $this->portfolio_slug(), $title);
 
         $title = stripslashes($title);
 
@@ -850,55 +852,94 @@ class themeblvd_seo {
     }
 
     function portfolio_title(){
-
-        $portfolios = get_terms('portfolio');
-        $macro = '';
         
-        foreach ($portfolios as $portfolio) {
+        global $post;
+        $term_name = '';
+        
+        if( is_tax() ){
+        	
+        	$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+        	$term_name = $term->name;
+        	
+        } else {
+        
+        	$terms = get_the_terms( $post->ID, 'portfolio' );
+        	
+        	foreach ($terms as $term) {
 
-            if( end($portfolios ) == $portfolio){
-                $macro .= $portfolio->name;
-            } else {
-                $macro .= $portfolio->name.', ';
-            }
+	            if( end($terms) == $term){
+	                $term_name .= $term->name;
+	            } else {
+	                $term_name .= $term->name.', ';
+	            }
+	        }
+
         }
-
+        
+        $macro = $term_name;
+        
         return $macro;
 
     }
 
     function portfolio_slug(){
 
-        $portfolios = get_terms('portfolio');
-        $macro = '';
+        global $post;
+        $term_slug = '';
         
-        foreach ($portfolios as $portfolio) {
+        if( is_tax() ){
+        	
+        	$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+        	$term_slug = $term->slug;
+        	
+        } else {
+        
+        	$terms = get_the_terms( $post->ID, 'portfolio' );
+        	
+        	foreach ($terms as $term) {
 
-            if( end($portfolios ) == $portfolio){
-                $macro .= $portfolio->slug;
-            } else {
-                $macro .= $portfolio->slug.', ';
-            }
+	            if( end($terms) == $term){
+	                $term_slug .= $term->slug;
+	            } else {
+	                $term_slug .= $term->slug.', ';
+	            }
+	        }
+
         }
-
+        
+        $macro = $term_slug;
+        
         return $macro;
 
     }
     
     function portfolio_description(){
 
-        $portfolios = get_terms('portfolio');
-        $macro = '';
+        global $post;
+        $term_description = '';
         
-        foreach ($portfolios as $portfolio) {
+        if( is_tax() ){
+        	
+        	$term = get_term_by( 'slug', get_query_var( 'term' ), get_query_var( 'taxonomy' ) );
+        	$term_description = $term->description;
+        	
+        } else {
+        
+        	$terms = get_the_terms( $post->ID, 'portfolio' );
+        	
+        	foreach ($terms as $term) {
 
-            if( end($portfolios ) == $portfolio){
-                $macro .= $portfolio->description;
-            } else {
-                $macro .= $portfolio->description.', ';
-            }
+	            if( end($terms) == $term){
+	                $term_description .= $term->description;
+	            } else {
+	                $term_description .= $term->description.', ';
+	            }
+	        }
+
         }
-
+        
+        $macro = $term_description;
+        
         return $macro;
 
     }
