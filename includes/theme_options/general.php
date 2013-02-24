@@ -370,6 +370,15 @@ $options_general = array (
             "option2" => __("No, hide titles.", $shortname)
     ),
 
+    array(  "name" => __("Activate [raw] shortcode?", $shortname),
+            "desc" => __("The raw shortcode can be useful when formatting your posts to escape WP auto formatting in select places, but if it causes any conflicts with other plugins, you can disable it here.", $shortname),
+            "id" => $shortname."_raw_shortcode",
+            "std" => "true",
+            "type" => "true_false_radio",
+            "option1" => __("Yes, enable [raw] shortcode.", $shortname),
+            "option2" => __("No, disable [raw] shortcode.", $shortname)
+    ),
+
     array(  "type" => "end" ),
 
     //Layout Settings
