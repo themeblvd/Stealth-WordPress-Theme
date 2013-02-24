@@ -37,6 +37,9 @@ include_once(TEMPLATEPATH . '/includes/theme_functions/stealth_featured_posts.ph
 include_once(TEMPLATEPATH . '/includes/theme_functions/slide.php');
 include_once(TEMPLATEPATH . '/includes/theme_functions/portfolio.php');
 
+//Twitter functionality (imported temporarily from TB framework v2.2.1)
+include_once(TEMPLATEPATH . '/includes/theme_functions/twitter.php');
+
 ##############################################################
 # Include theme option pages
 ##############################################################

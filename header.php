@@ -76,14 +76,17 @@ global $themeblvd_header_html;
     
     /* LINK COLOR */
     a,
-    #sidebar .widget .twitter_div li a,
-    #sidebar-left .widget .twitter_div li a,
-    #home-widget-columns .widget .twitter_div li a {
+    #sidebar .tb-twitter_widget.widget li a,
+    #sidebar-left .tb-twitter_widget.widget .twitter_div li a,
+    #home-widget-columns .tb-twitter_widget.widget li a {
     	color: #<?php echo $themeblvd_link_color; ?>
     }
 	
 	/* LINK HOVER COLOR */
-	a:hover {
+	a:hover,
+	#sidebar .tb-twitter_widget.widget li a:hover,
+    #sidebar-left .tb-twitter_widget.widget .twitter_div li a:hover,
+    #home-widget-columns .tb-twitter_widget.widget li a:hover {
 		color: #<?php echo $themeblvd_link_hover_color; ?>;
 	}
     
@@ -147,26 +150,9 @@ global $themeblvd_header_html;
 	
 	            <div id="twitter">
 	                <div class="inner">
-	
-	                    <script type="text/javascript">
-	                    jQuery.noConflict()(function(){
-	                        jQuery(window).load(function() {
-	                            jQuery(".twitter_div").getTwitter({
-	                                    userName: "<?php echo $themeblvd_header_twitter; ?>",
-	                                    numTweets: 1,
-	                                    loaderText: "Loading tweets...",
-	                                    slideIn: true,
-	                                    slideDuration: 750,
-	                                    showHeading: false,
-	                                    showProfileLink: false,
-	                                    showTimestamp: true
-	                            });
-	                        });
-	                    });
-	                    </script>
-	
-	                    <div class="twitter_div"></div>
-	
+						<div class="twitter_div">
+							<?php themeblvd_twitter( 1, $themeblvd_header_twitter ); ?>
+						</div>
 	                </div><!-- .inner (end) -->
 	            </div><!-- #twitter (end) -->
 	
