@@ -26,9 +26,8 @@ add_image_size( 'blog', 630, 9999 );
 add_image_size( 'featured', 280, 150, true );
 add_image_size( 'portfolio', 280, 125, true );
 add_image_size( 'portfolio-admin', 130, 58, true );
-add_image_size( 'slideshow-small', 640, 9999 );
-add_image_size( 'slideshow-large', 930, 350, true );
-add_image_size( 'slideshow-sidebar', 265, 9999 );
+add_image_size( 'slideshow-small', 640, 9999, true);
+add_image_size( 'slideshow-large', 930, 9999, true );
 add_image_size( 'slideshow-admin', 130, 49, true);
 
 ##############################################################

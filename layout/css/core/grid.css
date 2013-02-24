@@ -1,0 +1,153 @@
+/* HOMEPAGE WIDGET COLUMNS */
+
+#home-widget-columns .one-half {
+    float: left;
+    margin: 0 10px;
+    width: 460px;
+}
+
+#home-widget-columns .one-third {
+    float: left;
+    margin: 0 10px;
+    width: 300px;
+}
+
+#home-widget-columns .two-third {
+    float: left;
+    margin: 0 10px;
+    width: 620px;
+}
+
+#home-widget-columns .one-fourth {
+    float: left;
+    margin: 0 10px;
+    width: 220px;
+}
+
+#home-widget-columns .three-fourth {
+    float: left;
+    margin: 0 10px;
+    width: 700px;
+}
+
+/* 2-COLUMN LAYOUT */
+
+#main #content {
+    float: left;
+    margin: 0 0 0 10px;
+    padding: 0;
+    width: 640px;
+}
+
+#main #sidebar {
+    float: left;
+    margin: 0 10px 0 35px;
+    width: 265px;
+}
+
+#main #sidebar-left {
+    float: left;
+    margin: 0 35px 0 10px;
+    width: 265px;
+}
+
+#content .one-half {
+    float: left;
+    margin: 0 20px 0 0;
+    width: 310px;
+}
+
+#content .one-fourth {
+    float: left;
+    margin: 0 20px 0 0;
+    width: 145px;
+}
+
+#content .three-fourth {
+    float: left;
+    margin: 0 20px 0 0;
+    width: 475px;
+}
+
+#content .one-third {
+    float: left;
+    margin: 0 20px 0 0;
+    width: 200px;
+}
+
+#content .two-third {
+    float: left;
+    margin: 0 20px 0 0;
+    width: 420px;
+}
+
+#content .last {
+    margin-right: 0;
+}
+
+/* 1-COLUMN LAYOUT */
+
+#main #full-width-content {
+    margin: 0 10px;
+}
+
+#full-width-content .one-half {
+    float: left;
+    margin: 0 20px 0 0;
+    width: 460px;
+}
+
+#full-width-content .one-fourth {
+    float: left;
+    margin: 0 20px 0 0;
+    width: 220px;
+}
+
+#full-width-content .three-fourth {
+    float: left;
+    margin: 0 20px 0 0;
+    width: 700px;
+}
+
+#full-width-content .one-third {
+    float: left;
+    margin: 0 20px 0 0;
+    width: 300px;
+}
+
+#full-width-content .two-third {
+    float: left;
+    margin: 0 20px 0 0;
+    width: 620px;
+}
+
+#full-width-content .last {
+    margin: 0;
+}
+
+/* FOOTER */
+
+#footer-boxes .column {
+	float: left;
+	margin: 0 10px;
+}
+
+#footer-boxes .half {
+    width: 460px;
+}
+
+#footer-boxes .one-fourth {
+    width: 220px;
+}
+
+#footer-boxes .three-fourth {
+    width: 700px;
+}
+
+#footer-boxes .one-third {
+    width: 300px;
+}
+
+#footer-boxes .two-third {
+    width: 620px;
+}

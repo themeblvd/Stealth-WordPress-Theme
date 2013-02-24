@@ -4,10 +4,11 @@
  * ThemeBlvd WordPress Theme Framework
  * File Includes
  * 
- * This file includes all files needed for this WordPress theme
+ * This file includes all files needed for this theme
  * framwork to work properly.
  *
  * @author  Jason Bobich
+ * @version	1.1
  *
  */
 
@@ -15,48 +16,45 @@
 # Define Theme Constants
 ##############################################################
 
-define("THEMEHINTS", TEMPLATEPATH . "/framework/theme_hints");
-define("THEMEOPTIONS", TEMPLATEPATH . "/framework/theme_options");
-define("SEO", TEMPLATEPATH . "/framework/seo");
-define("HELPERITEMS", TEMPLATEPATH . "/framework/helper_items");
+define("CLASSES", TEMPLATEPATH . "/framework/classes/");
+define("FUNCTIONS", TEMPLATEPATH . "/framework/functions/");
 
 
 ##############################################################
 # (1) Theme Hints
 ##############################################################
 
-include_once(THEMEHINTS . "/functions/theme_hints.php");
+include_once(FUNCTIONS . "themeblvd_theme_hints.php");
 
 ##############################################################
 # (2) Theme Options
 ##############################################################
 
-include_once(THEMEOPTIONS . "/functions/themeblvd_admin_head.php");
-include_once(THEMEOPTIONS . "/classes/themeblvd_options.php");
-include_once(THEMEOPTIONS . "/classes/themeblvd_meta_box.php");
+include_once(FUNCTIONS . "themeblvd_admin_head.php");
+include_once(CLASSES . "themeblvd_options.php");
+include_once(CLASSES . "themeblvd_meta_box.php");
 
 ##############################################################
 # (3) SEO
 ##############################################################
 
-include_once(SEO . "/classes/themeblvd_seo.php");
+include_once(CLASSES . "themeblvd_seo.php");
 
 ##############################################################
-# (4) Helper Items
+# (4) Helper Functions
 ##############################################################
 
-include_once(HELPERITEMS . "/comments.php");
-include_once(HELPERITEMS . "/limit.php");
-include_once(HELPERITEMS . "/page_number.php");
-include_once(HELPERITEMS . "/sandbox.php");
-include_once(HELPERITEMS . "/pagination.php");
-include_once(HELPERITEMS . "/themeblvd_audio.php");
-include_once(HELPERITEMS . "/themeblvd_breadcrumbs.php");
-include_once(HELPERITEMS . "/themeblvd_copyright.php");
-include_once(HELPERITEMS . "/themeblvd_columns.php");
-include_once(HELPERITEMS . "/themeblvd_font.php");
-include_once(HELPERITEMS . "/themeblvd_media.php");
-include_once(HELPERITEMS . "/themeblvd_title.php");
-include_once(HELPERITEMS . "/themeblvd_video.php");
-include_once(HELPERITEMS . "/themeblvd_widget_columns.php");
+include_once(FUNCTIONS . "comments.php"); //depreciated
+include_once(FUNCTIONS . "themeblvd_audio.php");
+include_once(FUNCTIONS . "themeblvd_breadcrumbs.php");
+include_once(FUNCTIONS . "themeblvd_copyright.php");
+include_once(FUNCTIONS . "themeblvd_columns.php"); //depreciated
+include_once(FUNCTIONS . "themeblvd_font.php");
+include_once(FUNCTIONS . "themeblvd_media.php");
+include_once(FUNCTIONS . "themeblvd_menu_fallback.php");
+include_once(FUNCTIONS . "themeblvd_pagination.php");
+include_once(FUNCTIONS . "themeblvd_rand.php");
+include_once(FUNCTIONS . "themeblvd_title.php");
+include_once(FUNCTIONS . "themeblvd_video.php");
+include_once(FUNCTIONS . "themeblvd_widget_columns.php");
 ?>

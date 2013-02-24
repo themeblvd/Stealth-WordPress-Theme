@@ -1,0 +1,1987 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Stealth\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-03-28 19:51-0800\n"
+"PO-Revision-Date: 2011-03-28 19:51-0800\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../stealth/404.php:11
+msgid "Page Not Found"
+msgstr ""
+
+#: ../stealth/404.php:16
+msgid "The page you requested does not exist."
+msgstr ""
+
+#: ../stealth/archive.php:24
+msgid "Category"
+msgstr ""
+
+#: ../stealth/archive.php:26
+msgid "Tag"
+msgstr ""
+
+#: ../stealth/archive.php:28
+#: ../stealth/archive.php:30
+#: ../stealth/archive.php:32
+msgid "Archive"
+msgstr ""
+
+#: ../stealth/archive.php:34
+msgid "Author Archive"
+msgstr ""
+
+#: ../stealth/archive.php:36
+msgid "Blog Archives"
+msgstr ""
+
+#: ../stealth/archive.php:62
+#: ../stealth/index.php:222
+#: ../stealth/single.php:36
+msgid "No Comments"
+msgstr ""
+
+#: ../stealth/archive.php:62
+#: ../stealth/index.php:222
+#: ../stealth/single.php:36
+msgid "1 Comment"
+msgstr ""
+
+#: ../stealth/archive.php:62
+#: ../stealth/index.php:222
+#: ../stealth/single.php:36
+msgid "% Comments"
+msgstr ""
+
+#: ../stealth/archive.php:66
+#: ../stealth/index.php:218
+#: ../stealth/single.php:40
+msgid "by "
+msgstr ""
+
+#: ../stealth/archive.php:83
+#: ../stealth/search.php:41
+#: ../stealth/taxonomy.php:130
+msgid "Read More"
+msgstr ""
+
+#: ../stealth/archive.php:98
+msgid "There are no posts to display."
+msgstr ""
+
+#: ../stealth/comments.php:33
+msgid "No comments"
+msgstr ""
+
+#: ../stealth/comments.php:33
+msgid "One comment"
+msgstr ""
+
+#: ../stealth/comments.php:33
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: ../stealth/index.php:125
+msgid "You need to select a page to pull content from for this area or hide this section all together. You can do all this in the Homepage section of your theme options page."
+msgstr ""
+
+#: ../stealth/index.php:241
+msgid "Read more"
+msgstr ""
+
+#: ../stealth/index.php:266
+msgid "There are no posts to show."
+msgstr ""
+
+#: ../stealth/page.php:34
+msgid "Edit Page"
+msgstr ""
+
+#: ../stealth/search.php:20
+msgid "Search Results for"
+msgstr ""
+
+#: ../stealth/search.php:56
+msgid "There are no results that match your search."
+msgstr ""
+
+#: ../stealth/sidebar.php:51
+msgid "This is your Blog Sidebar, and no widgets have been placed here yet."
+msgstr ""
+
+#: ../stealth/sidebar.php:71
+msgid "This is your Pages Sidebar, and no widgets have been placed here yet."
+msgstr ""
+
+#: ../stealth/single.php:52
+msgid "Edit Post"
+msgstr ""
+
+#: ../stealth/taxonomy.php:93
+#: ../stealth/taxonomy.php:107
+msgid "Oops! You forgot set a featured image."
+msgstr ""
+
+#: ../stealth/taxonomy.php:151
+msgid "This portfolio contains no portfolio items."
+msgstr ""
+
+#: ../stealth/template_archives.php:35
+msgid "The Last 30 Posts"
+msgstr ""
+
+#: ../stealth/template_archives.php:41
+msgid "comments"
+msgstr ""
+
+#: ../stealth/template_archives.php:45
+msgid "Categories"
+msgstr ""
+
+#: ../stealth/template_archives.php:51
+msgid "Monthly Archives"
+msgstr ""
+
+#: ../stealth/template_contact.php:92
+msgid "Your Name"
+msgstr ""
+
+#: ../stealth/template_contact.php:96
+msgid "Your E-mail"
+msgstr ""
+
+#: ../stealth/template_contact.php:134
+msgid "Your Message"
+msgstr ""
+
+#: ../stealth/template_contact.php:155
+msgid "Your message has been sent!"
+msgstr ""
+
+#: ../stealth/template_sitemap.php:35
+msgid "Pages"
+msgstr ""
+
+#: ../stealth/template_sitemap.php:47
+msgid "Posts per category"
+msgstr ""
+
+#: ../stealth/template_sitemap.php:58
+msgid "Comments"
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_meta_box.php:811
+#: ../stealth/framework/classes/themeblvd_options.php:1445
+msgid "Hide"
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:125
+msgid "A third-party SEO plugin has been detected which could cause problems with this theme's built in SEO plugin. It is advised that you disable this theme's SEO plugin or your third-party SEO plugin."
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:131
+msgid "Your site is currently set to Private. SEO is disabled. You can change this setting <a href='"
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:408
+msgid "Displayed Elements"
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:411
+msgid "Arrange items below in the order you'd like them to be displayed."
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:435
+msgid "Hidden Elements"
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:438
+msgid "Drag items below to hide them."
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:822
+msgid "Oops! You did not enter a URL to an image."
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:835
+msgid "Remove Image"
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:1291
+msgid "You can create up to three additional fields to go on your contact form before the user types their message. If you want your conact form to only include the typical Name, Email, and Message, simply leave the extra name fields blank. <a href=\"#contact-info\" title=\"Learn More\" class=\"jaybich-open\">Learn More</a>"
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:1297
+msgid "The form builder allows you to have more control over your Contact Page without you having to edit any code. Basically, by default, your contact form will show fields for the Name, E-mail, and Message. These three fields are not editable because they are needed for the contact form to work properly. You can add up to three additional fields to your contact form. These fields will show up after the E-mail field, but before the Message field."
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:1302
+msgid "This is the name of the field that will show up on your contact form. It will show exactly how you write it here. So, make sure to format it exactly how you'd like your users to see it."
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:1306
+msgid "This is the type of field you want to show. A \"Text Input\" is a standard single-line input field, and a \"Text Area\" would allow your user to type out an entire paragraph (similar to the Message field)."
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:1310
+msgid "If you make a field required, it means that the user cannot submit the form with that field empty."
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:1314
+msgid "If you're asking the user to enter something other than a standard piece of text, you may want to select an appropriate validation method."
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:1317
+msgid "Anything entered into the field is accepted."
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:1320
+msgid "Validates that it's an email address."
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:1323
+msgid "Validates it's a proper website address."
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:1326
+msgid "Validates that there are only numbers (ex: a phone number)."
+msgstr ""
+
+#: ../stealth/framework/classes/themeblvd_options.php:1333
+msgid "If you require further customization of your form beyond the form builder, you can always manually add fields in the HTML code of template_contact.php. You DO NOT need to edit any PHP code. Any fields you manually add to the HTML form will automatically be included in the e-mail sent out."
+msgstr ""
+
+#: ../stealth/framework/functions/comments.php:21
+msgid "ago"
+msgstr ""
+
+#: ../stealth/framework/functions/comments.php:66
+msgid "Reply"
+msgstr ""
+
+#: ../stealth/framework/functions/comments.php:67
+msgid "Log in to reply."
+msgstr ""
+
+#: ../stealth/framework/functions/comments.php:90
+#, php-format
+msgid "By %1$s on %2$s at %3$s"
+msgstr ""
+
+#: ../stealth/framework/functions/comments.php:94
+msgid "Edit"
+msgstr ""
+
+#: ../stealth/framework/functions/comments.php:95
+msgid "\\t\\t\\t\\t\\t<span class=\"unapproved\">Your trackback is awaiting moderation.</span>\\n"
+msgstr ""
+
+#: ../stealth/framework/functions/themeblvd_menu_fallback.php:18
+msgid "Home"
+msgstr ""
+
+#: ../stealth/framework/functions/themeblvd_pagination.php:26
+msgid "&laquo; Newer Entries "
+msgstr ""
+
+#: ../stealth/framework/functions/themeblvd_pagination.php:27
+msgid " Older Entries &raquo;"
+msgstr ""
+
+#: ../stealth/framework/functions/themeblvd_theme_hints.php:26
+msgid "WP Admin: "
+msgstr ""
+
+#: ../stealth/framework/functions/themeblvd_title.php:32
+#: ../stealth/framework/functions/themeblvd_title.php:42
+#: ../stealth/framework/functions/themeblvd_title.php:51
+#: ../stealth/framework/functions/themeblvd_title.php:65
+msgid "Page "
+msgstr ""
+
+#: ../stealth/framework/functions/themeblvd_title.php:48
+msgid "Search results for "
+msgstr ""
+
+#: ../stealth/framework/functions/themeblvd_widget_columns.php:24
+msgid "This is a dynamically generated widget column. Widgets will be stacked in this column."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/general.php:59
+msgid "Primary Navigation"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/general.php:63
+msgid "Footer Navigation"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:19
+msgid "Add New Portfolio Item"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:24
+msgid "Portfolio Items"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:25
+msgid "Porfolio Item"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:41
+msgid "Portfolios"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:42
+msgid "All Portfolios"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:43
+msgid "Add New Portfolio"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:44
+msgid "New Portfolio Name"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:45
+msgid "Edit Portfolio"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:57
+msgid "Portfolio Tags"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:58
+msgid "All Portfolio Tags"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:59
+msgid "Add New Tag"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:60
+msgid "New Tag Name"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:101
+msgid "Not Assigned"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:115
+msgid "No Tags"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:124
+msgid "Oops! You forgot to set a featured image."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:143
+msgid "You are currently creating a Portfolio Item, which can then be categorized into your Portfolios. <a href=\"#themeblvd_portfolio_item_description\" class=\"jaybich-open\">Learn More</a>"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:144
+msgid "<p>With custom post types and custom menus in WordPress 3.0, WordPress has totally changed the potential for theme making. Some concepts of how this theme manages portfolios may seem unusual at first, but once you get used to how things work, you'll see how much more efficient everything is.</p><h4 style=\"margin: 10px 0pt;\">The overall concept of creating your first portfolio.</h4><p>1. Create a new <em>Portfolio</em>. You can think of a <em>Portfolio</em> as a \"category\" if that helps you visualize it a bit better.</p><p>2. Create several <em>Portfolio Items</em> that each consist of:</p><ul><li>Title</li><li>Content</li><li>Excerpt</li><li>Media Link (Full URL to enlarged image, YouTube video, Vimeo video, .mov file, or .swf file)</li><li>Thumbnail (featured image)</li><li>Portfolio (i.e. Which portfolio is this portfolio item assigned to?)</li></ul><p>3. Add your <em>Portfolio</em> (i.e. \"category\" of portfolio items) to a menu under Appearance &gt; Menus.</p><p>4. Now that your <em>Portfolio</em> has been added to a menu, it's live on your website. When someone visit that <em>Portfolio</em>, they'll see all of that <em>Portfolios's</em> items displayed in a gallery view.</p><p><em>Note: Under Appearance &gt; Menus, if you do not see your Portfolios in the left column, it just means you have them hidden. Just click the Screen Options tab in the top right corner and then check off \"Portfolios.\"</em></p><h4 style=\"margin: 10px 0pt;\">Let's clear up one common misconception :-) </h4><p><em>\"I'm trying to add a portfolio page, but when I create a new page, there's no Portfolio page template? Why?\"</em></p><p>There's no need for that any more. Before WordPress 3.0, the only logical way to create a main menu was to list out WordPress pages. So, then the dilemma was that if you didn't want a \"blog\" for your homepage, how would you have a link to a \"blog\" from your main menu? So, theme authors started creating page templates that would list out the blog posts, and thus that \"page\" could be added to the main menu. Then, when theme authors started offering portfolios with their themes, the same thing needed to be done, as a portfolio would simply be another method of listing out \"posts.\"</p><p>With WordPress's menu builder you can add a blog's category, or in this case a \"Portfolio\", directly to your main menu. There's no need for creating a page in order to accomplish this.</p> "
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:147
+msgid "Portfolio Item"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:148
+msgid "Place the URL to your portfolio media item here. <a href=\"#themeblvd_media_item\" class=\"jaybich-open\">Learn More</a>"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:153
+msgid "<h4>Accepted Media Types</h4><h5>1. Images</h5><p>Insert the full URL to your image like this:<br>http://www.YourSite.com/wp-content/uploads/2010/06/image.jpg</p><h5>2. MP3 Files</h5><p>Insert the full URL to your audio mp3 file like this:<br>http://www.YourSite.com/wp-content/uploads/2010/06/song.mp3</p><h5>3. YouTube Videos</h5><p>Insert the full URL to the video page like this:<br>http://www.youtube.com/watch?v=qqXi8WmQ_WM</p><h5>4. Vimeo Videos</h5><p>Insert the full URL to the video page like this:<br>http://vimeo.com/7570458</p><h5>5. Flash SWF Files</h5><p>Insert the full URL to the .swf file with the width and height attached like this:<br>http://www.YourSite.com/wp-content/uploads/2010/06/flashfile.swf?width=792&amp;height=294</p><h5>6. MP4 Video Files</h5><p>Insert the full URL to the .mp4 file with the width and height attached like this:<br>http://www.YourSite.com/wp-content/uploads/2010/06/video.mp4?width=480&amp;height=204<h5>7. FLV Video Files</h5><p>Insert the full URL to the .flv file with the width and height attached like this:<br>http://www.YourSite.com/wp-content/uploads/2010/06/video.flv?width=480&amp;height=204<h5>8. F4V Video Files</h5><p>Insert the full URL to the .f4v file with the width and height attached like this:<br>http://www.YourSite.com/wp-content/uploads/2010/06/video.f4v?width=480&amp;height=204<h5>9. Quicktime MOV Files</h5><p>Insert the full URL to the .mov file with the width and height attached like this:<br>http://www.YourSite.com/wp-content/uploads/2010/06/video.mov?width=480&amp;height=204"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:158
+msgid "<em>Don't forget to set your thumbnail image, which is controlled by this post's \"featured image.\" It can be set in the Featured Image box generally located in the right column for editing this post.</em> <a href=\"#themeblvd_portfolio_item_thumb\" class=\"jaybich-open\">Learn More</a>"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/portfolio.php:159
+msgid "Your thumbnail image (featured image) will be used on the Portfolio gallery style page for the user to click on. It will automatically be scaled and cropped to be 280x125. However, your resulting gallery of thumbnails will look better if you size your thumbnails before uploading them, or at least plan for them to be horizontally sized (meaning wider than they are tall)."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/slide.php:21
+msgid "Add New Slide"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/slide.php:25
+msgid "Slides"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/slide.php:27
+msgid "Slide"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/slide.php:44
+msgid "Slideshows"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/slide.php:45
+msgid "All Slideshows"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/slide.php:46
+msgid "Add New Slideshow"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/slide.php:47
+msgid "New Slideshow Name"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/slide.php:86
+msgid "Oops! This is an image slide, but you forgot a featured image."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/slide.php:88
+msgid "No featured image."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/slide.php:112
+#: ../stealth/includes/theme_functions/slide.php:133
+msgid "Image Slide"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/slide.php:114
+#: ../stealth/includes/theme_functions/slide.php:134
+msgid "Content Slide"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/slide.php:132
+msgid "What kind of slide is this?"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/slide.php:135
+msgid "An image slide will use the featured image for the slide area, while a content slide will output the content entered above in the main content editor."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/slide.php:157
+msgid "If you selected for this to be an \"Image Slide\" in the general option above, these options will configure this image slide. If you've selected this to be an image slide, and you leave the following options blank, nothing but your featured image set over to the right will show. The featured image will automatically be scaled and cropped to be 930x350. So, make sure you upload an image that is atleast that large. Completely ignore these options if this is a content slide."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/slide.php:161
+msgid "Description (optional)"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/slide.php:162
+msgid "Enter in a description you want to show over the image. Leave blank if you do not want a description to show."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/slide.php:168
+msgid "Image Link (optional)"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/slide.php:169
+msgid "Enter where you'd like this image slide to link to. Leave this option blank if you do not want this slide to be clickable."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/stealth_slideshow.php:170
+msgid "There are no slides to display."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:19
+msgid "These are breadcrumbs. They can be turned on or off from your theme options panel under \"General Settings.\""
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:34
+msgid "This is a dynamic widget area named \"Blog Sidebar.\" You can add and edit widgets in this area from your WP admin panel. This sidebar appears on all blog-related pages."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:49
+msgid "This is a dynamic widget area named \"Pages Sidebar.\" You can add and edit widgets in this area from your WP admin panel. This sidebar appears on all \"Pages\" that aren't blog-related."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:64
+msgid "This is a standard WordPress archive template. It's used to display posts filtered by category, tag, date, etc. It's controlled by archive.php."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:71
+msgid "This is the template for displaying comments. It's controlled with two files: <ul><li>(1) comments.php</li><li>(2) framework/helper_items/comments.php</li></ul>"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:78
+msgid "This is your global header, which is controlled by header.php. You have several different options for your header, including dynamically putting in a new logo image, choosing what displays to the right - a recent tweet, search form, or block of HTML code. This can all be set on your theme options page under \"Layout Settings.\" Also, below is a menu that you need to dynamically build from your Menu Builder. You then assign it to the \"Primary Navigation\" menu location."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:97
+msgid "This is your global footer. It's controlled with footer.php. You can put widgets here by adding them to the \"Footer Area\" widget area in your Widgets panel. Your copyright message can be dynmaically set by going to your theme options page and going to \"Layout Settings.\" You can insert a menu in the lower right corner by going to your Menu Builder, creating a new menu, and assigning it to the \"Footer Navigation\" menu location."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:120
+msgid "This is your default homepage, which is controlled by index.php. There are many options you can set for your homepage from your theme options page. So, make sure and explore those and customize this page to look the way you want. If you want to use this theme's alternate homepage, you can do so by creating a page, setting the \"Alternate Homepage\" template to that page, and then going to Settings > Reading > frontpage displays and setting that static page as your front page."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:139
+msgid "Choose a static page's content to show here from your theme options panel under \"Homepage.\""
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:162
+msgid "This is dynamic sidebar. You can add widgets here from your Widgets panel by adding them to the \"Default Homepage Sidebar\" widget area. You can also completely hide this sidebar from your theme options panel."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:181
+msgid "This is a standard WordPress page that's using the default page template. You can edit its format in page.php."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:200
+msgid "This is a standard WordPress page using the page template \"Alternate Homepage.\" If you'd like to set this page as your homepage, you need to go to Settings > Reading > frontpage displays, and set this static page as your frontpage. Also, this page template has several dynamic settings you can set from your page template settings page. The format of this page template is controlled with template_alternate_home.php."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:223
+msgid "This is a dynamic widget area. You can put widgets here by going to your Widgets page and adding widgets to the \"Alternate Homepage\" widget area."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:238
+msgid "This is a standard WordPress page using the page template \"Archives.\" It simply displays links to all of your archived content. This is a good page template to use for SEO reasons. It's format is controlled with template_archives.php"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:257
+msgid "This is a standard WordPress page using the page template \"Blog Page.\" This page template has several dynamic settings you can set from your page template settings page. The format of this page template is controlled with template_blog.php. If you'd like to edit the actual display of the blog posts, you can do so by editing /includes/stealth_blog.php"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:280
+msgid "This is a standard WordPress page using the page template \"Magazine Page.\" This page template has several dynamic settings you can set from your page template settings page. The format of this page template is controlled with template_magazine.php. If you'd like to edit the actual display of the blog posts, you can do so by editing /includes/stealth_mag.php"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:303
+msgid "This is the Contact page template. You can add fields to it from your template settings page, or you can manually edit the HTML in template_contact.php. The contact form uses sendmail.php to send the email. However, you shouldn't need to edit this file. Any manually edited fields added to template_contact.php will be picked up by sendmail.php."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:326
+msgid "This is a page using the page template \"Full Width Page.\" You can edit its format in template_fullwidth.php."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:345
+msgid "This is a standard WordPress page using the page template \"Sitemap.\" It simply displays links to important areas of your site. This is a good page template to use for SEO reasons. It's format is controlled with template_sitemap.php"
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:364
+msgid "This is a standard WordPress post. You can edit its format in single.php."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:383
+msgid "This is a standard WordPress search results page. You can edit its format in search.php."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:390
+msgid "This is a slideshow using the jQuery plugin, Cycle. In this theme, the individual images or chunks of content are referred to as \"Slides\" and if you're using multiple slideshows throughout your website, you can categorize \"Slides\" into \"Slideshows\" -- If you do this, you can select which \"Slideshow\" will actually show in different areas of your website from your theme option pages."
+msgstr ""
+
+#: ../stealth/includes/theme_functions/theme_hints.php:421
+msgid "This is the display of a group of \"Portfolio Items\" and you can edit its format in taxonomy.php."
+msgstr ""
+
+#: ../stealth/includes/theme_meta/pages.php:25
+msgid "Page Title"
+msgstr ""
+
+#: ../stealth/includes/theme_meta/pages.php:26
+msgid "Show page title."
+msgstr ""
+
+#: ../stealth/includes/theme_meta/pages.php:27
+msgid "Hide page title."
+msgstr ""
+
+#: ../stealth/includes/theme_meta/pages.php:28
+msgid "This will determine whether the title of this particular page shows or not on the front-end of your website."
+msgstr ""
+
+#: ../stealth/includes/theme_meta/seo.php:26
+msgid "Title Tag"
+msgstr ""
+
+#: ../stealth/includes/theme_meta/seo.php:27
+msgid "Enter in the title as you'd like to be displayed.  <a href='#"
+msgstr ""
+
+#: ../stealth/includes/theme_meta/seo.php:31
+msgid "<p>This is the title that gets inserted within the &lt;title&gt; tag of this page's &lt;head&gt; section. It then gets displayed at the top of most web browsers when a user visits your site. It also, in most cases, gets used on a search engine results page when displaying your page as a result. It's also very important in how search engines determine what this page is about. So, it's important to put a couple of your most important keywords here along with your site's name in a user-friendly, NON-spammy format.</p><p>Here's what the final result will look like in your source code:</p><p>&lt;title&gt;Your title ends up here&lt;/title&gt;</p>"
+msgstr ""
+
+#: ../stealth/includes/theme_meta/seo.php:34
+msgid "Meta Keywords"
+msgstr ""
+
+#: ../stealth/includes/theme_meta/seo.php:35
+msgid "Enter a comma-separated list of keywords you'd like to associate with this page.  <a href='#"
+msgstr ""
+
+#: ../stealth/includes/theme_meta/seo.php:39
+msgid "<p>Meta keywords are words or phrases that you can use to describe your page or post. They definitely do not have the same impact on SEO that they did in the past, however they can still be helpful. According to <a href=\"http://www.mattcutts.com/blog/\" target=\"_blank\">Matt Cutts</a>, head of Google's Webspam team, Google does not use meta keywords to determine rankings in their organic search results. However, many other search engines still do. So, it's a never a bad idea to include them.</p><p>Here's what the final result will look like in your source code:</p><p>&lt;meta name=\"keywords\" content=\"keyword1, keyword2, keyword3\" /&gt;</p>"
+msgstr ""
+
+#: ../stealth/includes/theme_meta/seo.php:42
+msgid "Meta Description"
+msgstr ""
+
+#: ../stealth/includes/theme_meta/seo.php:43
+msgid "Enter a description you'd like to associate with this page. <a href='#"
+msgstr ""
+
+#: ../stealth/includes/theme_meta/seo.php:47
+msgid "<p>The meta description is a short paragraph that sums up what a particular page or post is about. Google and other search engines will often display this description in their search results. Without this snippet of text, generally, search engines will simply pull relevant chunks of text from your site to display.</p><p>Here's what the final result will look like in your source code:</p><p>&lt;meta name=\"description\" content=\"This is your SEO description of your site.\" /&gt;</p>"
+msgstr ""
+
+#: ../stealth/includes/theme_meta/seo.php:50
+msgid "Do you want this page to be indexed by search engines?"
+msgstr ""
+
+#: ../stealth/includes/theme_meta/seo.php:51
+msgid "Yes, I want search engins to find this page."
+msgstr ""
+
+#: ../stealth/includes/theme_meta/seo.php:52
+msgid "No, hide this page form search engines."
+msgstr ""
+
+#: ../stealth/includes/theme_meta/seo.php:53
+msgid "If you choose to hide this page from search engines, nofollow and noindex tags will be added to this page so search engines will not index it."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:33
+msgid "Body Style"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:34
+msgid "Choose your body style."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:59
+msgid "Header Color"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:60
+msgid "Enter in a color hex value. This color will show in your header beneath whatever texture you choose. HINT: Darker colors will allow the texture you select in the next option to be more visable.<br />Ex: 000000"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:66
+msgid "Header Texture"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:67
+msgid "This is the texture that will appear in the header of your site. Note that some textures will appear better on different colors. So, play around a little!<br /><br /><a href=\"#themeblvd_header_texture\" class=\"jaybich-open\">View Texture Guide</a>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:282
+msgid "Accent Color"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:283
+msgid "Enter in a color hex value. This color will be applied in several key areas of your site including most notably the <strong>main menu</strong>.<br />Ex: 000000"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:289
+msgid "Link Color"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:290
+#: ../stealth/includes/theme_options/general.php:297
+msgid "Enter in a link color hex value.<br />Ex: 000000"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:296
+msgid "Link Hover Color"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:303
+msgid "Footer Style"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:304
+msgid "Choose your footer style."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:329
+msgid "Custom CSS"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:332
+msgid "Feel free to throw in some of your own CSS code if you're feeling like you want to spruce things up a bit. You <strong>do not</strong> need &lt;style&gt; tags."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:346
+msgid "Show title on archive pages?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:347
+#: ../stealth/includes/theme_options/general.php:356
+msgid "This option applies to standard WordPress archive pages that show posts by tag, category, date, etc."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:351
+msgid "Yes, show titles on archive pages."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:352
+#: ../stealth/includes/theme_options/general.php:370
+msgid "No, hide titles."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:355
+msgid "Show featured images on archive pages?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:360
+msgid "Yes, show featured images on archive pages."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:361
+#: ../stealth/includes/theme_options/general.php:1344
+#: ../stealth/includes/theme_options/general.php:1570
+#: ../stealth/includes/theme_options/general.php:1586
+#: ../stealth/includes/theme_options/general.php:1594
+msgid "No, hide them."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:364
+msgid "Show title on search pages?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:365
+msgid "This option applies to search result pages."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:369
+msgid "Yes, show titles on search result pages."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:384
+msgid "<h4>Header</h4>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:387
+msgid "Header Logo"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:388
+msgid "Select whether you want your main logo to be an image or text. If you select 'image' you can put in the image url in the next option, and if you select 'text' your <a href='options-general.php' target='_blank'>Site Title</a> will show instead."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:414
+msgid "Header - Right Section"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:415
+msgid "Select what you'd like to show in the right side of your header."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:444
+msgid "Header Twitter Account"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:445
+msgid "If you selected to show a recent tweet above, enter in your Twitter account username."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:451
+msgid "Header HTML Block"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:452
+msgid "If you selected to show a block of HTML code above, put your code in here.<br /><br />This block is 500px wide and positioned absolute. This means that the height of this block will not effect the overall height of the header area. The logo is what controls the height of your header."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:460
+msgid "<h4>Content Area</h4>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:463
+msgid "Sidebar on right or left?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:464
+msgid "Choose which side of the page you'd like the sidebar to be positioned on when viewing 2-column pages."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:471
+msgid "Right"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:476
+msgid "Left"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:485
+msgid "<h4>Footer</h4>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:488
+msgid "How many footer columns?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:489
+msgid "A dynamic widget area will be registered for each column. <strong>Note: If you lessen the number of widget columns, any existing widgets in additional columns will be removed.</strong>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:496
+msgid "Hide Widget Columns"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:501
+#: ../stealth/includes/theme_options/general.php:1372
+msgid "1 Column"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:506
+#: ../stealth/includes/theme_options/general.php:1377
+msgid "2 Columns"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:511
+#: ../stealth/includes/theme_options/general.php:1382
+msgid "3 Columns"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:516
+#: ../stealth/includes/theme_options/general.php:1387
+msgid "4 Columns"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:523
+msgid "Copyright Text"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:524
+msgid "Enter in your copyright text. '%year%' will show the current year and '%site_title%' will show your current Site Title."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:534
+msgid "Fonts"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:539
+msgid "General Body Font Size"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:540
+msgid "Choose the size in pixels that you'd like your body font to be."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:580
+msgid "General Body Font"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:581
+msgid "Choose which font stack you'd like to use for your general body font. <a href=\"#themeblvd_font_body\" class=\"jaybich-open\">Learn More</a>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:585
+msgid "Font stacks are prioritized lists of fonts, defined in the CSS font-family attribute, that the browser will cycle through until it finds a font that is installed on the user's system. The font stacks listed here were put together by <a href='http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/'>Nathan Ford</a>."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:696
+msgid "Headers Font"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:697
+msgid "Choose which font you'd like to use from the Google Font Directory. Select 'None' if you'd like the header font to default to the body font. <a href=\"#flipblog_font_headers\" class=\"jaybich-open\">Learn More</a>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1111
+msgid "Analytics Code"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1112
+msgid "Enter in your Analytics code to be inserted just before the closing &lt;/body&gt; tag of your website."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1127
+msgid "<h4>Layout Configuration</h4> <p>This section will help you setup which elements should be displayed on your homepage.</p>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1131
+msgid "How do you want to setup your homepage?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1132
+msgid "Drag the elements around in the order you'd like to position them on your homepage.<br /><br /><img src=\""
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1139
+msgid "Slideshow"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1144
+msgid "Slogan"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1149
+msgid "Featured Posts"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1154
+msgid "Widget Columns"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1159
+msgid "Content From Page"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1164
+msgid "Blog + Sidebar"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1173
+msgid "<h4>Slideshow</h4>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1176
+msgid "Slideshow feed from where?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1177
+msgid "Choose the slideshow you'd like to pull from. Slideshows are setup <a href='edit-tags.php?taxonomy=slideshows&post_type=slide'>here</a>."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1184
+msgid "Slideshow transition"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1185
+msgid "Here you can select how you want each slide to transition to the next. The most typical options would be \"fade\" and \"scrollHorz\"."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1333
+msgid "Slideshow autoplay duration"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1334
+msgid "Enter the time you would like in between transitions in seconds. Use '0' to deactivate automatic transitioning."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1339
+msgid "Show next/previous arrows?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1340
+msgid "These are the arrows that allow the user to navigate the slideshow to the next slide or back to the previous slide."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1343
+msgid "Yes show next/previous buttons."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1348
+msgid "Slideshow overlay color?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1349
+msgid "This is the transparent color that will appear behind descriptions if you place them on a slide in the slideshow."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1355
+msgid "<h4>Widget Columns</h4> <p>This section allows you to configure the widget areas on your homepage.</p>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1359
+msgid "How many widget columns?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1360
+msgid "A dynamic widget area will be registered for each column. Even if you have widget columns hidden in the Homepage Configuration options, selecting 0 widget columns will clean up Appearance > Widgets page by not having excess widget areas. <strong>Note: If you lessen the number of widget columns, any existing widgets in additional columns will be removed.</strong>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1367
+msgid "0 Columns"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1396
+msgid "<h4>Featured Posts</h4>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1399
+msgid "Featured posts tag"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1400
+msgid "Enter the tag you'd like to assign to posts in order for them to show here."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1406
+msgid "Pull blog posts or portfolio items?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1407
+msgid "Chose whether you want the featured tag to pull from blog posts or portfolio items."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1408
+msgid "Blog Posts"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1415
+msgid "<h4>Page Content</h4> <p>This section allows you to select a page, which will be used to populate this section of the homepage.</p>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1419
+msgid "Use which page's content?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1420
+msgid "If you have the \"Content From Page\" set to show in your Layout Configuration options, here you can select which WordPress page to pull from."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1426
+msgid "<h4>Slogan</h4> <p>This section will help you confgure your slogan and call-to-action button.</p>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1430
+msgid "Slogan Text"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1431
+msgid "Enter the text that will appear to the left of your call-to-action button."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1437
+msgid "Button Text"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1438
+msgid "Enter the text that will appear in the call-to-action button.<br /><br /><strong>HINT: If you leave this field blank, the button will not show and the slogan will be centered.</strong>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1444
+msgid "Button Link"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1445
+msgid "Enter where the call-to-action button link. Ex: http://yoursite.com/landing-page"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1451
+msgid "<h4>Homepage Blog</h4> <p>Here you can settings for a blog if you have it set to show.</p>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1455
+msgid "Show excerpts or full posts?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1456
+msgid "Choose whether you'd like to show the excerpt or the content for a more classic blog feel. <a href=\"#themeblvd_homepage_blog_content\" class=\"jaybich-open\">Learn More</a>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1457
+msgid ""
+"\n"
+"            \t\n"
+"            \t<p>If you're new to WordPress, you may be wondering what the difference between showing the excerpt and showing the content is. So, here is some information on both options.</p>\n"
+"\n"
+"\t\t\t\t<h4>1) Show excerpts.</h4>\n"
+"\t\t\t\t\n"
+"\t\t\t\t<p>The <a href=\"http://codex.wordpress.org/Excerpt\" target=\"_blank\">excerpt</a> is a one paragraph summary of your post that can be up to 55 words long. You can specify the excerpt when creating your posts, and if you do not specify one, WordPress will automatically take the first 55 words of your post and use that. In an excerpt, you cannot have any HTML code; it is plain text only. Any HTML tags (links, images, etc.) that you attempt to put in the excerpt will be stripped by WordPress.</p>\n"
+"\t\t\t\t\n"
+"\t\t\t\t<p>In this particular theme, when showing the excerpt, a \"Read More\" button will automatically be displayed below the excerpt that links to the post.</p>\n"
+"\t\t\t\t\n"
+"\t\t\t\t<h4>2) Show full content.</h4>\n"
+"\t\t\t\t\n"
+"\t\t\t\t<p>If you're looking for more of a classic blog feel, you can choose to show the content on your blog page. This means that the excerpt will not be used at all. All content will be shown from your post with <em>no</em> automatic \"Read More\" button.</p>\n"
+"\t\t\t\t\n"
+"\t\t\t\t<p>When using this option, if you'd like to pick a spot for the post to be cut off and insert a link to the post, this is commonly referred in WordPress as the \"teaser\". When you're writing a post, you can insert <em>&lt;!--more--&gt;</em> anywhere in the post, and it will cut off at that point and a link will be shown that leads to the post. You can also customize what the link says by adding text to that tag like this <em>&lt;!--more But wait, there's more!--&gt;</em>. <a href=\"http://codex.wordpress.org/Customizing_the_Read_More\" target=\"_blank\">Learn More</a></p>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1478
+msgid "Show excerpts."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1483
+msgid "Show full posts."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1490
+msgid "Show link to blog page at the bottom of posts?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1491
+msgid "This homepage blog does not have pagination, so it might be a good idea to show a link that directs to another page on your site where your full blog is."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1498
+msgid "Yes, show a link."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1503
+msgid "No, don't show a link."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1510
+msgid "Link Text"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1511
+msgid "This is the text that will be displayed in the link directing to your blog page."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1517
+msgid "Link URL"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1518
+msgid "Put in the full URL to your blog page.<br />Ex: http://www.yoursite.com/blog"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1535
+msgid "You can have an unlimited number of portfolio pages on your site. The following options will take effect across <strong>all</strong> of your portfolio pages.<br /><br />To sum it all up, this theme uses a custom post type of <a href=\"edit.php?post_type=portfolio-item\">Portfolio Items</a> which are categorized into a custom taxonomy, <a href=\"edit-tags.php?taxonomy=portfolio&post_type=portfolio-item\">Portfolios</a>. To make a Portfolio live, you simply add that Portfolio (i.e. group of Portfolio Items) to a menu with the <a href=\"nav-menus.php\">Menu Builder</a>. <br /><br /><em>Hint: If you don't see \"Portfolios\" in the left column while building a menu, it just means you need to unhide it under the Screen Options tab in the top right corner of the screen.</em>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1538
+msgid "Show title of the page?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1539
+msgid "Yes, show main title."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1540
+#: ../stealth/includes/theme_options/general.php:1548
+msgid "No, hide it."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1541
+msgid "This is referring to the main title of the Portfolio, NOT the titles of the individual portfolio items."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1546
+msgid "Show Portfolio description?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1547
+msgid "Yes, show the portfolio's description."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1549
+msgid "This is referring to the main description of the Portfolio, NOT the excerpts of the individual portfolio items."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1554
+msgid "How many items per page?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1555
+msgid "Enter the number of portfolio items you'd like displayed on each page. Most likely you'd want to pick a number divisible by 3 (i.e. 3, 6, 9, 12)."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1560
+msgid "Item thumbnails link where?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1561
+msgid "Link to lightbox popup of the media item."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1562
+msgid "Link to the portfolio post."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1563
+msgid "This is referring to the thumbnails of each portfolio item."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1568
+msgid "Show item titles?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1569
+msgid "Yes, show titles."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1571
+msgid "This is referring to the titles of portfolio items on the portfolio gallery page."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1576
+msgid "Item titles are links?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1577
+msgid "Yes, item titles link to the portfolio posts."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1578
+msgid "No, item titles are not links."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1579
+msgid "This is referring to the title of portfolio items on the portfolio gallery page."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1584
+msgid "Show item descriptions?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1585
+msgid "Yes, show descriptions."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1587
+msgid "This is referring to the description of a portfolio item on the portfolio gallery page."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1592
+msgid "Show item \"Read More\" links?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1593
+msgid "Yes, show links."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1595
+msgid "This is referring to a \"Read More\" link that links to the portfolio item's post."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1600
+msgid "Media Player Color"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1601
+msgid "This is the color you'd like to apply to your audio and video players for self-hosted media in your portfolios."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1607
+msgid "Video Player Logo URL"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1608
+msgid "Enter the URL to the logo you'd like to show in the lower right corner of your self-hosted videos. Leave blank if you don't want one to show."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1614
+msgid "Video Player Logo Width"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1615
+msgid "Enter the width of your logo used in the previous option."
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1621
+msgid "Video Player Logo Height"
+msgstr ""
+
+#: ../stealth/includes/theme_options/general.php:1622
+msgid "Enter the height of your logo used in the previous option."
+msgstr ""
+
+#: ../stealth/includes/theme_options/help.php:33
+msgid "Don't you hate when you first install a premium WordPress theme and everything looks blank? You wonder why it doesn't look like that awesome live demo you saw before you bought it? Well, now your journey to setting up your site begins, and <a href=\"http://jasonbobich.com/theme_hints.php\">Jason's <em>Theme Hints</em></a> can help. When turned on, <em>Theme Hints</em> will help you setup your website by giving you little hints as you browse the front-end of your website that explain how different elements of your website are effected and where to edit them. Then, simply switch <em>Theme Hints</em> off when you're ready to go live to the world!"
+msgstr ""
+
+#: ../stealth/includes/theme_options/help.php:37
+msgid "Show Theme Hints?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/help.php:38
+msgid "When turned on, you can browse the front-end of your website and see clues on editing all the different areas of your site."
+msgstr ""
+
+#: ../stealth/includes/theme_options/help.php:42
+msgid "Yes, turn on Theme Hints."
+msgstr ""
+
+#: ../stealth/includes/theme_options/help.php:43
+msgid "No, turn them off."
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:33
+msgid "This theme includes a built-in SEO plugin, which is a part of the ThemeBlvd WordPress theme framework. These options will help you setup your site's search engine optimization by allowing you to customize your meta information and title tags. Additionally, you can edit title tags and meta information individually for pages and posts when you're working on them in their edit screens."
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:37
+msgid "Enable this theme's built-in SEO plugin?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:38
+msgid "Yes, enable ThemeBlvd SEO."
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:39
+msgid "No, disable it."
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:40
+msgid "If you're using a third-party SEO plugin, you should disable built-in SEO."
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:55
+msgid "These options will be used on your homepage. The keywords and descriptions will also be used on any other places within the theme that default meta information is needed, such as 404 pages, archives, etc."
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:59
+msgid "Homepage Title Tag"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:60
+msgid "Enter in the title as you'd like to be displayed. <a href='#"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:64
+msgid "<p>This is your homepage title that gets inserted within the &lt;title&gt; tag of your homepage's &lt;head&gt; section. It then gets displayed at the top of most web browsers when a user visits your site. It also, in most cases, gets used on a search engine results page when displaying your page as a result. It's also very important in determining what your website is about.</p><p>So, it's important to put a couple of your most important keywords here along with your site's name in a user-friendly, NON-spammy format.</p><p>&lt;title&gt;Your title ends up here&lt;/title&gt;</p><h4>Accepted title format macros for your homepage title</h4>%blog_title% - Your site title<br />%blog_description% - Your site description"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:67
+msgid "Homepage Meta Keywords"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:68
+msgid "Enter a comma-separated list of keywords you'd like to associate with your homepage. <br /><br /> Ex: keyword1, keyword2, keyword3 <br /><br /><a href='#"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:72
+msgid "<p>Meta keywords are words or phrases that you can use to describe your page or post. They definitely do not have the same impact on SEO that they did in the past, however they can still be helpful. According to <a href='http://www.mattcutts.com/blog/' target='_blank'>Matt Cutts</a>, head of Google's Webspam team, Google does not use meta keywords to determine rankings in their organic search results. However, many other search engines still do. So, it's a never a bad idea to include them.</p><p>&lt;meta name=&quot;keywords&quot; content=&quot;keyword1, keyword2, keyword3&quot; /&gt;</p>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:75
+msgid "Homepage Meta Description"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:76
+msgid "Enter a description you'd like to associate with your homepage. In most cases this is what gets displayed on a Search Engine results page. <br /><br /><a href='#"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:80
+msgid "<p>The meta description is a short paragraph that sums up what a particular page or post is about. Google and other search engines will often display this description in their search results. Without this snippet of text, generally, search engines will simply pull relevant chunks of text from your site to display.</p><p>&lt;meta name=&quot;description&quot; content=&quot;This is your SEO description of your site.&quot; /&gt;</p>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:92
+msgid "These are the titles that get inserted within the &lt;title&gt; tags in the &lt;head&gt; sections throughout your site. They then get displayed at the top of most web browsers when a user visits your site. Also, in most cases, they get used on search engine result pages when displaying your site as a result. They're also very important in how search engines determine what a particular page on your site is about. So, it's important to put a couple of your most important keywords in there along with your site's name in a user-friendly, NON-spammy format."
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:96
+msgid "Posts"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:97
+msgid "Enter the format you'd like the default titles of your Posts displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:101
+msgid "<h4>Accepted title format macros for Posts</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%post_title% - The original title of the post<br />%category_title% - The (main) category of the post<br />%category_slug% - Alias for %category_title%<br />%post_author_username% - This post's author login<br />%post_author_firstname% - This post's author first name<br />%post_author_lastname% - This post's author last name"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:105
+msgid "Enter the format you'd like the default titles of your Pages displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:109
+msgid "<h4>Accepted title format macros for Pages</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%page_title% - The original title of the page<br />%page_author_username% - This page's author login<br />%page_author_firstname% - This page's author first name<br />%page_author_lastname% - This page's author last name"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:113
+msgid "Enter the format you'd like the default titles of your Category pages displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:117
+msgid "<h4>Accepted title format macros for Category pages</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%category_title% - The original title of the category<br />%category_description% - The description of the category"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:121
+msgid "Enter the format you'd like the default titles of your portfolio item pages displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:125
+msgid "<h4>Accepted title format macros for Portfolio Items</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%item_title% - The original title of the portfolio item<br />%portfolio_title% - The (main) portfolio of the portfolio item<br />%portfolio_slug% - Alias for %portfolio_title%"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:129
+msgid "Enter the format you'd like the default titles of your portfolio pages displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:133
+msgid "<h4>Accepted title format macros for Portfolio pages</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%portfolio_title% - The original title of the portfolio<br />%portfolio_description% - The description of the category"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:136
+msgid "Archives"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:137
+msgid "Enter the format you'd like the default titles of your Archive pages displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:141
+msgid "<h4>Accepted title format macros for Archive pages</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%date% - The original archive title given by WordPess, e.g. '2010' or '2010 September'"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:144
+#: ../stealth/includes/theme_options/seo.php:152
+msgid "Tags"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:145
+msgid "Enter the format you'd like the default titles of your Tags pages displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:149
+msgid "<h4>Accepted title format macros for Tag pages</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%tag% - The name of the tag"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:153
+msgid "Enter the format you'd like the default titles of your Author pages displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:157
+msgid "<h4>Accepted title format macros for Author pages</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%author% - The public name of the author"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:160
+msgid "Search Results"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:161
+msgid "Enter the format you'd like the default titles of your Search Results pages displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:165
+msgid "<h4>Accepted title format macros for Search Results pages</h4>%blog_title% - Your site title<br />%blog_description% - Your site description<br />%search_term% - What was searched for"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:168
+msgid "404"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:169
+msgid "Enter the format you'd like the default titles of your 404 pages displayed as. <br /> <a href='#"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:173
+msgid "<h4>Accepted title format macros for 404 pages</h4>%blog_title% - Your site title<br />%blog_description% - Your site description"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:185
+msgid "Where would you like meta keywords to run?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:186
+msgid "Select the sections of the theme's front-end you'd like meta keywords to be inserted into the &lt;head&gt;. <br /><br /><a href='#"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:237
+msgid "<p>Meta keywords are words or phrases that you can use to describe your page or post. They definitely do not have the same impact on SEO that they did in the past, however they can still be helpful. According to <a href='http://www.mattcutts.com/blog/' target='_blank'>Matt Cutts</a>, head of Google's Webspam team, Google does not use meta keywords to determine rankings in their organic search results. However, many other search engines still do. So, it's a never a bad idea to include them.</p><p>&lt;meta name=&quot;keywords&quot; content=&quot;keyword1, keyword2, keyword3&quot; /&gt;</p> <ul><li><strong>Homepage:</strong> Meta keywords entered in the homepage SEO section will be used on your homepage if this option is checked.</li><li><strong>Pages:</strong> Meta keywords for pages are taken from the custom option you can put in when editing a page. If this is left blank, the keywords used in your homepage keyword list will be used. Check this option to activate this.</li><li><strong>Posts:</strong> Meta keywords for posts are taken from the custom option you can put in when editing a post. If this is left blank, the keywords used in your homepage keyword list will be used. Check this option to activate this.</li><li><strong>Categories:</strong> This option applies to category pages. The associated category name(s) and slug(s) are the keywords used.</li><li><strong>Portfolio Items:</strong> Meta keywords for portfolio items are taken from the custom option you can put in when editing a portfolio item. If this is left blank, the keywords used in your homepage keyword list will be used. Check this option to activate this.</li><li><strong>Portfolios:</strong> This option applies to portfolio pages (e.g. groups of portfolio items). Keywords returned are the name(s) and slug(s) of the associated portfolio.</li><li><strong>Archives:</strong> This option applies to archive pages. Keywords are taken from your homepage keyword list if this option is enabled.</li><li><strong>Tags:</strong> This option applies to tags pages. The associated tag is used as a single keyword.</li><li><strong>Author Pages:</strong> This option applies to pages of posts filtered by an author. The author's public name will be used as a single keyword.</li><li><strong>Search Results:</strong> This option applies to search result pages. Keywords are taken from the words searched for if this option is enabled.</li><li><strong>404 Page:</strong> This option applies to 404 pages (not found pages). Keywords are taken from your homepage keyword list if this option is enabled.</li></ul>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:249
+msgid "Where would you like meta descriptions to run?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:250
+msgid "Select the sections of the theme's front-end you'd like meta descriptions to be inserted into the &lt;head&gt;. <br /><br /><a href='#"
+msgstr ""
+
+#: ../stealth/includes/theme_options/seo.php:301
+msgid "<p>The meta description is a short paragraph that sums up what a particular page or post is about. Google and other search engines will often display this description in their search results. Without this snippet of text, generally, search engines will simply pull relevant chunks of text from your site to display.</p><p>&lt;meta name=&quot;description&quot; content=&quot;This is your SEO description of your site.&quot; /&gt;</p> <ul><li><strong>Homepage:</strong> The meta description entered in the homepage SEO section will be used on your homepage if this option is checked.</li><li><strong>Pages:</strong> The meta description for pages is taken from the custom option you can put in when editing a page. If this is left blank, the description used for your homepage description list will be used. Check this option to activate this.</li><li><strong>Posts:</strong>The meta description for posts is taken from the custom option you can put in when editing a post. If this is left blank, the description used for your homepage description will be used. Check this option to activate this.</li><li><strong>Categories:</strong> This option applies to category pages. The description is taken from the description entered when creating a category, and if it's left blank, the homepage description is used.</li><li><strong>Portfolio Items:</strong>The meta description for portfolio items is taken from the custom option you can put in when editing a portfolio item. If this is left blank, the description used for your homepage description will be used. Check this option to activate this.</li><li><strong>Portfolios:</strong> This option applies to portfolio pages (e.g. groups of portfolio items). The description is taken from the description entered when creating a portfolio, and if it's left blank, the homepage description is used.</li><li><strong>Archives:</strong> This option applies to archive pages. The description is taken from your homepage description if this option is enabled.</li><li><strong>Tags:</strong> This option applies to tags pages. The description is taken from your homepage description if this option is enabled.</li><li><strong>Author Pages:</strong> This option applies to pages of posts filtered by an author. The author's bio will be used for description and if that's blank, the homepage description will be used.</li><li><strong>Search Results:</strong> This option applies to search result pages. The description is taken from the words searched for if this option is enabled.</li><li><strong>404 Page:</strong> This option applies to 404 pages (not found pages). The description is taken from your homepage description if this option is enabled.</li></ul>"
+msgstr ""
+
+#: ../stealth/includes/theme_options/templates.php:33
+msgid "Exclude categories from blog page?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/templates.php:34
+msgid "Choose which categories you'd like not to show on your blog page."
+msgstr ""
+
+#: ../stealth/includes/theme_options/templates.php:40
+msgid "Show content or excerpts?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/templates.php:41
+msgid "Choose whether you want the full content of each post to show or just the excerpts."
+msgstr ""
+
+#: ../stealth/includes/theme_options/templates.php:42
+msgid "Show full content."
+msgstr ""
+
+#: ../stealth/includes/theme_options/templates.php:43
+msgid "Show only excerpts."
+msgstr ""
+
+#: ../stealth/includes/theme_options/templates.php:58
+msgid "Exclude categories from magazine page?"
+msgstr ""
+
+#: ../stealth/includes/theme_options/templates.php:59
+msgid "Choose which categories you'd like not to show on your magazine page."
+msgstr ""
+
+#: ../stealth/includes/theme_options/templates.php:78
+msgid "Enter the e-mail address where you would like to receive messages from this contact form."
+msgstr ""
+
+#: ../stealth/includes/theme_shortcodes/classic.php:47
+msgid "Posted on "
+msgstr ""
+
+#: ../stealth/includes/theme_shortcodes/media.php:37
+msgid "The URL you entered is not a .mp3 file."
+msgstr ""
+
+#: ../stealth/includes/theme_shortcodes/media.php:106
+msgid "You entered a video URL that isn't compatible with this shortcode."
+msgstr ""
+
+#: ../stealth/includes/theme_shortcodes/tinymce/dialog.php:23
+msgid "Shortcode Options"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_audio.php:38
+msgid "You forgot to enter a URL to your mp3 file."
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_audio.php:109
+msgid "Title:"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_audio.php:111
+msgid "Full URL to .mp3 file:"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_audio.php:112
+msgid "Example URL Format:"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_audio.php:115
+msgid "Auto start on page load?"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_audio.php:135
+msgid "Color:"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_audio.php:137
+msgid "Player Width:"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_audio.php:139
+msgid "Embed dimensions will be different from theme to theme depending on the size of your current theme's sidebar or widget area you're placing the audio player in. So, you may need to play around with the width."
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_audio.php:141
+msgid "Content Below Audio:"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_info_box.php:259
+msgid "Title"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_info_box.php:261
+msgid "Preset Icon"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_info_box.php:281
+msgid "Custom Icon URL"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_info_box.php:283
+msgid "Accepted URL Formats:"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_info_box.php:288
+msgid "Note: Entering a custom icon URL will overwrite preset selected icon above."
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_info_box.php:291
+msgid "Description"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_info_box.php:295
+msgid "Button URL"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_simple_contact.php:170
+msgid "Get in Touch"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_twitter.php:78
+msgid "Latest Tweets"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_twitter.php:78
+msgid "jasonbobich"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_twitter.php:78
+msgid "5"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_twitter.php:78
+msgid "Follow Us!"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_video.php:39
+msgid "You forgot to enter a video URL."
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_video.php:127
+msgid "You entered a video URL that isn't compatible with this widget."
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_video.php:178
+msgid "General Options"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_video.php:182
+msgid "Video URL"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_video.php:190
+msgid "Custom Width"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_video.php:192
+msgid "Custom Height"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_video.php:194
+msgid "Embed dimensions will be different from theme to theme depending on the size of your current theme's sidebar or widget area you're placing the video in. So, you may need to play around with the dimensions a bit."
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_video.php:196
+msgid "Content Below Video"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_video.php:198
+msgid "Self-Hosted Options"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_video.php:200
+msgid "These options only apply if you're entering in a URL for a self-hosted video file."
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_video.php:202
+msgid "Start Image"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_video.php:208
+msgid "Player Color"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_video.php:210
+msgid "Logo Watermark URL (optional)"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_video.php:212
+msgid "Logo Width"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widget_video.php:214
+msgid "Logo Height"
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widgets.php:37
+msgid "These widgets will get shown in the sidebar of all Posts and blog-related pages."
+msgstr ""
+
+#: ../stealth/includes/theme_widgets/widgets.php:47
+msgid "These widget will get shown in the sidebar on all 2-column \"Pages\" that are NOT posts or blog-related things."
+msgstr ""
+
+#: ../twentyten/404.php:16
+msgid "Not Found"
+msgstr ""
+
+#: ../twentyten/404.php:18
+msgid "Apologies, but the page you requested could not be found. Perhaps searching will help."
+msgstr ""
+
+#: ../twentyten/archive.php:33
+#, php-format
+msgid "Daily Archives: <span>%s</span>"
+msgstr ""
+
+#: ../twentyten/archive.php:35
+#, php-format
+msgid "Monthly Archives: <span>%s</span>"
+msgstr ""
+
+#: ../twentyten/archive.php:37
+#, php-format
+msgid "Yearly Archives: <span>%s</span>"
+msgstr ""
+
+#: ../twentyten/author.php:27
+#, php-format
+msgid "Author Archives: %s"
+msgstr ""
+
+#: ../twentyten/author.php:37
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: ../twentyten/category.php:16
+#, php-format
+msgid "Category Archives: %s"
+msgstr ""
+
+#: ../twentyten/comments.php:18
+msgid "This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: ../twentyten/comments.php:41
+#: ../twentyten/comments.php:60
+msgid "<span class=\"meta-nav\">&larr;</span> Older Comments"
+msgstr ""
+
+#: ../twentyten/comments.php:42
+#: ../twentyten/comments.php:61
+msgid "Newer Comments <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../twentyten/comments.php:72
+msgid "Comments are closed."
+msgstr ""
+
+#: ../twentyten/footer.php:33
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: ../twentyten/footer.php:33
+#, php-format
+msgid "Proudly powered by %s."
+msgstr ""
+
+#: ../twentyten/functions.php:140
+msgid "Berries"
+msgstr ""
+
+#: ../twentyten/functions.php:146
+msgid "Cherry Blossoms"
+msgstr ""
+
+#: ../twentyten/functions.php:152
+msgid "Concave"
+msgstr ""
+
+#: ../twentyten/functions.php:158
+msgid "Fern"
+msgstr ""
+
+#: ../twentyten/functions.php:164
+msgid "Forest Floor"
+msgstr ""
+
+#: ../twentyten/functions.php:170
+msgid "Inkwell"
+msgstr ""
+
+#: ../twentyten/functions.php:176
+msgid "Path"
+msgstr ""
+
+#: ../twentyten/functions.php:182
+msgid "Sunset"
+msgstr ""
+
+#: ../twentyten/functions.php:248
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../twentyten/functions.php:330
+#, php-format
+msgid "%s <span class=\"says\">says:</span>"
+msgstr ""
+
+#: ../twentyten/functions.php:333
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../twentyten/functions.php:340
+#, php-format
+msgid "%1$s at %2$s"
+msgstr ""
+
+#: ../twentyten/functions.php:340
+#: ../twentyten/functions.php:357
+msgid "(Edit)"
+msgstr ""
+
+#: ../twentyten/functions.php:357
+msgid "Pingback:"
+msgstr ""
+
+#: ../twentyten/functions.php:376
+msgid "Primary Widget Area"
+msgstr ""
+
+#: ../twentyten/functions.php:378
+msgid "The primary widget area"
+msgstr ""
+
+#: ../twentyten/functions.php:387
+msgid "Secondary Widget Area"
+msgstr ""
+
+#: ../twentyten/functions.php:389
+msgid "The secondary widget area"
+msgstr ""
+
+#: ../twentyten/functions.php:398
+msgid "First Footer Widget Area"
+msgstr ""
+
+#: ../twentyten/functions.php:400
+msgid "The first footer widget area"
+msgstr ""
+
+#: ../twentyten/functions.php:409
+msgid "Second Footer Widget Area"
+msgstr ""
+
+#: ../twentyten/functions.php:411
+msgid "The second footer widget area"
+msgstr ""
+
+#: ../twentyten/functions.php:420
+msgid "Third Footer Widget Area"
+msgstr ""
+
+#: ../twentyten/functions.php:422
+msgid "The third footer widget area"
+msgstr ""
+
+#: ../twentyten/functions.php:431
+msgid "Fourth Footer Widget Area"
+msgstr ""
+
+#: ../twentyten/functions.php:433
+msgid "The fourth footer widget area"
+msgstr ""
+
+#: ../twentyten/functions.php:467
+#, php-format
+msgid "<span class=\"%1$s\">Posted on</span> %2$s <span class=\"meta-sep\">by</span> %3$s"
+msgstr ""
+
+#: ../twentyten/functions.php:493
+#, php-format
+msgid "This entry was posted in %1$s and tagged %2$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../twentyten/functions.php:495
+#, php-format
+msgid "This entry was posted in %1$s. Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../twentyten/functions.php:497
+#, php-format
+msgid "Bookmark the <a href=\"%3$s\" title=\"Permalink to %4$s\" rel=\"bookmark\">permalink</a>."
+msgstr ""
+
+#: ../twentyten/header.php:33
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../twentyten/header.php:83
+msgid "Skip to content"
+msgstr ""
+
+#: ../twentyten/loop-attachment.php:21
+#, php-format
+msgid "Return to %s"
+msgstr ""
+
+#: ../twentyten/loop-attachment.php:23
+#, php-format
+msgid "<span class=\"meta-nav\">&larr;</span> %s"
+msgstr ""
+
+#: ../twentyten/loop-attachment.php:32
+#, php-format
+msgid "<span class=\"%1$s\">By</span> %2$s"
+msgstr ""
+
+#: ../twentyten/loop-attachment.php:43
+#, php-format
+msgid "<span class=\"%1$s\">Published</span> %2$s"
+msgstr ""
+
+#: ../twentyten/loop-attachment.php:53
+#, php-format
+msgid "Full size is %s pixels"
+msgstr ""
+
+#: ../twentyten/loop-attachment.php:56
+msgid "Link to full-size image"
+msgstr ""
+
+#: ../twentyten/loop-attachment.php:105
+#: ../twentyten/loop-page.php:29
+#: ../twentyten/loop-single.php:34
+#: ../twentyten/loop.php:144
+msgid "Pages:"
+msgstr ""
+
+#: ../twentyten/loop-single.php:47
+#, php-format
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../twentyten/loop.php:25
+#: ../twentyten/loop.php:178
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr ""
+
+#: ../twentyten/loop.php:26
+#: ../twentyten/loop.php:179
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr ""
+
+#: ../twentyten/loop.php:35
+msgid "Apologies, but no results were found for the requested archive. Perhaps searching will help find a related post."
+msgstr ""
+
+#: ../twentyten/loop.php:93
+#: ../twentyten/loop.php:96
+msgid "More Galleries"
+msgstr ""
+
+#: ../twentyten/loop.php:99
+#: ../twentyten/loop.php:122
+#: ../twentyten/loop.php:164
+msgid "Leave a comment"
+msgstr ""
+
+#: ../twentyten/loop.php:151
+#, php-format
+msgid "<span class=\"%1$s\">Posted in</span> %2$s"
+msgstr ""
+
+#: ../twentyten/loop.php:160
+#, php-format
+msgid "<span class=\"%1$s\">Tagged</span> %2$s"
+msgstr ""
+
+#: ../twentyten/search.php:16
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../twentyten/search.php:26
+msgid "Nothing Found"
+msgstr ""
+
+#: ../twentyten/search.php:28
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr ""
+
+#: ../twentyten/sidebar.php:34
+msgid "Meta"
+msgstr ""
+
+#: ../twentyten/tag.php:16
+#, php-format
+msgid "Tag Archives: %s"
+msgstr ""
+

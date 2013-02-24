@@ -4,15 +4,12 @@
 
     <div class="content">
 
-        <?php if($themeblvd_breadcrumbs == 'true') : ?>
-            <?php if($themeblvd_theme_hints == 'true') : ?>
-                <?php echo themeblvd_theme_hints('breadcrumbs'); ?>
-            <?php endif; ?>
-            <div id="breadcrumbs">
-                <?php themeblvd_breadcrumbs(); ?>
-            </div><!-- #breadcrumbs (end) -->
-        <?php endif; ?>
-
+        <?php themeblvd_breadcrumbs(); ?>
+		
+		<?php if($themeblvd_sidebar == 'left') : ?>
+			<?php get_sidebar(); ?>	
+		<?php endif; ?>
+		
         <div id="content">
 
             <?php if($themeblvd_theme_hints == 'true') : ?>
@@ -21,25 +18,27 @@
 
             <?php if($themeblvd_archive_title == 'true') : ?>
             <h1>
-                <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
-                <?php /* If this is a category archive */ if (is_category()) { ?>
-                Category: <?php single_cat_title(); ?>
-                <?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
-                Tag: <?php single_tag_title(); ?>
-                <?php /* If this is a daily archive */ } elseif (is_day()) { ?>
-                Archive: <?php the_time('F jS, Y'); ?>
-                <?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
-                Archive: <?php the_time('F, Y'); ?>
-                <?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
-                Archive: <?php the_time('Y'); ?>
-                <?php /* If this is an author archive */ } elseif (is_author()) { ?>
-                Author Archive
-                <?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
-                Blog Archives
-                <?php } ?>
-            </h1>
+		        <?php if (have_posts()) : ?>
+			        <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
+			        <?php /* If this is a category archive */ if (is_category()) { ?>
+			        <?php _e('Category', "themeblvd"); ?>: <?php single_cat_title(); ?>
+			        <?php /* If this is a tag archive */ } elseif( is_tag() ) { ?>
+			        <?php _e('Tag', "themeblvd"); ?>: <?php single_tag_title(); ?>
+			        <?php /* If this is a daily archive */ } elseif (is_day()) { ?>
+			        <?php _e('Archive', "themeblvd"); ?>: <?php the_time('F jS, Y'); ?>
+			        <?php /* If this is a monthly archive */ } elseif (is_month()) { ?>
+			        <?php _e('Archive', "themeblvd"); ?>: <?php the_time('F, Y'); ?>
+			        <?php /* If this is a yearly archive */ } elseif (is_year()) { ?>
+			        <?php _e('Archive', "themeblvd"); ?>: <?php the_time('Y'); ?>
+			        <?php /* If this is an author archive */ } elseif (is_author()) { ?>
+			        <?php _e('Author Archive', "themeblvd"); ?>
+			        <?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
+			        <?php _e('Blog Archives', "themeblvd"); ?>
+		    		<?php } ?>
+		    	<?php endif; ?>
+		    </h1>
             <?php endif; ?>
-
+			
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
             <div class="entry">
@@ -101,12 +100,10 @@
             <?php endif; ?>
 
         </div><!-- #content (end) -->
-
-        <div id="sidebar">
-
-            <?php get_sidebar(); ?>
-
-        </div><!-- #sidebar (end) -->
+        
+        <?php if($themeblvd_sidebar == 'right') : ?>
+			<?php get_sidebar(); ?>	
+		<?php endif; ?>
 
         <div class="clear"></div>
 

@@ -1,11 +1,12 @@
 <?php
 //Globals
+global $themeblvd_footer_columns;
 global $themeblvd_copyright;
 global $themeblvd_theme_hints;
 global $themeblvd_analytics;
 ?>
 
-<div id="footer-top"><!-- --></div>
+	<div id="footer-top"><!-- --></div>
 
     <div id="footer">
 
@@ -17,9 +18,11 @@ global $themeblvd_analytics;
 
             <div id="footer-boxes">
 
-                <!-- Footer Widget Area -->
+                <!-- Footer Widgets (start) -->
 
-                <?php if ( is_sidebar_active('footer-area') ) { dynamic_sidebar('footer-area'); } ?>
+				<?php themeblvd_widget_columns_display("footer", $themeblvd_footer_columns); ?>
+			
+				<!-- Footer Widgets (end) -->
 
                 <div class="clear"></div>
 
@@ -43,7 +46,7 @@ global $themeblvd_analytics;
 
 <?php wp_footer(); ?>
 
-<?php echo $themeblvd_analytics; ?>
+<?php echo stripslashes($themeblvd_analytics); ?>
 
 </body>
 </html>

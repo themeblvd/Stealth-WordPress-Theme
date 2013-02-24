@@ -8,33 +8,56 @@
  * @author  Jason Bobich
  *
  */
-function slideshow_shortcode($atts, $content = null) {
+ 
+##############################################################
+# Anything Slider
+##############################################################
 
-    extract(shortcode_atts(
-        array(
-            'category' => '',
-            'size' => 'small',
+function shortcode_slideshow($atts, $content = null) {
+
+    extract(shortcode_atts(array(
+    		'category' => '',
             'effect' => 'fade',
-            'autoheight' => 'false',
-            'speed' => '3'
+            'speed' => '5',
+            'color' => '000000',
+            'width' => '640',
+            'height' => ''
     ), $atts));
 
-    //Run Slideshow
-    $slideshow_options = array (
-        'slideshow' => $category,
-        'size' => 'slideshow-'.$size,
-        'transition' => $effect,
-        'height' => $autoheight,
-        'speed' => $speed
-    );
-
-    $output = '<div class="slideshow-wrapper">';
-    $output .= stealth_slideshow($slideshow_options);
-    $output .= '</div><!-- .slideshow-wrapper (end) -->';
+    $output = stealth_slideshow($category, $effect, $speed, $color, $width, $height, $arrows = null);
 
     return $output;
-
+    
 }
 
-add_shortcode('slideshow', 'slideshow_shortcode');
+add_shortcode('slideshow', 'shortcode_slideshow');
+
+##############################################################
+# Nivo Slider
+##############################################################
+
+//No Nivo plugin attached to Stealth
+
+/*
+function shortcode_nivo($atts, $content = null) {
+
+    extract(shortcode_atts(array(
+    		'category' => '',
+            'effect' => 'random',
+            'speed' => '5',
+            'slices' => '15',
+            'color' => '000000',
+            'width' => '560',
+            'height' => '250'
+    ), $atts));
+
+    $output = alyeska_nivo($category, $effect, $speed, $slices, $color, $width, $height);
+
+    return $output;
+    
+}
+
+add_shortcode('nivo', 'shortcode_nivo');
+*/
+
 ?>

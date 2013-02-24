@@ -9,16 +9,11 @@ Template Name: Archives
 <div id="main">
 
     <div class="content">
-
-        <?php if($themeblvd_breadcrumbs == 'true') : ?>
-            <?php if($themeblvd_theme_hints == 'true') : ?>
-                <?php echo themeblvd_theme_hints('breadcrumbs'); ?>
-            <?php endif; ?>
-            <div id="breadcrumbs">
-                <?php themeblvd_breadcrumbs(); ?>
-            </div><!-- #breadcrumbs (end) -->
-        <?php endif; ?>
-
+		
+		<?php if($themeblvd_sidebar == 'left') : ?>
+			<?php get_sidebar(); ?>	
+		<?php endif; ?>
+		
         <div id="content">
 
             <?php if($themeblvd_theme_hints == 'true') : ?>
@@ -26,8 +21,12 @@ Template Name: Archives
             <?php endif; ?>
 
             <?php the_post(); ?>
+            
+            <?php themeblvd_breadcrumbs(); ?>
 
-            <h1><?php the_title(); ?></h1>
+            <?php if( get_post_meta($post->ID, 'themeblvd_pagetitle', true) != 'false' ) : ?>
+			<h1><?php the_title(); ?></h1>
+			<?php endif; ?>
 
             <div class="content sitemap">
 
@@ -58,13 +57,10 @@ Template Name: Archives
             </div><!-- .content (end) -->
 
         </div><!-- #content (end) -->
-
-        <div id="sidebar">
-
-            <?php $wp_query->is_page = true; ?>
-            <?php get_sidebar(); ?>
-
-        </div><!-- #sidebar (end) -->
+        
+        <?php if($themeblvd_sidebar == 'right') : ?>
+			<?php get_sidebar(); ?>	
+		<?php endif; ?>
 
         <div class="clear"></div>
 

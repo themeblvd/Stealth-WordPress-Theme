@@ -1,8 +1,14 @@
 <?php
-
-#################################################################
-# Tabs Widget
-#################################################################
+/**
+ *
+ * ThemeBlvd Tabs Widget
+ *
+ * This widget displays a basic
+ * set of jQuery tabs.
+ *
+ * @author  Jason Bobich
+ *
+ */
 
 class Themeblvd_Tabs extends WP_Widget {
 
@@ -21,37 +27,37 @@ class Themeblvd_Tabs extends WP_Widget {
 
         $tab_titles = array();
 
-        if( isset($instance['tab1-title']) ){
+        if( isset($instance['tab1-title']) && $instance['tab1-title']  ){
             $tab_titles[] = $instance['tab1-title'];
         }
 
-        if( isset($instance['tab2-title']) ){
+        if( isset($instance['tab2-title']) && $instance['tab2-title']  ){
             $tab_titles[] = $instance['tab2-title'];
         }
 
-        if( isset($instance['tab3-title']) ){
+        if( isset($instance['tab3-title']) && $instance['tab3-title']  ){
             $tab_titles[] = $instance['tab3-title'];
         }
 
-        if( isset($instance['tab4-title']) ){
+        if( isset($instance['tab4-title']) && $instance['tab4-title'] ){
             $tab_titles[] = $instance['tab4-title'];
         }
 
         $tab_contents = array();
 
-        if( isset($instance['tab1-content']) ){
+        if( isset($instance['tab1-content']) && $instance['tab1-content']  ){
             $tab_contents[] = $instance['tab1-content'];
         }
 
-        if( isset($instance['tab2-content']) ){
+        if( isset($instance['tab2-content']) && $instance['tab2-content']  ){
             $tab_contents[] = $instance['tab2-content'];
         }
 
-        if( isset($instance['tab3-content']) ){
+        if( isset($instance['tab3-content']) && $instance['tab3-content']  ){
             $tab_contents[] = $instance['tab3-content'];
         }
 
-        if( isset($instance['tab4-content']) ){
+        if( isset($instance['tab4-content']) && $instance['tab4-content']  ){
             $tab_contents[] = $instance['tab4-content'];
         }
 
@@ -151,7 +157,11 @@ class Themeblvd_Tabs extends WP_Widget {
         
         <?php
         }
-}
+        
+##################################################################
+} # end Themeblvd_Tabs class extend
+##################################################################
+
 register_widget('Themeblvd_Tabs');
 
 ?>

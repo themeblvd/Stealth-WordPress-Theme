@@ -153,7 +153,11 @@ class themeblvd_Recent_Posts extends WP_Widget {
 					
 <?php
     }
-}
+
+##################################################################
+} # end Themeblvd_Recent_Posts class extend
+##################################################################
+
 register_widget('themeblvd_Recent_Posts');
 
 ?>

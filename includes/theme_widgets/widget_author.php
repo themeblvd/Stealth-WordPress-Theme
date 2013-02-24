@@ -126,7 +126,10 @@ class Themeblvd_Author extends WP_Widget {
 
         <?php
         }
-}
+
+##################################################################
+} # end Themeblvd_Author class extend
+##################################################################
 
 register_widget('Themeblvd_Author');
 

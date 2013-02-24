@@ -29,11 +29,8 @@ register_post_type('portfolio-item', array(
     'capability_type' => 'page',
     'hierarchical' => false,
     'supports' => array('title', 'excerpt', 'editor', 'thumbnail', 'comments'), // Let's use custom fields for debugging purposes only
-    'menu_icon' => get_bloginfo('template_url') . '/framework/theme_options/layout/images/icon_portfolio.png'
+    'menu_icon' => get_template_directory_uri() . '/framework/layout/images/icon_portfolio.png'
 ));
-
-add_filter("manage_edit-portfolio-item_columns", "edit_columns");
-add_action("manage_posts_custom_column", "custom_columns");
 
 ##############################################################
 # Register associated taxonomies
@@ -130,6 +127,9 @@ function custom_columns($column){
 
     }
 }
+
+add_filter("manage_edit-portfolio-item_columns", "edit_columns");
+add_action("manage_posts_custom_column", "custom_columns");
 
 ##############################################################
 # Define metabox

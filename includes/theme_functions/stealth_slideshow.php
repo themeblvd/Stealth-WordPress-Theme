@@ -12,45 +12,99 @@
  *
  */
 
-function stealth_slideshow($options) {
-
+function stealth_slideshow($category, $effect, $speed, $color, $width, $height, $arrows) {
+	
     //Innitiate $output
     $output = '';
 
-    //Theme Hints
-    global $themeblvd_theme_hints;
-    if($themeblvd_theme_hints == 'true'){
-        $output .= themeblvd_theme_hints('slideshow');
-    }
+    //Create unique ID
+	$id = mt_rand();
+	
+	//Set autoplay duration
+	if($speed != '0'){
+		$speed .= '000';
+	}
+	
+	//Set description color
+	if( !$color ){
+	
+		$color = '000000';
+	
+	}
+	
+	//Set width/height
+	if(!$width && !$height){
 
-    $slideshow = $options['slideshow'];
-    $size = $options['size'];
-    $transition = $options['transition'];
-    $height = $options['height'];
-    $speed = $options['speed'];
-    $arrows = $options['arrows'];
-
-    $id = mt_rand();
-
-    if($speed != '0'){
-       $speed = $speed.'000';
-    }
-
-    if($slideshow != 'all'){
-        $slideshowString = "&slideshows=".$slideshow;
+		$dimensions = "";
+	
+	} else {
+		
+		$dimensions = ' style="';
+		
+		if($width){
+			
+			$dimensions .= 'width:'.$width.'px;';
+			
+		}
+		
+		if($height){
+		
+			$dimensions .= 'height:'.$height.'px;';
+		
+		}
+		
+		$dimensions .= '"';
+		
+	}
+	
+	//Set size
+	if( isset($width) && $width == '640' ){
+		
+		$size = 'slideshow-small';
+		
+	} elseif(isset($width) && $width == '930' ){
+	
+		$size = 'slideshow-large';
+	
+	}
+	
+    if($category){
+        $slideshowString = "&slideshows=".$category;
     }
     
-    $slideshow_query = new WP_Query('post_type=slide&order=ASC&orderby=menu_order&nopaging=true'.$slideshowString);
+    if( isset($slideshowString) ) {
+    	
+    	$slideshow_query = new WP_Query('post_type=slide&order=ASC&orderby=menu_order&nopaging=true'.$slideshowString);
+    	
+    } else {
+    	
+    	$slideshow_query = new WP_Query('post_type=slide&order=ASC&orderby=menu_order&nopaging=true');
+    	
+    }
 
     if($slideshow_query->have_posts()) {
-
-        $output .= '<script type="text/javascript">';
-        $output .= 'runSlideshow("'.$id.'", "'.$transition.'", "'.$height.'", '.$speed.' );';
-        $output .= '</script>';
+        
+        $output .= '<script>'."\n";
+		$output .= '	jQuery.noConflict()(function($){'."\n";
+		$output .= '		$(document).ready(function() {'."\n";
+		$output .= '			$("#'.$id.' .slideshow").cycle({'."\n";
+		$output .= '				fx: "'.$effect.'",'."\n";
+		$output .= '				timeout: '.$speed.','."\n";
+		$output .= '				pager: "#'.$id.' .slideshow-nav-inner",'."\n";
+		$output .= '				next: ".slide-next",'."\n";
+		$output .= '				prev: ".slide-prev",'."\n";
+		$output .= '				pagerAnchorBuilder: paginate,'."\n";
+		$output .= '				speed: "2000",'."\n";
+		$output .= '				pause: 1,'."\n";
+		$output .= '				easing: "easeInOutQuint"'."\n";
+		$output .= '			});'."\n";
+		$output .= '		});'."\n";
+		$output .= '	});'."\n";
+		$output .= '</script>'."\n";
 
         $output .= '<div id="'.$id.'">';
 
-        if($arrows == 'true'){
+        if( isset($arrows) && $arrows == 'true'){
             $output .= '<a href="#" title="Next" class="slide-next">Next</a>';
             $output .= '<a href="#" title="Previous" class="slide-prev">Previous</a>';
         }
@@ -72,12 +126,17 @@ function stealth_slideshow($options) {
                         $output .= '<a href="'.get_post_meta($post->ID, 'themeblvd_slide_link', true).'" title="'.get_the_title().'" style="display:block;">';
                     }
 
-                    if ( has_post_thumbnail() ) {
-                       $output .= get_the_post_thumbnail($post->ID, $size);
+                     if ( has_post_thumbnail() ) {
+                    	if( isset($size) ){
+                    		$output .= get_the_post_thumbnail($post->ID, $size);
+                    	} else {
+                    		$output .= get_the_post_thumbnail($post->ID);
+                    	}
                     }
 
                     if( get_post_meta($post->ID, 'themeblvd_slide_description', true) ){
-                        $output .= '<div class="description">';
+                    
+                    	$output .= '<div class="description" style="background-color: #'.$color.';">';
                             $output .= '<div class="pad">';
                                 $output .= get_post_meta($post->ID, 'themeblvd_slide_description', true);
                             $output .= '</div><!-- .pad (end) -->';
@@ -115,6 +174,6 @@ function stealth_slideshow($options) {
     return $output;
 
 ##################################################################
-} # end get_stealth_slideshow function
+} # end stealth_slideshow function
 ##################################################################
 ?>

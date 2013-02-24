@@ -197,7 +197,11 @@ class themeblvd_Simple_Contact extends WP_Widget {
 <?php
 
             }
-}
+            
+##################################################################
+} # end Themeblvd_Simple_Contact class extend
+##################################################################
+
 register_widget('themeblvd_Simple_Contact');
 
 ?>

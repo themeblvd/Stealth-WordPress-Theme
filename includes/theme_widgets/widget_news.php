@@ -158,7 +158,11 @@ class themeblvd_Recent_News extends WP_Widget {
 					
 <?php
     }
-}
+    
+##################################################################
+} # end Themeblvd_Recent New class extend
+##################################################################
+
 register_widget('themeblvd_Recent_News');
 
 ?>

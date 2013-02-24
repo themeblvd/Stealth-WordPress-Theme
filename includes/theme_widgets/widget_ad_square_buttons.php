@@ -1,7 +1,7 @@
 <?php 
 /**
  *
- * ThemeBlvd Ads - Square buttons (125x125)
+ * ThemeBlvd Ads Widget - Square buttons (125x125)
  *
  * This widget shows a simple display of
  * advertisements for your blog sidebar.
@@ -10,9 +10,9 @@
  *
  */
 
-class themeblvd_Ads_Square_Buttons extends WP_Widget {
+class Themeblvd_Ads_Square_Buttons extends WP_Widget {
 
-    function themeblvd_Ads_Square_Buttons() {
+    function Themeblvd_Ads_Square_Buttons() {
 
         $widget_ops = array('classname' => 'ad_square_buttons', 'description' => 'Declare up to six 125x125 advertisements to be displayed in a grid.' );
         $this->WP_Widget('square_buttons_ads', 'ThemeBlvd Ads - Square Buttons', $widget_ops);
@@ -201,7 +201,10 @@ class themeblvd_Ads_Square_Buttons extends WP_Widget {
             </div>
 <?php
     }
-}
-register_widget('themeblvd_Ads_Square_Buttons');
+##################################################################
+} # end Themeblvd_Ads_Square_Buttons class extend
+##################################################################
+
+register_widget('Themeblvd_Ads_Square_Buttons');
 
 ?>

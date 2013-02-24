@@ -1,9 +1,9 @@
 <?php
 /**
  *
- * FlipBlog Shortcodes
+ * Stealth Shortcodes
  *
- * The classics... lovin' the classics!
+ * Media shorcodes (audio, video, etc.)
  *
  * @author  Jason Bobich
  *
@@ -22,7 +22,7 @@ function shortcode_audio($atts, $content = null) {
         'color' => '000000'
     ), $atts));
     
-    $template_url = get_bloginfo('template_url');
+    $template_url = get_template_directory_uri();
     $id = mt_rand();
     $mp3 = strpos($file, ".mp3");
 
@@ -30,7 +30,7 @@ function shortcode_audio($atts, $content = null) {
 
     if($mp3 !== false){
         
-        $output .= themeblvd_audio($file, $autostart, $color);
+        $output .= themeblvd_audio($file, $autostart, $color, $width);
 
     } else {
 
@@ -64,7 +64,7 @@ function shortcode_video($atts, $content = null) {
         'logo_height' => '40'
     ), $atts));
 
-    $template_url = get_bloginfo('template_url');
+    $template_url = get_template_directory_uri();
 
     $video_url = $file;
 

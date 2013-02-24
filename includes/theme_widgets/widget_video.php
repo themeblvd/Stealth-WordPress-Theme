@@ -1,8 +1,15 @@
 <?php
-
-#################################################################
-# Video Widget
-#################################################################
+/**
+ *
+ * ThemeBlvd Video Widget
+ *
+ * This widget displays a video file
+ * in the custom flash video player,
+ * from vimeo, or from youtube.
+ *
+ * @author  Jason Bobich
+ *
+ */
 
 class Themeblvd_Video extends WP_Widget {
 
@@ -19,8 +26,7 @@ class Themeblvd_Video extends WP_Widget {
         echo $before_widget;
 
         //Template URL
-        $template_url = get_bloginfo('template_url');
-
+        $template_url = get_template_directory_uri();
 
         if(isset( $instance['title']) ) {
             echo $before_title . $instance['title'] . $after_title;
@@ -184,7 +190,9 @@ class Themeblvd_Video extends WP_Widget {
         <p><label for="<?php echo $this->get_field_id('width'); ?>"><?php _e("Custom Width", "themeblvd"); ?> <input class="widefat" id="<?php echo $this->get_field_id('width'); ?>" name="<?php echo $this->get_field_name('width'); ?>" type="text" value="<?php if( isset($instance['width']) ) echo $instance['width']; ?>" /></label></p>
 
         <p><label for="<?php echo $this->get_field_id('height'); ?>"><?php _e("Custom Height", "themeblvd"); ?> <input class="widefat" id="<?php echo $this->get_field_id('height'); ?>" name="<?php echo $this->get_field_name('height'); ?>" type="text" value="<?php if( isset($instance['height']) ) echo $instance['height']; ?>" /></label></p>
-
+		
+		<p style="font-size:9px"><?php _e("Embed dimensions will be different from theme to theme depending on the size of your current theme's sidebar or widget area you're placing the video in. So, you may need to play around with the dimensions a bit.", "themeblvd"); ?></p>
+		
         <p><label for="<?php echo $this->get_field_id('content'); ?>"><?php _e("Content Below Video", "themeblvd"); ?> <textarea class="widefat" id="<?php echo $this->get_field_id('content'); ?>" name="<?php echo $this->get_field_name('content'); ?>"><?php if( isset($instance['content']) ) echo $instance['content']; ?></textarea></label></p>
 
         <h3><?php _e("Self-Hosted Options", "themeblvd"); ?></h3>
@@ -207,7 +215,10 @@ class Themeblvd_Video extends WP_Widget {
 
         <?php
     }
-}
+    
+##################################################################
+} # end Themeblvd_Video class extend
+##################################################################
 
 register_widget('Themeblvd_Video');
 

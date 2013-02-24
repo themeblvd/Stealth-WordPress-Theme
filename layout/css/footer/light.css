@@ -1,0 +1,35 @@
+/* BODY */
+
+body {
+    background: #f7f7f7;
+}
+
+/* FOOTER */
+
+#footer {
+    background-color: #f7f7f7;
+    background-image: url(../../images/style/light/footer-bg.jpg);
+}
+
+#footer-boxes {
+    color: #121212;
+    text-shadow: 0 1px 0 #ffffff;
+}
+
+#footer-boxes a:hover {
+    color: #000000;
+}
+
+/* COPYRIGHT */
+
+#copyright .menu li {
+    border-left: 1px solid #666666;
+}
+
+#copyright .menu li a {
+    color: #666666;
+}
+
+#copyright .menu li a:hover {
+    color: #000000;
+}

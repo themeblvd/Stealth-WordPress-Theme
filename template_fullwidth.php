@@ -10,14 +10,7 @@ Template Name: Full Width Page
 		
     <div class="content">
 
-        <?php if($themeblvd_breadcrumbs == 'true') : ?>
-            <?php if($themeblvd_theme_hints == 'true') : ?>
-                <?php echo themeblvd_theme_hints('breadcrumbs'); ?>
-            <?php endif; ?>
-            <div id="breadcrumbs">
-                <?php themeblvd_breadcrumbs(); ?>
-            </div><!-- #breadcrumbs (end) -->
-        <?php endif; ?>
+        <?php themeblvd_breadcrumbs(); ?>
 
         <div id="full-width-content">
 
@@ -27,7 +20,9 @@ Template Name: Full Width Page
 
             <?php the_post(); ?>
 
-            <h1><?php the_title(); ?></h1>
+            <?php if( get_post_meta($post->ID, 'themeblvd_pagetitle', true) != 'false' ) : ?>
+			<h1><?php the_title(); ?></h1>
+			<?php endif; ?>
 
             <div class="content">
 

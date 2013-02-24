@@ -74,6 +74,7 @@
     -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
     display: block;
+    margin: 0 0 12px 0;
     padding: 5px;
 }
 
@@ -81,7 +82,7 @@
     display: block;
 }
 
-img.pretty {
+.pretty {
     background-color: #f5f5f5;
     background: -moz-linear-gradient(bottom, #F2F2F2 0px, #fff 100%);
     background: -webkit-gradient(linear,left bottom,left top, color-stop(0, #f2f2f2),color-stop(1, #fff));
@@ -94,6 +95,20 @@ img.pretty {
     -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .2);
     padding: 5px;
     display: block;
+}
+
+.text-highlight {
+    background-color: #FFFFAA;
+    padding: 3px 2px;
+}
+
+.dropcap {
+    float: left;
+    font-size: 300%;
+    font-weight: bold;
+    line-height: 100%;
+    margin: 5px 7px 0 0;
+    position: relative;
 }
 
 /* GENERAL TYPOGRAPHY */

@@ -18,6 +18,7 @@ include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_ad_square_buttons.ph
 include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_audio.php");
 include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_author.php");
 include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_feedback.php");
+include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_info_box.php");
 include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_news.php");
 include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_recent_posts.php");
 include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_simple_contact.php");
@@ -37,85 +38,64 @@ $blog_sidebar = array (
 	'id' => 'blog-sidebar',
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h2>',
+	'before_title' => '<h3>',
 	'after_title' => '</h2>'
 );
 
-$pages_sidebar = array (
+$page_sidebar = array (
 	'name' => 'Page Sidebar',
 	'description' => __('These widget will get shown in the sidebar on all 2-column "Pages" that are NOT posts or blog-related things.', 'themeblvd'),
 	'id' => 'page-sidebar',
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3>',
-	'after_title' => '</h3>'
-);
-
-$footer = array (
-	'name' => 'Footer Area',
-	'description' => __('These widgets will get shown four to a row in the footer of your site. You can place an unlimited number of widgets here, however it will look best to put a number divisible by 4 (i.e. 4, 8, 12, etc).', 'themeblvd'),
-	'id' => 'footer-area',
-	'before_widget' => '<div class="widget one-fourth">',
-	'after_widget' => '</div>',
-	'before_title' => '<h3>',
-	'after_title' => '</h3>'
-);
-
-$homepage_sidebar = array (
-	'name' => 'Default Homepage Sidebar',
-	'description' => __('These widgets will get shown in the sidebar in the bottom content area of the default homepage if you have it enabled on your theme options page.', 'themeblvd'),
-	'id' => 'homepage-sidebar',
-	'before_widget' => '<div class="one-third">',
-	'after_widget' => '</div>',
-	'before_title' => '<h3>',
-	'after_title' => '</h3>'
-);
-
-$homepage2 = array (
-	'name' => 'Alternate Homepage',
-	'description' => __('These widgets will get shown four to a row when using the page template "Alternate Homepage". You can place an unlimited number of widgets here, however it will look best to put a number divisible by 4 (i.e. 4, 8, 12, etc).', 'themeblvd'),
-	'id' => 'homepage2',
-	'before_widget' => '<div class="widget one-fourth">',
-	'after_widget' => '</div>',
-	'before_title' => '<h3>',
+	'before_title' => '<h2>',
 	'after_title' => '</h3>'
 );
 
 // Check for static widgets in widget-ready areas
 function is_sidebar_active( $index ){
 
-  global $wp_registered_sidebars;
-
-  $widgetcolums = wp_get_sidebars_widgets();
-
-  if ($widgetcolums[$index]) return true;
-
-	return false;
+	global $wp_registered_sidebars;
+	$widgetcolums = wp_get_sidebars_widgets();
+	if ( isset($widgetcolums[$index]) ){
+		return true;
+	} else {
+		return false;
+	}
+	
 }
 
 function theme_widgets_init() {
 
-    //Available Widget Areas
-    global $blog_sidebar;
-    global $pages_sidebar;
-    global $footer;
-    global $homepage_sidebar;
-    global $homepage2;
+    ##############################################################
+    # Default Widget Areas
+    ##############################################################
 
-    // Sidebar
+    //Available Widget Areas
+    global $page_sidebar; //Sidebar for Wordpress Pages
+    global $blog_sidebar; //Sidebar for Single Posts and Blog Page template pages
+
+    // Pages
+    register_sidebar($page_sidebar);
+
+    // Blog Sidebar
     register_sidebar($blog_sidebar);
 
-    //Pages Sidebar
-    register_sidebar($pages_sidebar);
+	##############################################################
+    # Homepage Columns
+    ##############################################################
 
-    //Footer
-    register_sidebar($footer);
+    global $themeblvd_homepage_columns;
+    
+    themeblvd_widget_columns("Homepage Column", "homepage", $themeblvd_homepage_columns);
 
-    //Homepage Sidebar (optional)
-    register_sidebar($homepage_sidebar);
+    ##############################################################
+    # Footer Columns
+    ##############################################################
 
-    //Alternate Homepage
-    register_sidebar($homepage2);
+    global $themeblvd_footer_columns;
+    
+    themeblvd_widget_columns("Footer Column", "footer", $themeblvd_footer_columns);
 
 }
 

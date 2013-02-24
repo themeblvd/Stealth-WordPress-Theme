@@ -29,52 +29,301 @@ $options_general = array (
             "id" => "general",
             "icon" => "screen-on"
     ),
-
-    array(  "name" => __("Theme Style", $shortname),
-            "desc" => __("Select the overall style color you'd like to use for your website.", $shortname),
+    
+    array(  "name" => __("Body Style", $shortname),
+            "desc" => __("Choose your body style.", $shortname),
             "id" => $shortname."_style",
-            "std" => "blue",
+            "std" => "light",
             "type" => "select",
             "data" => array(
-            //Blue, Green, Orange, Purple, Red, or Yellow
+
                 array(
-                    "name" => "Blue",
-                    "value" => "blue"
+                    "name" => "Dark",
+                    "value" => "dark"
                 ),
 
                 array(
-                    "name" => "Green",
-                    "value" => "green"
+                    "name" => "Light",
+                    "value" => "light"
                 ),
-
-                array(
-                    "name" => "Orange",
-                    "value" => "orange"
-                ),
-
-                array(
-                    "name" => "Purple",
-                    "value" => "purple"
-                ),
-
-                array(
-                    "name" => "Red",
-                    "value" => "red"
-                ),
-
-                array(
-                    "name" => "Yellow",
-                    "value" => "yellow"
-                )
                 
+                array(
+                    "name" => "Beige",
+                    "value" => "beige"
+                )
+
+            )
+
+    ),
+    
+    array(  "name" => __("Header Color", $shortname),
+            "desc" => __("Enter in a color hex value. This color will show in your header beneath whatever texture you choose. HINT: Darker colors will allow the texture you select in the next option to be more visable.<br />Ex: 000000", $shortname),
+            "id" => $shortname."_header_color",
+            "std" => "000000",
+            "type" => "color_picker"
+    ),
+    
+    array(  "name" => __("Header Texture", $shortname),
+            "desc" => __("This is the texture that will appear in the header of your site. Note that some textures will appear better on different colors. So, play around a little!<br /><br /><a href=\"#themeblvd_header_texture\" class=\"jaybich-open\">View Texture Guide</a>", $shortname),
+            "more-info" => '<center><img src="'.get_template_directory_uri().'/includes/theme_options/images/texture-guide.jpg" /></center>',
+            "id" => $shortname."_header_texture",
+            "std" => "image=chex.png&position=0+0&repeat=repeat",
+            "type" => "select",
+            "data" => array(
+				
+				array(
+                    "name" => "None",
+                    "value" => "none"
+                ),
+                
+                array(
+                    "name" => "Bathroom Wall",
+                    "value" => "image=bathroom-wall.png&position=0+0&repeat=repeat"
+                ),
+				
+				array(
+                    "name" => "Bokeh",
+                    "value" => "image=bokeh.png&position=center+0&repeat=no-repeat"
+                ),
+				
+				array(
+                    "name" => "Boxy (Thick)",
+                    "value" => "image=boxy-thick.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Boxy (Thin)",
+                    "value" => "image=boxy-thin.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Camo",
+                    "value" => "image=camo.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Cathedral",
+                    "value" => "image=cathedral.png&position=0+0&repeat=repeat"
+                ),
+				
+				array(
+                    "name" => "Chex",
+                    "value" => "image=chex.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Chex (Reverse)",
+                    "value" => "image=chex-reverse.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Church Window",
+                    "value" => "image=church-window.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Circles",
+                    "value" => "image=circles.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Diagnol (Grid)",
+                    "value" => "image=diag-grid.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Diagnol (Thick)",
+                    "value" => "image=diag2.png&position=0+0&repeat=repeat"
+                ),
+                
+				array(
+                    "name" => "Diagnol (Thin)",
+                    "value" => "image=diag1.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Digital",
+                    "value" => "image=digital.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Fabric",
+                    "value" => "image=fabric.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Grid #1",
+                    "value" => "image=grid1.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Grid #2",
+                    "value" => "image=grid2.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Grid #3",
+                    "value" => "image=grid3.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Grid #4",
+                    "value" => "image=grid4.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Grid #5",
+                    "value" => "image=grid5.png&position=0+0&repeat=repeat"
+                ),
+				
+				array(
+                    "name" => "Grunge",
+                    "value" => "image=grunge.png&position=0+0&repeat=repeat"
+                ),
+				
+                array(
+                    "name" => "Grunge (Professional)",
+                    "value" => "image=grunge-pro.png&position=center+1px&repeat=no-repeat"
+                ),
+                
+                array(
+                    "name" => "Horizontal (Thick)",
+                    "value" => "image=horz2.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Horizontal (Thin)",
+                    "value" => "image=horz1.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Kitchen Floor",
+                    "value" => "image=kitchen-floor.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Leather",
+                    "value" => "image=leather.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Metal",
+                    "value" => "image=metal.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Mosaic",
+                    "value" => "image=mosaic.png&position=center+0&repeat=no-repeat"
+                ),
+                
+                array(
+                    "name" => "Noise",
+                    "value" => "image=noise.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Ornate",
+                    "value" => "image=ornate.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Retro Grunge Stripes",
+                    "value" => "image=retro-grunge.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Retro Wallpaper",
+                    "value" => "image=retro-wallpaper.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Squares",
+                    "value" => "image=squares.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Squares (Nested)",
+                    "value" => "image=squares-nested.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Vertical (Thick)",
+                    "value" => "image=vert2.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Vertical (Thin)",
+                    "value" => "image=vert1.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Wavy",
+                    "value" => "image=wavy.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Wood (Old)",
+                    "value" => "image=wood-old.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Wood (Simple)",
+                    "value" => "image=wood-simple.png&position=0+0&repeat=repeat"
+                ),
+                
+                array(
+                    "name" => "Wood (Polished)",
+                    "value" => "image=wood.png&position=0+0&repeat=repeat"
+                )
+
             )
     ),
-
-    array(  "name" => __("Custom Link Color", $shortname),
-            "desc" => __("Enter in a link color hex value. If you leave this blank, it will default to the color of the style you chose above.<br />Ex: 000000", $shortname),
-            "id" => $shortname."_link_color",
-            "std" => "",
+    
+    array(  "name" => __("Accent Color", $shortname),
+            "desc" => __("Enter in a color hex value. This color will be applied in several key areas of your site including most notably the <strong>main menu</strong>.<br />Ex: 000000", $shortname),
+            "id" => $shortname."_accent_color",
+            "std" => "0083b6",
             "type" => "color_picker"
+    ),
+
+    array(  "name" => __("Link Color", $shortname),
+            "desc" => __("Enter in a link color hex value.<br />Ex: 000000", $shortname),
+            "id" => $shortname."_link_color",
+            "std" => "0074a1",
+            "type" => "color_picker"
+    ),
+    
+    array(  "name" => __("Link Hover Color", $shortname),
+            "desc" => __("Enter in a link color hex value.<br />Ex: 000000", $shortname),
+            "id" => $shortname."_link_hover_color",
+            "std" => "004c69",
+            "type" => "color_picker"
+    ),
+    
+    array(  "name" => __("Footer Style", $shortname),
+            "desc" => __("Choose your footer style.", $shortname),
+            "id" => $shortname."_footer_style",
+            "std" => "dark",
+            "type" => "select",
+            "data" => array(
+
+                array(
+                    "name" => "Dark",
+                    "value" => "dark"
+                ),
+
+                array(
+                    "name" => "Light",
+                    "value" => "light"
+                ),
+                
+                array(
+                    "name" => "Beige",
+                    "value" => "beige"
+                )
+
+            )
+
     ),
 
     array(  "name" => __("Custom CSS", $shortname),
@@ -92,15 +341,6 @@ $options_general = array (
             "name" => "General Settings",
             "id" => "general-settings",
             "icon" => "tools"
-    ),
-
-    array(  "name" => __("Show breadcrumbs?", $shortname),
-            "desc" => __("Specify whether or not you'd like breadcrumbs to show throughout your website.", $shortname),
-            "id" => $shortname."_breadcrumbs",
-            "std" => "true",
-            "type" => "true_false_radio",
-            "option1" => __("Yes, show breadcrumbs.", $shortname),
-            "option2" => __("No, hide them.", $shortname)
     ),
 
     array(  "name" => __("Show title on archive pages?", $shortname),
@@ -214,10 +454,70 @@ $options_general = array (
             "std" => "",
             "type" => "textarea"
     ),
+    
+    array(
+            "type" => "description",
+            "desc" => __("<h4>Content Area</h4>", $shortname)
+    ),
+    
+    array(  "name" => __("Sidebar on right or left?", $shortname),
+            "desc" => __("Choose which side of the page you'd like the sidebar to be positioned on when viewing 2-column pages.", $shortname),
+            "id" => $shortname."_sidebar",
+            "std" => "right",
+            "type" => "select",
+            "data" => array(
+
+                    array(
+                        "name" => __("Right", $shortname),
+                        "value" => "right"
+                    ),
+
+                    array(
+                        "name" => __("Left", $shortname),
+                        "value" => "left"
+                    )
+
+                )
+    ),
 
     array(
             "type" => "description",
             "desc" => __("<h4>Footer</h4>", $shortname)
+    ),
+    
+    array(  "name" => __("How many footer columns?", $shortname),
+            "desc" => __("A dynamic widget area will be registered for each column. <strong>Note: If you lessen the number of widget columns, any existing widgets in additional columns will be removed.</strong>", $shortname),
+            "id" => $shortname."_footer_columns",
+            "std" => "4",
+            "type" => "select",
+            "data" => array(
+					
+					array(
+                        "name" => __("Hide Widget Columns", $shortname),
+                        "value" => "hide"
+                    ),
+					
+                    array(
+                        "name" => __("1 Column", $shortname),
+                        "value" => "1"
+                    ),
+
+                    array(
+                        "name" => __("2 Columns", $shortname),
+                        "value" => "2"
+                    ),
+
+                    array(
+                        "name" => __("3 Columns", $shortname),
+                        "value" => "3"
+                    ),
+
+                    array(
+                        "name" => __("4 Columns", $shortname),
+                        "value" => "4"
+                    ),
+
+                )
     ),
 
     array(  "name" => __("Copyright Text", $shortname),
@@ -281,6 +581,7 @@ $options_general = array (
             "desc" => __("Choose which font stack you'd like to use for your general body font. <a href=\"#themeblvd_font_body\" class=\"jaybich-open\">Learn More</a>", $shortname),
             "id" => $shortname."_font_body",
             "std" => 'lucida',
+            "custom" => "body_font",
             "more-info" => __("Font stacks are prioritized lists of fonts, defined in the CSS font-family attribute, that the browser will cycle through until it finds a font that is installed on the user's system. The font stacks listed here were put together by <a href='http://unitinteractive.com/blog/2008/06/26/better-css-font-stacks/'>Nathan Ford</a>.", $shortname),
             "type" => "select",
             "data" => array(
@@ -396,6 +697,7 @@ $options_general = array (
             "desc" => __("Choose which font you'd like to use from the Google Font Directory. Select 'None' if you'd like the header font to default to the body font. <a href=\"#flipblog_font_headers\" class=\"jaybich-open\">Learn More</a>", $shortname),
             "id" => $shortname."_font_headers",
             "std" => "Cantarell",
+            "custom" => "header_font",
             "more-info" => "This theme uses the CSS3 @font-face for all of your headers (&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, etc.). The choices given are hosted from <a href='http://code.google.com/webfonts' target='_blank'>Google's Font Directory</a>. View the directory in order to preview all fonts listed here. This list is not a full list and doesn't include all fonts in the directory. Also note that older browsers do not support this method of font rendering. In these older browsers, the font will fall back to your general body font.",
             "type" => "select",
             "data" => array(
@@ -404,7 +706,27 @@ $options_general = array (
                     "name" => "None",
                     "value" => "none"
                 ),
-
+				
+				array(
+                    "name" => "Allan",
+                    "value" => "Allan:bold"
+                ),
+                
+                array(
+                    "name" => "Allerta",
+                    "value" => "Allerta"
+                ),
+                
+                array(
+                    "name" => "Allerta Stencil",
+                    "value" => "Allerta+Stencil"
+                ),
+                
+                array(
+                    "name" => "Anonymous Pro",
+                    "value" => "Anonymous+Pro"
+                ),
+				
                 array(
                     "name" => "Arimo",
                     "value" => "Arimo"
@@ -413,6 +735,26 @@ $options_general = array (
                 array(
                     "name" => "Arvo",
                     "value" => "Arvo"
+                ),
+                
+                array(
+                    "name" => "Bentham",
+                    "value" => "Bentham"
+                ),
+                
+                array(
+                    "name" => "Buda",
+                    "value" => "Buda:light"
+                ),
+                
+                array(
+                    "name" => "Cabin",
+                    "value" => "Cabin:bold"
+                ),
+                
+                array(
+                    "name" => "Calligraffitti",
+                    "value" => "Calligraffitti"
                 ),
 
                 array(
@@ -424,15 +766,60 @@ $options_general = array (
                     "name" => "Cardo",
                     "value" => "Cardo"
                 ),
+                
+                array(
+                    "name" => "Cherry Cream Soda",
+                    "value" => "Cherry+Cream+Soda"
+                ),
+                
+                array(
+                    "name" => "Chewy",
+                    "value" => "Chewy"
+                ),
+                
+                array(
+                    "name" => "Coda",
+                    "value" => "Coda:800"
+                ),
+                
+                array(
+                    "name" => "Coming Soon",
+                    "value" => "Coming+Soon"
+                ),
+                
+                array(
+                    "name" => "Copse",
+                    "value" => "Copse"
+                ),
+                
+                array(
+                    "name" => "Corben",
+                    "value" => "Corben:bold"
+                ),
 
                 array(
                     "name" => "Cousine",
                     "value" => "Cousine"
                 ),
+                
+                array(
+                    "name" => "Covered By Your Grace",
+                    "value" => "Covered+By+Your+Grace"
+                ),
+                
+                array(
+                    "name" => "Crafty Girls",
+                    "value" => "Crafty+Girls"
+                ),
 
                 array(
                     "name" => "Crimson Text",
                     "value" => "Crimson+Text"
+                ),
+                
+                array(
+                    "name" => "Crushed",
+                    "value" => "Crushed"
                 ),
 
                 array(
@@ -454,6 +841,26 @@ $options_general = array (
                     "name" => "Droid Serif",
                     "value" => "Droid+Serif"
                 ),
+                
+                array(
+                    "name" => "Fontdiner Swanky",
+                    "value" => "Fontdiner+Swanky"
+                ),
+                
+                array(
+                    "name" => "Geo",
+                    "value" => "Geo"
+                ),
+                
+                array(
+                    "name" => "Gruppo",
+                    "value" => "Gruppo"
+                ),
+                
+                array(
+                    "name" => "Homemade Apple",
+                    "value" => "Homemade+Apple"
+                ),
 
                 array(
                     "name" => "IM Fell",
@@ -464,25 +871,85 @@ $options_general = array (
                     "name" => "Inconsolata",
                     "value" => "Inconsolata"
                 ),
+                
+                array(
+                    "name" => "Irish Growler",
+                    "value" => "Irish+Growler"
+                ),
 
                 array(
                     "name" => "Josefin Sans Std Light",
-                    "value" => "Josefin+Sans:100",
+                    "value" => "Josefin+Sans:300",
                 ),
 
                 array(
                     "name" => "Josefin Slab",
                     "value" => "Josefin+Slab:100"
                 ),
+                
+                array(
+                    "name" => "Just Another Hand",
+                    "value" => "Just+Another+Hand"
+                ),
+                
+                array(
+                    "name" => "Just Me Again Down Here",
+                    "value" => "Just+Me+Again+Down+Here"
+                ),
+                
+                array(
+                    "name" => "Kenia",
+                    "value" => "Kenia"
+                ),
+                
+                array(
+                    "name" => "Kranky",
+                    "value" => "Kranky"
+                ),
+                
+                array(
+                    "name" => "Kristi",
+                    "value" => "Kristi"
+                ),
+                
+                array(
+                    "name" => "Lato",
+                    "value" => "Lato"
+                ),
+                
+                array(
+                    "name" => "Lekton",
+                    "value" => "Lekton"
+                ),
 
                 array(
                     "name" => "Lobster",
                     "value" => "Lobster"
                 ),
+                
+                array(
+                    "name" => "Luckiest Guy",
+                    "value" => "Luckiest+Guy"
+                ),
+                
+                array(
+                    "name" => "Maiden Orange",
+                    "value" => "Maiden+Orange"
+                ),
+                
+                array(
+                    "name" => "Merriweather",
+                    "value" => "Merriweather"
+                ),
 
                 array(
                     "name" => "Molengo",
                     "value" => "Molengo"
+                ),
+                
+                array(
+                    "name" => "Mountains of Christmas",
+                    "value" => "Mountains+of+Christmas"
                 ),
 
                 array(
@@ -509,35 +976,115 @@ $options_general = array (
                     "name" => "Old Standard TT",
                     "value" => "Old+Standard+TT"
                 ),
+                
+                array(
+                    "name" => "Orbitron",
+                    "value" => "Orbitron"
+                ),
 
                 array(
                     "name" => "PT Sans",
                     "value" => "PT+Sans"
+                ),
+                
+                array(
+                    "name" => "Permanent Marker",
+                    "value" => "Permanent+Marker"
                 ),
 
                 array(
                     "name" => "Philosopher",
                     "value" => "Philosopher"
                 ),
+                
+                array(
+                    "name" => "Puritan",
+                    "value" => "Puritan"
+                ),
+                
+                array(
+                    "name" => "Raleway",
+                    "value" => "Raleway:100"
+                ),
 
                 array(
                     "name" => "Reenie Beanie",
                     "value" => "Reenie+Beanie"
                 ),
-
+				
+				array(
+                    "name" => "Rock Salt",
+                    "value" => "Rock+Salt"
+                ),
+                
+                array(
+                    "name" => "Schoolbell",
+                    "value" => "Schoolbell"
+                ),
+                
+                array(
+                    "name" => "Slackey",
+                    "value" => "Slackey"
+                ),
+                
+                array(
+                    "name" => "Sniglet",
+                    "value" => "Sniglet:800"
+                ),
+                
+                array(
+                    "name" => "Sunshiney",
+                    "value" => "Sunshiney"
+                ),
+                
+                array(
+                    "name" => "Syncopate",
+                    "value" => "Syncopate"
+                ),
+				
                 array(
                     "name" => "Tangerine",
                     "value" => "Tangerine"
                 ),
-
+                
                 array(
                     "name" => "Tinos",
                     "value" => "Tinos"
                 ),
+                
+                array(
+                    "name" => "Ubuntu",
+                    "value" => "Ubuntu"
+                ),
+                
+                array(
+                    "name" => "UnifrakturCook",
+                    "value" => "UnifrakturCook:bold"
+                ),
+                
+                array(
+                    "name" => "UnifrakturMaguntia",
+                    "value" => "UnifrakturMaguntia"
+                ),
+                
+                array(
+                    "name" => "Unkempt",
+                    "value" => "Unkempt"
+                ),
+                
+                array(
+                    "name" => "Vibur",
+                    "value" => "Vibur"
+                ),
 
                 array(
-                    "name" => "Volkorn",
-                    "value" => "Volkorn"
+                    "name" => "Vollkorn",
+                    "value" => "Vollkorn"
+                ),
+                
+                array(
+                    "name" => "Walter Turncoat",
+                    "value" => "Walter+Turncoat"
                 ),
 
                 array(
@@ -546,7 +1093,7 @@ $options_general = array (
                 )
 
             )
-    ),
+	),
 
     array(  "type" => "end"),
 
@@ -576,19 +1123,54 @@ $options_general = array (
             "id" => "homepage",
             "icon" => "home"
     ),
+    
+    array(  "desc" => __("<h4>Layout Configuration</h4> <p>This section will help you setup which elements should be displayed on your homepage.</p>", $shortname),
+            "type" => "description"
+    ),
+    
+    array(  "name" => __("How do you want to setup your homepage?", $shortname),
+            "desc" => __('Drag the elements around in the order you\'d like to position them on your homepage.<br /><br /><img src="'.get_template_directory_uri().'/includes/theme_options/images/home-diagram.jpg" />', $shortname),
+            "id" => $shortname."_homepage_sort",
+            "std" => array("placeholder", "slideshow", "slogan", "widgets"),
+            "type" => "sortable",
+            "data" => array(
+                
+                "slideshow" => array(
+                    "name" => __('Slideshow', $shortname),
+                    "value" => "slideshow"
+                ),
+                
+                "slogan" => array(
+                    "name" => __('Slogan', $shortname),
+                    "value" => "slogan"
+                ),
+                
+                "featured" => array(
+                    "name" => __('Featured Posts', $shortname),
+                    "value" => "featured"
+                ),
+                
+                "widgets" => array(
+                    "name" => __('Widget Columns', $shortname),
+                    "value" => "widgets"
+                ),
+                
+                "page" => array(
+                    "name" => __('Content From Page', $shortname),
+                    "value" => "page"
+                ),
+				
+                "blog" => array(
+                    "name" => __('Blog + Sidebar', $shortname),
+                    "value" => "blog"
+                )
+
+            ),
+    ),
 
     array(
             "type" => "description",
-            "desc" => __("<h4>Slideshow Options</h4>", $shortname)
-    ),
-
-    array(  "name" => __("Show slideshow?", $shortname),
-            "desc" => __("Choose whether or not you want to show the slideshow at the top of the homepage.", $shortname),
-            "option1" => __("Yes, show slideshow.", $shortname),
-            "option2" => __("No, hide slideshow.", $shortname),
-            "id" => $shortname."_home_show_slideshow",
-            "std" => "true",
-            "type" => "true_false_radio"
+            "desc" => __("<h4>Slideshow</h4>", $shortname)
     ),
 
     array(  "name" => __("Slideshow feed from where?", $shortname),
@@ -748,14 +1330,6 @@ $options_general = array (
             )
     ),
 
-    array(  "name" => __("Slideshow auto height", $shortname),
-            "desc" => __("If you turn this on, it means the slideshow will animate to a new height for each slide. If turned off, the slideshow will take on the height of the tallest slide and stay that height.", $shortname),
-            "option1" => __("Yes, turn on auto height animated scaling.", $shortname),
-            "option2" => __("No, let the slideshow take on the height of the tallest slide.", $shortname),
-            "id" => $shortname."_home_slide_height",
-            "std" => "true",
-            "type" => "true_false_radio"),
-
     array(  "name" => __("Slideshow autoplay duration", $shortname),
             "desc" => __("Enter the time you would like in between transitions in seconds. Use '0' to deactivate automatic transitioning.", $shortname),
             "id" => $shortname."_home_slide_speed",
@@ -768,20 +1342,58 @@ $options_general = array (
             "std" => "true",
             "option1" => __('Yes show next/previous buttons.', $shortname),
             "option2" => __('No, hide them.', $shortname),
-            "type" => "true_false_radio"),
-
-    array(
-            "type" => "description",
-            "desc" => __("<h4>Featured Posts Options</h4>", $shortname)
-    ),
-
-    array(  "name" => __("Show featured posts?", $shortname),
-            "desc" => __("Choose whether or not you want to show the featured posts in the middle of the homepage.", $shortname),
-            "option1" => __("Yes, show featured posts.", $shortname),
-            "option2" => __("No, hide featured posts.", $shortname),
-            "id" => $shortname."_home_show_featured",
-            "std" => "true",
             "type" => "true_false_radio"
+	),
+	
+	array(  "name" => __("Slideshow overlay color?", $shortname),
+            "desc" => __("This is the transparent color that will appear behind descriptions if you place them on a slide in the slideshow.", $shortname),
+            "id" => $shortname."_home_color",
+            "std" => "000000",
+            "type" => "color_picker"
+    ),
+    
+    array(  "desc" => __("<h4>Widget Columns</h4> <p>This section allows you to configure the widget areas on your homepage.</p>", $shortname),
+            "type" => "description"
+    ),
+	
+    array(  "name" => __("How many widget columns?", $shortname),
+            "desc" => __("A dynamic widget area will be registered for each column. Even if you have widget columns hidden in the Homepage Configuration options, selecting 0 widget columns will clean up Appearance > Widgets page by not having excess widget areas. <strong>Note: If you lessen the number of widget columns, any existing widgets in additional columns will be removed.</strong>", $shortname),
+            "id" => $shortname."_homepage_columns",
+            "std" => "3",
+            "type" => "select",
+            "data" => array(
+					
+					array(
+                        "name" => __("0 Columns", $shortname),
+                        "value" => "0"
+                    ),
+					
+                    array(
+                        "name" => __("1 Column", $shortname),
+                        "value" => "1"
+                    ),
+
+                    array(
+                        "name" => __("2 Columns", $shortname),
+                        "value" => "2"
+                    ),
+
+                    array(
+                        "name" => __("3 Columns", $shortname),
+                        "value" => "3"
+                    ),
+
+                    array(
+                        "name" => __("4 Columns", $shortname),
+                        "value" => "4"
+                    ),
+
+                )
+    ),
+	
+	array(
+            "type" => "description",
+            "desc" => __("<h4>Featured Posts</h4>", $shortname)
     ),
 
     array(  "name" => __("Featured posts tag", $shortname),
@@ -800,42 +1412,113 @@ $options_general = array (
             "type" => "true_false_radio"
     ),
 
-    array(
-            "type" => "description",
-            "desc" => __("<h4>Bottom Content Area Options</h4>", $shortname)
-    ),
-
-    array(  "name" => __("Show bottom content area?", $shortname),
-            "desc" => __("Choose whether or not you want the entire bottom content area to show.", $shortname),
-            "option1" => __("Yes, show bottom content area.", $shortname),
-            "option2" => __("No, hide bottom content area.", $shortname),
-            "id" => $shortname."_home_show_content",
-            "std" => "true",
-            "type" => "true_false_radio"
-    ),
-
-    array(  "name" => __("Use which page's content?", $shortname),
-            "desc" => __("Choose which page you want to pull content from to fill this area.", $shortname),
-            "id" => $shortname."_home_page",
-            "type" => "page_dropdown"
-    ),
-
-    array(  "name" => __("Show page's title?", $shortname),
-            "desc" => __("Choose whether or not you want the title of the page selected in the previous option to show before the page's content.", $shortname),
-            "option1" => __("Yes, show page's title.", $shortname),
-            "option2" => __("No, hide page's title.", $shortname),
-            "id" => $shortname."_home_page_title",
-            "std" => "true",
-            "type" => "true_false_radio"
+    array(  "desc" => __("<h4>Page Content</h4> <p>This section allows you to select a page, which will be used to populate this section of the homepage.</p>", $shortname),
+            "type" => "description"
     ),
     
-    array(  "name" => __("Show bottom content sidebar?", $shortname),
-            "desc" => __("Choose whether to show the sidebar or not. If the sidebar is hidden, the selected page's content will stretch full-width.", $shortname),
-            "option1" => __("Yes, show sidebar.", $shortname),
-            "option2" => __("No, hide sidebar.", $shortname),
-            "id" => $shortname."_home_show_sidebar",
-            "std" => "true",
-            "type" => "true_false_radio"
+    array(  "name" => __("Use which page's content?", $shortname),
+            "desc" => __("If you have the \"Content From Page\" set to show in your Layout Configuration options, here you can select which WordPress page to pull from.", $shortname),
+            "id" => $shortname."_homepage_page_id",
+            "std" => '',
+            "type" => "page_dropdown"
+    ),
+    
+    array(  "desc" => __("<h4>Slogan</h4> <p>This section will help you confgure your slogan and call-to-action button.</p>", $shortname),
+            "type" => "description"
+    ),
+    
+    array(  "name" => __("Slogan Text", $shortname),
+            "desc" => __("Enter the text that will appear to the left of your call-to-action button.", $shortname),
+            "id" => $shortname."_homepage_slogan",
+            "std" => "This is the perfect business theme to get your site up and running in no time. It's so sleek, stylish and simple. It's just so Stealth.",
+            "type" => "text"
+    ),
+    
+    array(  "name" => __("Button Text", $shortname),
+            "desc" => __("Enter the text that will appear in the call-to-action button.<br /><br /><strong>HINT: If you leave this field blank, the button will not show and the slogan will be centered.</strong>", $shortname),
+            "id" => $shortname."_homepage_slogan_button",
+            "std" => "Get Started Today",
+            "type" => "text"
+    ),
+    
+    array(  "name" => __("Button Link", $shortname),
+            "desc" => __("Enter where the call-to-action button link. Ex: http://yoursite.com/landing-page", $shortname),
+            "id" => $shortname."_homepage_slogan_link",
+            "std" => "",
+            "type" => "text"
+    ),
+    
+    array(  "desc" => __("<h4>Homepage Blog</h4> <p>Here you can settings for a blog if you have it set to show.</p>", $shortname),
+            "type" => "description"
+    ),
+    
+    array(  "name" => __("Show excerpts or full posts?", $shortname),
+            "desc" => __("Choose whether you'd like to show the excerpt or the content for a more classic blog feel. <a href=\"#themeblvd_homepage_blog_content\" class=\"jaybich-open\">Learn More</a>", $shortname),
+            "more-info" => __('
+            	
+            	<p>If you\'re new to WordPress, you may be wondering what the difference between showing the excerpt and showing the content is. So, here is some information on both options.</p>
+
+				<h4>1) Show excerpts.</h4>
+				
+				<p>The <a href="http://codex.wordpress.org/Excerpt" target="_blank">excerpt</a> is a one paragraph summary of your post that can be up to 55 words long. You can specify the excerpt when creating your posts, and if you do not specify one, WordPress will automatically take the first 55 words of your post and use that. In an excerpt, you cannot have any HTML code; it is plain text only. Any HTML tags (links, images, etc.) that you attempt to put in the excerpt will be stripped by WordPress.</p>
+				
+				<p>In this particular theme, when showing the excerpt, a "Read More" button will automatically be displayed below the excerpt that links to the post.</p>
+				
+				<h4>2) Show full content.</h4>
+				
+				<p>If you\'re looking for more of a classic blog feel, you can choose to show the content on your blog page. This means that the excerpt will not be used at all. All content will be shown from your post with <em>no</em> automatic "Read More" button.</p>
+				
+				<p>When using this option, if you\'d like to pick a spot for the post to be cut off and insert a link to the post, this is commonly referred in WordPress as the "teaser". When you\'re writing a post, you can insert <em>&lt;!--more--&gt;</em> anywhere in the post, and it will cut off at that point and a link will be shown that leads to the post. You can also customize what the link says by adding text to that tag like this <em>&lt;!--more But wait, there\'s more!--&gt;</em>. <a href="http://codex.wordpress.org/Customizing_the_Read_More" target="_blank">Learn More</a></p>', $shortname),
+            "id" => $shortname."_homepage_blog_content",
+            "std" => "excerpt",
+            "type" => "radio",
+            "data" => array(
+
+                array(
+                    "name" => __("Show excerpts.", $shortname),
+                    "value" => "excerpt"
+                ),
+
+                array(
+                    "name" => __("Show full posts.", $shortname),
+                    "value" => "content"
+                )
+
+            )
+    ),
+    
+    array(  "name" => __("Show link to blog page at the bottom of posts?", $shortname),
+            "desc" => __("This homepage blog does not have pagination, so it might be a good idea to show a link that directs to another page on your site where your full blog is.", $shortname),
+            "id" => $shortname."_homepage_blog_link",
+            "std" => "yes",
+            "type" => "radio",
+            "data" => array(
+
+                array(
+                    "name" => __("Yes, show a link.", $shortname),
+                    "value" => "yes"
+                ),
+
+                array(
+                    "name" => __("No, don't show a link.", $shortname),
+                    "value" => "no"
+                )
+
+            )
+    ),
+    
+    array(  "name" => __("Link Text", $shortname),
+            "desc" => __("This is the text that will be displayed in the link directing to your blog page.", $shortname),
+            "id" => $shortname."_homepage_blog_text",
+            "std" => "More at the Blog &raquo;",
+            "type" => "text"
+    ),
+    
+    array(  "name" => __("Link URL", $shortname),
+            "desc" => __("Put in the full URL to your blog page.<br />Ex: http://www.yoursite.com/blog", $shortname),
+            "id" => $shortname."_homepage_blog_url",
+            "std" => "",
+            "type" => "text"
     ),
 
     array(  "type" => "end"),

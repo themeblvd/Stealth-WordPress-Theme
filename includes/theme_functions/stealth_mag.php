@@ -26,10 +26,6 @@ function stealth_mag($categories) {
         $categoryString = implode($categoryString, ", ");
         $categoryString = 'cat='.$categoryString;
         
-    } else {
-
-        $categoryString = '';
-        
     }
 
     //Page it up
@@ -47,10 +43,19 @@ function stealth_mag($categories) {
 
     }
 
+    if( isset($categoryString) ) {
+    	
+    	query_posts($categoryString.'&paged='.$paged);
+    	
+    } else {
+    	
+    	query_posts('paged='.$paged);
+    	
+    }
+    
+    if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+    
     ?>
-
-    <?php query_posts($categoryString.'paged='.$paged); ?>
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
     <div class="magazine-entry <?php if($counter %2 == 0){ echo ' last'; } ?>">
 

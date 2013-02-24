@@ -90,7 +90,11 @@ class Themeblvd_Twitter_Feed extends WP_Widget {
 
         <?php
         }
-}
+        
+##################################################################
+} # end Themeblvd_Twitter_Feed class extend
+##################################################################
+
 register_widget('Themeblvd_Twitter_Feed');
 
 ?>

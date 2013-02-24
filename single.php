@@ -4,21 +4,18 @@
 		
     <div class="content">
 
-        <?php if($themeblvd_breadcrumbs == 'true') : ?>
-            <?php if($themeblvd_theme_hints == 'true') : ?>
-                <?php echo themeblvd_theme_hints('breadcrumbs'); ?>
-            <?php endif; ?>
-            <div id="breadcrumbs">
-                <?php themeblvd_breadcrumbs(); ?>
-            </div><!-- #breadcrumbs (end) -->
-        <?php endif; ?>
-
+        <?php themeblvd_breadcrumbs(); ?>
+		
+		<?php if($themeblvd_sidebar == 'left') : ?>
+			<?php get_sidebar(); ?>	
+		<?php endif; ?>
+		
         <div id="content">
 
             <?php if($themeblvd_theme_hints == 'true') : ?>
                 <?php echo themeblvd_theme_hints('single'); ?>
             <?php endif; ?>
-
+			
             <div class="entry">
 
                 <?php the_post(); ?>
@@ -68,11 +65,9 @@
             
         </div><!-- #content (end) -->
 
-        <div id="sidebar">
-        
-            <?php get_sidebar(); ?>
-
-        </div><!-- #sidebar (end) -->
+        <?php if($themeblvd_sidebar == 'right') : ?>
+			<?php get_sidebar(); ?>	
+		<?php endif; ?>
 
         <div class="clear"></div>
 

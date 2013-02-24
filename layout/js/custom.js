@@ -39,7 +39,7 @@ jQuery.noConflict()(function(){
         // ---------------------------------------------------------
 
         jQuery("a[rel^='lightbox']").prettyPhoto({
-            theme: 'dark_square',
+            theme: 'light_square',
             show_title: false,
             opacity: .50,
             gallery_markup:'<div class="pp_gallery"> \
@@ -210,7 +210,7 @@ jQuery.noConflict()(function(){
 // Run Slideshow - Works with stealth_slideshow() PHP function
 // ----------------------------------------------------------------------------
 
-function runSlideshow(id, transition, height, speed) {
+function runSlideshow(id, transition, speed) {
     jQuery.noConflict()(function(){
 
         jQuery(document).ready(function(){
@@ -222,36 +222,18 @@ function runSlideshow(id, transition, height, speed) {
                  }, 1000);
             }
 
-            if(height == 'true'){
+            jQuery('#'+id+' .slideshow').cycle({
+                fx: transition,                         //Transition effect
+                timeout: speed,                         //Time between transitions in milliseconds
+                pager: '#'+id+' .slideshow-nav-inner',  //Element where navigation will be inserted
+                next: '.slide-next',                    //Next button
+                prev: '.slide-prev',                    //Previous button
+                pagerAnchorBuilder: paginate,           //function used for navigation (do not change)
+                speed: 2000,                            //Duration of transition in milliseconds
+                pause: 1,                               //Pause on hover (true)
+                easing: 'easeInOutQuint'                //Easing capability (do not change)
+            });
 
-                jQuery('#'+id+' .slideshow').cycle({
-                    fx: transition,                         //Transition effect
-                    timeout: speed,                         //Time between transitions in milliseconds
-                    pager: '#'+id+' .slideshow-nav-inner',  //Element where navigation will be inserted
-                    next: '.slide-next',                    //Next button
-                    prev: '.slide-prev',                    //Previous button
-                    pagerAnchorBuilder: paginate,           //function used for navigation (do not change)
-                    speed: 2000,                            //Duration of transition in milliseconds
-                    pause: 1,                               //Pause on hover (true)
-                    easing: 'easeInOutQuint',               //Easing capability (do not change)
-                    before: onBefore
-                });
-
-            } else {
-
-                jQuery('#'+id+' .slideshow').cycle({
-                    fx: transition,                         //Transition effect
-                    timeout: speed,                         //Time between transitions in milliseconds
-                    pager: '#'+id+' .slideshow-nav-inner',  //Element where navigation will be inserted
-                    next: '.slide-next',                    //Next button
-                    prev: '.slide-prev',                    //Previous button
-                    pagerAnchorBuilder: paginate,           //function used for navigation (do not change)
-                    speed: 2000,                            //Duration of transition in milliseconds
-                    pause: 1,                               //Pause on hover (true)
-                    easing: 'easeInOutQuint'                //Easing capability (do not change)
-                });
-
-            }
 
         });
 

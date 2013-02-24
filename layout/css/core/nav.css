@@ -61,7 +61,7 @@ ul#menu-wrapper .menu li.sfHover li ul {
 }
 
 #menu-wrapper .menu li {
-    background-position: right -37px;
+    background-position: right -47px;
     background-repeat: no-repeat;
     display: inline;
     float: left;
@@ -72,7 +72,7 @@ ul#menu-wrapper .menu li.sfHover li ul {
     display: block;
     font-size: 11px;
     letter-spacing: 1px;
-    padding: 13px 15px;
+    padding: 18px 15px;
     color: #ffffff;
     text-decoration: none;
 }
@@ -82,22 +82,27 @@ ul#menu-wrapper .menu li.sfHover li ul {
 }
 
 #menu-wrapper .menu > li:first-child a {
-    padding: 13px 15px 13px 13px;
+    padding: 18px 15px 17px 18px;
 }
 
 #menu-wrapper .menu li a:hover {
-    background-position: 0 -74px;
+    background-position: 0 -94px;
     background-repeat: repeat-x;
+}
+
+#menu-wrapper,
+#menu-wrapper .menu,
+#menu-wrapper .menu li,
+#menu-wrapper .menu li a:hover {
+	background-image: url(../../images/shared/menu.png);
 }
 
     /* Second Level Buttons */
 
 #menu-wrapper .menu li ul {
     background-image: none;
-    border-top: none;
     cursor: pointer;
-    border-width: 1px;
-    border-style: solid;
+    margin: 10px 0 0 0;
     width: 200px;
 }
 
@@ -110,19 +115,19 @@ ul#menu-wrapper .menu li.sfHover li ul {
 
 #menu-wrapper .menu li li a {
     background-image: none;
-    border-bottom: none;
     font-size: 10px;
     text-align: left;
-    padding: 10px;
+    padding: 12px 15px;
     cursor: pointer;
 }
 
 #menu-wrapper .menu li li a:hover {
-    background-image: none;
+    background: url(../../images/shared/drop-link.png);
 }
 
 #menu-wrapper .menu li li ul {
     padding: 0;
+    margin: 0;
 }
 
 #menu-wrapper .menu li li li {}
@@ -147,7 +152,7 @@ ul#menu-wrapper .menu li.sfHover li ul {
     background:		url('../../images/shared/arrows-ffffff.png') no-repeat -10px -100px; /* 8-bit indexed alpha png. IE6 gets solid image only */
 }
 a > .sf-sub-indicator {  /* give all except IE6 the correct values */
-    top:			15px;
+    top:			18px;
     background-position: 0 -100px; /* use translucent arrow for modern browsers*/
 }
 

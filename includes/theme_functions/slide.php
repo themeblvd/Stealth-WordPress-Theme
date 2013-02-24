@@ -33,11 +33,8 @@ register_post_type('slide', array(
     'rewrite' => array("slug" => "slide"), // Permalinks
     'query_var' => "slide", // This goes to the WP_Query schema
     'supports' => array('title', 'thumbnail', 'page-attributes', 'editor'/*,'author', 'excerpt' ,'custom-fields'*/), // Let's use custom fields for debugging purposes only
-    'menu_icon' => get_bloginfo('template_url') . '/framework/theme_options/layout/images/icon_slides.png'
+    'menu_icon' => get_template_directory_uri() . '/framework/layout/images/icon_slides.png'
 ));
-
-add_filter("manage_edit-slide_columns", "edit_columns_slide");
-add_action("manage_pages_custom_column", "custom_columns_slide");
 
 ##############################################################
 # Register associated taxonomy
@@ -121,6 +118,10 @@ function custom_columns_slide($column) {
 
     }
 }
+
+add_filter("manage_edit-slide_columns", "edit_columns_slide");
+add_action("manage_pages_custom_column", "custom_columns_slide");
+
 ##############################################################
 # Define metaboxs
 ##############################################################

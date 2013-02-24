@@ -22,14 +22,7 @@
 
     <div class="content">
 
-        <?php if($themeblvd_breadcrumbs == 'true') : ?>
-            <?php if($themeblvd_theme_hints == 'true') : ?>
-                <?php echo themeblvd_theme_hints('breadcrumbs'); ?>
-            <?php endif; ?>
-            <div id="breadcrumbs">
-                <?php themeblvd_breadcrumbs(); ?>
-            </div><!-- #breadcrumbs (end) -->
-        <?php endif; ?>
+        <?php themeblvd_breadcrumbs(); ?>
 
         <div id="full-width-content">
 
@@ -71,6 +64,7 @@
             <!-- Start the Loop -->
             <?php $paged = (get_query_var('paged')) ? get_query_var('paged') : 1; ?>
             <?php query_posts("paged=$paged&portfolio=$term_slug&posts_per_page=$themeblvd_portfolio_page"); ?>
+            
             <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
                 <?php
@@ -94,7 +88,7 @@
 
                         <span class="enlarge">
                             <?php if ( has_post_thumbnail() ) : ?>
-                                <?php the_post_thumbnail('portfolio'); ?>
+                                <?php the_post_thumbnail('portfolio', array("class" => "pretty")); ?>
                             <?php else : ?>
                                 <p><?php _e('Oops! You forgot set a featured image.', 'themeblvd'); ?></p>
                             <?php endif; ?>
@@ -108,7 +102,7 @@
 
                         <span class="enlarge">
                             <?php if ( has_post_thumbnail() ) : ?>
-                                <?php the_post_thumbnail('portfolio'); ?>
+                                <?php the_post_thumbnail('portfolio', array("class" => "pretty")); ?>
                             <?php else : ?>
                                 <p><?php _e('Oops! You forgot set a featured image.', 'themeblvd'); ?></p>
                             <?php endif; ?>

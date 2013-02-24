@@ -75,14 +75,9 @@ $info = array(
 # Activate Meta Box if site is public and SEO is enabled
 ##############################################################
 
-//Is site set to public?
-if ( get_option('blog_public') == 1 ) {
+//Is site set to public? And is ThemeBlvd SEO enabled?
+if ( get_option('blog_public') == 1 && get_option('themeblvd_seo_plugin') != 'false' ) {
 
-    //Is ThemeBlvd SEO enabled?
-    if( get_option('themeblvd_seo') != 'false') {
-
-        $themeblvd_seo = new themeblvd_meta_box($info, $options);
-    
-    }
+	$themeblvd_seo = new themeblvd_meta_box($info, $options);
 
 }

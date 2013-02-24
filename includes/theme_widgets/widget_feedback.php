@@ -107,7 +107,10 @@ class Themeblvd_Feedback extends WP_Widget {
 
         <?php
         }
-}
+
+##################################################################
+} # end Themeblvd_Feedback class extend
+##################################################################
 
 register_widget('Themeblvd_Feedback');
 

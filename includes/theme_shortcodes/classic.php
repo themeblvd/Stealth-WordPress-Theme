@@ -1,9 +1,10 @@
 <?php
 /**
  *
- * Complexity Shortcodes
+ * Stealth Shortcodes
  *
- * The classics... lovin' the classics!
+ * The classics... lovin' the classics! These shortcodes
+ * are primarly here to be used in the ThemeBlvd Tabs widget.
  *
  * @author  Jason Bobich
  *

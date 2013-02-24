@@ -45,10 +45,19 @@ function stealth_blog($categories, $content) {
     global $more;
     $more = 0;
     
+    if( isset($categoryString) ) {
+    	
+    	query_posts($categoryString.'&paged='.$paged);
+    	
+    } else {
+    	
+    	query_posts('paged='.$paged);
+    	
+    }
+    
+    if ( have_posts() ) : while ( have_posts() ) : the_post(); 
+    
     ?>
-
-    <?php query_posts($categoryString.'paged='.$paged); ?>
-    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
     <div class="entry">
 
@@ -64,7 +73,7 @@ function stealth_blog($categories, $content) {
                 </span>
                 <span class="right">
                     <span class="author">
-                        <?php _e('by ', 'flipblog'); ?><?php the_author(); ?>
+                        <?php _e('by ', 'themeblvd'); ?><?php the_author(); ?>
                     </span>
                     <span class="comments">
                         <a href="<?php the_permalink(); ?>#comments-wrap">
@@ -75,7 +84,7 @@ function stealth_blog($categories, $content) {
             </div><!-- .meta (end) -->
 
             <?php if ( has_post_thumbnail() ) : ?>
-                <?php the_post_thumbnail('blog'); ?>
+                <?php the_post_thumbnail('blog', array("class" => "pretty")); ?>
             <?php endif; ?>
 
             <div class="excerpt">
