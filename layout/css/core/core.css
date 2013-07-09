@@ -69,6 +69,12 @@ frame {
     padding: 0;
 }
 
+#header #twitter .tweet-meta {
+    font-size: 10px;
+    font-style: italic;
+    margin-top: 3px;
+}
+
 #header .searchform {
     position: absolute;
     top: 35px;
@@ -451,6 +457,9 @@ frame {
 #home-widget-columns .widget li a {
     border: none;
     display: block;
+}
+#sidebar .widget.tweeple-feed-widget li a {
+    display: inline;
 }
 
 #sidebar .widget li a:hover,

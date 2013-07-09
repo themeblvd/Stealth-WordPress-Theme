@@ -39,30 +39,30 @@ class themeblvd_options {
         $pageSlug = $this->info['pageSlug'];
         $themename = $this->themename;
         $shortname = $this->shortname;
-		
+
 		if($menuTitle) {
-		
+
 	        if($pageLevel == 'parent'){
-	
+
 	            //Add parent options page
 	            if( function_exists('add_object_page') ){
 	                add_object_page( $pageTitle, $themename, "administrator", $shortname, array(&$this, 'admin_page'), "");
 	            } else {
 	                add_menu_page( $pageTitle, $themename, "administrator", $shortname, array(&$this, 'admin_page'), "");
 	            }
-	
+
 	            //Add first subpage linked to parent
 	            add_submenu_page( $shortname, $pageTitle, $menuTitle, "administrator", $shortname, array(&$this, 'admin_page') );
-	
+
 	        } else {
-	
+
 	            //Add submenu optiions page
 	            add_submenu_page( $shortname, $pageTitle, $menuTitle, "administrator", $shortname."-".$pageSlug, array(&$this, 'admin_page') );
-	
+
 	        } //End if pageLevel
-	        
+
 		} //End if menuTitle
-		
+
     }
 
     function admin_page() {
@@ -76,16 +76,16 @@ class themeblvd_options {
         $linkSite = $this->info['linkSite'];
         $linkAuthor = $this->info['linkAuthor'];
         $linkProfile = $this->info['linkProfile'];
-        
+
         //Reset Options
         if( isset($_REQUEST['action']) && 'Reset Options' == $_REQUEST['action'] ) {
 
 	        foreach ($options as $value) {
 	            if( isset($value['id']) ){
-	               delete_option( $value['id'] ); 
-	            } 
+	               delete_option( $value['id'] );
+	            }
 	        }
-	
+
 	        //Fade in and fade out message
 	        echo '<script type="text/javascript">';
 	        echo "jQuery.noConflict()(function($){";
@@ -94,15 +94,15 @@ class themeblvd_options {
 	        echo "	});";
 	        echo "});";
 	        echo "</script>";
-	
+
 	        //header("Location: admin.php?page=$pageSlug&reset=true");
 	        //die;
-	
+
 	    }
-        
+
         echo '<div class="wrap">';
         echo '<div id="themeblvd-options">';
-        
+
         //Saved message
         echo '<div id="themeblvd-options-save">';
         echo '	<div class="pad">';
@@ -125,7 +125,7 @@ class themeblvd_options {
                 _e('A third-party SEO plugin has been detected which could cause problems with this theme\'s built in SEO plugin. It is advised that you disable this theme\'s SEO plugin or your third-party SEO plugin.', 'themeblvd');
                 echo '</div><!-- .themeblvd-warning (end) -->';
             }
-            
+
             if( get_option('blog_public') == 0 ) {
                 echo '<div class="themeblvd-warning">';
                 _e("Your site is currently set to Private. SEO is disabled. You can change this setting <a href='". admin_url() . "options-privacy.php'>here</a>.", 'themeblvd');
@@ -170,7 +170,7 @@ class themeblvd_options {
                     $icon = $value['icon'];
 
                     //Available icon classes
-                    
+
                     //activity-monitor
                     //add
                     //address
@@ -276,7 +276,7 @@ class themeblvd_options {
                 ##############################################################
 
                 case 'description' :
-                
+
                     if( isset($value['id']) ){
                         $id = $value['id'];
                     }
@@ -320,7 +320,7 @@ class themeblvd_options {
 
                 case 'text' :
 
-                    $id = $value['id'];				
+                    $id = $value['id'];
 					$option = get_option( $value['id'], $value['std'] );
 					$currentValue = htmlspecialchars(stripslashes($option));
 
@@ -350,7 +350,7 @@ class themeblvd_options {
 
                 case 'textarea' :
 
-                    $id = $value['id'];				
+                    $id = $value['id'];
 					$option = get_option( $value['id'], $value['std'] );
 					$currentValue = htmlspecialchars(stripslashes($option));
 
@@ -373,25 +373,80 @@ class themeblvd_options {
                     echo '</div><!-- .themeblvd-entry (end) -->';
 
                     break;
-				
+
+                ##############################################################
+                # Tweeple Feed
+                ##############################################################
+
+                case 'tweeple' :
+
+                    $id = $value['id'];
+                    $option = get_option( $value['id'], $value['std'] );
+                    $currentValue = htmlspecialchars(stripslashes($option));
+
+                    echo '<div class="themeblvd-entry">';
+
+                    echo '<h4>'.$value['name'].'</h4>';
+
+                    echo '<div class="themeblvd-field">';
+
+                    if ( ! defined( 'TWEEPLE_PLUGIN_VERSION' ) ) {
+
+                        echo '<p><em>'.sprintf(__('You must install the %s plugin to create any Twitter feeds.', 'themeblvd'), '<a href="http://wordpress.org/plugins/tweeple/" target="_blank">Tweeple</a>').'</em></p>';
+
+                    } else {
+
+                        $tweeple = Tweeple::get_instance();
+                        $feeds = $tweeple->get_feeds();
+
+                        if ( count( $feeds ) > 0 ) {
+
+                            echo '<select name="'.$id.'">';
+
+                            foreach ( $feeds as $id => $name ) {
+                                echo '<option value="'.$id.'">'.$name.'</option>';
+                            }
+
+                            echo '</select>';
+
+                        } else {
+
+                            echo '<p><em>'.__('You haven\'t created any Twitter feeds yet. Go to Tools > Tweeple to create one.', 'themeblvd').'</em></p>';
+
+                        }
+                    }
+                    echo '</div><!-- .themeblvd-field (end) -->';
+
+                    echo '<div class="themeblvd-description">';
+                    echo $value['desc'];
+                    echo '</div><!-- .themeblvd-description (end) -->';
+
+                    if( isset($value['more-info']) ){
+                        $this->more_info( $id, $value['more-info'] );
+                    }
+
+                    echo '</div><!-- .themeblvd-entry (end) -->';
+
+                    break;
+
 				##############################################################
                 # Sortable Elements
                 ##############################################################
-				
+
 				case 'sortable' :
-					
+
 					//Curent option array
 					$currentValue = get_option( $value['id'], $value['std'] );
-					
+
 					//Data for more info on setup of array
 					$data = $value['data'];
-					
+
 					echo '<div class="themeblvd-entry">';
 
                     echo '<h4>'.$value['name'].'</h4>';
 
                     echo '<div class="themeblvd-field">';
-                    
+
                     echo '<script type="text/javascript">';
 			        echo "jQuery.noConflict()(function($){";
 			        echo "	$(document).ready(function(){";
@@ -400,9 +455,9 @@ class themeblvd_options {
 			        echo "	});";
 			        echo "});";
 			        echo "</script>";
-                    
+
                     echo '<div class="themeblvd-sortable-wrapper">';
-                    
+
                     echo '	<div class="themeblvd-sort-header">';
                     echo '		<span class="themeblvd-sort-title">';
                     echo 		__('Displayed Elements', 'themeblvd');
@@ -414,22 +469,22 @@ class themeblvd_options {
 
                     echo '	<ul id="'.$value['id'].'_show" class="themeblvd-sortable">';
                     echo '		<li id="'.$value['id'].'_placeholder" class="themeblvd-placeholder"><span>Placeholder</span></li>';
-            		
+
                     //List items set to be displayed
                     foreach( $currentValue as $item ){
-                    	
+
                     	if($item != 'placeholder'){
-                    	
+
 							echo '<li id="'.$value['id'].'_'.$data[$item]['value'].'"><span>'.$data[$item]['name'].'</span></li>';
-						
+
 						}
-                    
+
                     }
-                    
+
                     echo '	</ul>';
-                    
+
                     echo '	<div class="themeblvd-sort-divider"><!-- --></div>';
-                    
+
                     echo '	<div class="themeblvd-sort-header">';
                     echo '		<span class="themeblvd-sort-title">';
                     echo 		__('Hidden Elements', 'themeblvd');
@@ -438,24 +493,24 @@ class themeblvd_options {
                     echo 		__('Drag items below to hide them.', 'themeblvd');
                     echo '		</span>';
                     echo '	</div>';
-                    
+
                     echo '	<ul id="'.$value['id'].'_hidden" class="themeblvd-sortable-hidden">';
-                    
+
                     //List items set to be hidden
                     foreach( $value['data'] as $item ){
-                    	
+
                     	if( !in_array($item['value'], $currentValue) ){
-    						
+
     						echo '<li id="'.$value['id'].'_'.$item['value'].'"><span>'.$item['name'].'</span></li>';
-    						
+
 						}
-                    
+
                     }
-                    
+
                     echo '	</ul>';
-                    
+
                     echo '</div><!-- themeblvd-sortable-wrapper (end) -->';
-                    
+
                     echo '</div><!-- .themeblvd-field (end) -->';
 
                     echo '<div class="themeblvd-description">';
@@ -467,9 +522,9 @@ class themeblvd_options {
                     }
 
                     echo '</div><!-- .themeblvd-entry (end) -->';
-				
+
 					break;
-				
+
                 ##############################################################
                 # Select box
                 ##############################################################
@@ -488,7 +543,7 @@ class themeblvd_options {
                     echo '<h4>'.$value['name'].'</h4>';
 
                     echo '<div class="themeblvd-field" id="'.$value['id'].'_preview">';
-					
+
                     //create drop down box
                     echo '<select name="' . $value['id'] . '">';
                     foreach($drop_options as $key => $entry) {
@@ -505,41 +560,41 @@ class themeblvd_options {
 
 
                     echo '</select>';
-					
+
 					//Is this select box for a font selection?
-					
+
 					//Body Font Preview
 					if( isset($value['custom']) && $value['custom'] == 'body_font' ){
-						
+
 						//Font stack list from themeblvd_font.php
 						global $font_stacks;
-						
+
 						echo "<div class='themeblvd-body-font-preview' style='font-family: $font_stacks[$final_value]'>";
 						echo 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.';
 						echo '</div>';
-						
+
 					}
-					
+
 					//Header Font Preview
 					if( isset($value['custom']) && $value['custom'] == 'header_font' ){
-						
+
 						//Format font name
 						$header_font_family = $final_value;
 				        $header_font_family = str_replace('+', ' ', $header_font_family);
 				        $header_font_family = explode(':', $header_font_family);
 				        $header_font_family = explode('?', $header_font_family[0]);
 				        $header_font_family = $header_font_family[0];
-						
+
 						echo '<link href="http://fonts.googleapis.com/css?family='.$final_value.'" rel="stylesheet" type="text/css" class="temp-header-font" />';
-						
+
 						echo "<div class='themeblvd-header-font-preview' style='font-family: $header_font_family'>";
 						echo 'Lorem ipsum dolor sit amet';
 						echo '</div>';
-						
+
 						echo '<small>Note: Give a second for each Google font to load when previewing.</small>';
-						
+
 					}
-					
+
                     echo '</div><!-- .themeblvd-field (end) -->';
 
                     echo '<div class="themeblvd-description">';
@@ -582,7 +637,7 @@ class themeblvd_options {
                         } else {
                             $checked = "";
                         }
-                        
+
                         echo '<p><input class="themeblvd-radio" type="radio" name="'.$id.'" value="'.$entry['value'].'"'.$checked.'>';
                         echo $entry['name'].'</p>';
 
@@ -655,7 +710,7 @@ class themeblvd_options {
                 ##############################################################
 
 				/*
-				* NOTE: This case is depreciated, but is still in use in some themes. 
+				* NOTE: This case is depreciated, but is still in use in some themes.
 				* The preferred case to be used should be "radio" which is much more
 				* flexible.
 				*/
@@ -797,10 +852,10 @@ class themeblvd_options {
                     echo '<div class="clear"></div>';
                     echo '<div class="themeblvd-file" ';
                     if(!$currentValue){
-                    
+
                     	//Hide block if image has not been set
                     	echo 'style="display:none;" ';
-                    	
+
                     }
                     echo 'id="'.$id.'_image">';
 
@@ -808,27 +863,27 @@ class themeblvd_options {
                     if ( $currentValue ) {
 
                         $image = preg_match( '/(^.*\.jpg|jpeg|png|gif|ico*)/i', get_option($id) );
-												
+
 						//Check ifcorrectly formatted url was entered and display image
                         if($image){
-                        	
+
                         	//Display the scaled image to the user
                             echo '<img src="'.$currentValue.'" alt="" width="300" />';
-                        	
+
                         } else {
-							
+
 							//This is not a url to an image
 							echo '<div class="warning">';
 							_e('Oops! You did not enter a URL to an image.', 'themeblvd');
 							echo '</div>';
-							
+
 						}
 
                     }
-                    
+
                     //Scaled image notice
                     echo '<p><em>*This image has been scaled to fit this window, however the actual image size has not been effected.</em></p>';
-                    
+
                     //Removal Link
                     $removeId = $id."_image";
                     echo "<a href='#$removeId' title='Remove' class='themeblvd-file-remove'>";
@@ -901,7 +956,7 @@ class themeblvd_options {
                     if( isset($value['more-info']) ){
                         $this->more_info( $id, $value['more-info'] );
                     }
-                    
+
                     echo '</div><!-- .themeblvd-entry (end) -->';
 
 
@@ -1055,7 +1110,7 @@ class themeblvd_options {
                             }
 
                             echo "<option $selected value='". $id."'>" . $title . "</option>";
-                            
+
                         }
 
                     echo "</select>";
@@ -1153,7 +1208,7 @@ class themeblvd_options {
                     echo '<h4>'.$value['name'].'</h4>';
 
                     echo '<div class="themeblvd-field">';
-                    
+
                     echo "<select name='$id' id='$id' value='$currentValue'>";
 
                         foreach ($entries as $key => $entry) {
@@ -1172,7 +1227,7 @@ class themeblvd_options {
                         }
 
                     echo "</select>";
-                    
+
                     echo '</div><!-- .themeblvd-field (end) -->';
 
                     echo '<div class="themeblvd-description">';
@@ -1220,7 +1275,7 @@ class themeblvd_options {
                     echo '</div><!-- .themeblvd-entry (end) -->';
 
                     break;
-                
+
                 ##############################################################
                 # Contact Form - (1) Start the Table
                 ##############################################################
@@ -1415,18 +1470,18 @@ class themeblvd_options {
         echo '<div class="themeblvd-options-load"></div>';
         echo '<input name="action" type="submit" value="Save Changes" />';
         echo '</span>';
-        
+
         echo '</form><!-- #themeblvd-options-form (end) -->';
-        
+
         //Reset options
         echo '<form method="post" id="themeblvd-options-reset-form">';
         echo '	<span class="submit reset">';
         echo '		<input name="action" type="submit" value="Reset Options" onclick="return confirm(\'Are you sure you want to reset all theme settings for this page?\');" />';
         echo '	</span>';
         echo '</form><!-- #themeblvd-options-form (end) -->';
-        
+
         echo '<div class="clear"></div>';
-        
+
         echo '</div><!-- .themeblvd-footer (end) -->';
 
         echo '</div><!-- #themeblvd-options (end) -->';
@@ -1435,9 +1490,9 @@ class themeblvd_options {
     }
 
     function more_info($id, $text){
-		
+
 		$shortname = $this->shortname;
-		
+
         echo '<div class="clear"></div>';
         echo "<div id='$id' class='help-box'>";
         echo $text;
@@ -1447,7 +1502,7 @@ class themeblvd_options {
         echo '</div><!-- .help-box (end) -->';
 
     }
-              
+
 ##################################################################
 } # end themeblvd_options class
 ##################################################################

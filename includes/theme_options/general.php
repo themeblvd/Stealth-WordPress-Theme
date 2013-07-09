@@ -29,7 +29,7 @@ $options_general = array (
             "id" => "general",
             "icon" => "screen-on"
     ),
-    
+
     array(  "name" => __("Body Style", $shortname),
             "desc" => __("Choose your body style.", $shortname),
             "id" => $shortname."_style",
@@ -46,7 +46,7 @@ $options_general = array (
                     "name" => "Light",
                     "value" => "light"
                 ),
-                
+
                 array(
                     "name" => "Beige",
                     "value" => "beige"
@@ -55,14 +55,14 @@ $options_general = array (
             )
 
     ),
-    
+
     array(  "name" => __("Header Color", $shortname),
             "desc" => __("Enter in a color hex value. This color will show in your header beneath whatever texture you choose. HINT: Darker colors will allow the texture you select in the next option to be more visable.<br />Ex: 000000", $shortname),
             "id" => $shortname."_header_color",
             "std" => "000000",
             "type" => "color_picker"
     ),
-    
+
     array(  "name" => __("Header Texture", $shortname),
             "desc" => __("This is the texture that will appear in the header of your site. Note that some textures will appear better on different colors. So, play around a little!<br /><br /><a href=\"#themeblvd_header_texture\" class=\"jaybich-open\">View Texture Guide</a>", $shortname),
             "more-info" => '<center><img src="'.get_template_directory_uri().'/includes/theme_options/images/texture-guide.jpg" /></center>',
@@ -70,207 +70,207 @@ $options_general = array (
             "std" => "image=chex.png&position=0+0&repeat=repeat",
             "type" => "select",
             "data" => array(
-				
+
 				array(
                     "name" => "None",
                     "value" => "none"
                 ),
-                
+
                 array(
                     "name" => "Bathroom Wall",
                     "value" => "image=bathroom-wall.png&position=0+0&repeat=repeat"
                 ),
-				
+
 				array(
                     "name" => "Bokeh",
                     "value" => "image=bokeh.png&position=center+0&repeat=no-repeat"
                 ),
-				
+
 				array(
                     "name" => "Boxy (Thick)",
                     "value" => "image=boxy-thick.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Boxy (Thin)",
                     "value" => "image=boxy-thin.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Camo",
                     "value" => "image=camo.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Cathedral",
                     "value" => "image=cathedral.png&position=0+0&repeat=repeat"
                 ),
-				
+
 				array(
                     "name" => "Chex",
                     "value" => "image=chex.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Chex (Reverse)",
                     "value" => "image=chex-reverse.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Church Window",
                     "value" => "image=church-window.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Circles",
                     "value" => "image=circles.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Diagnol (Grid)",
                     "value" => "image=diag-grid.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Diagnol (Thick)",
                     "value" => "image=diag2.png&position=0+0&repeat=repeat"
                 ),
-                
+
 				array(
                     "name" => "Diagnol (Thin)",
                     "value" => "image=diag1.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Digital",
                     "value" => "image=digital.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Fabric",
                     "value" => "image=fabric.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Grid #1",
                     "value" => "image=grid1.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Grid #2",
                     "value" => "image=grid2.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Grid #3",
                     "value" => "image=grid3.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Grid #4",
                     "value" => "image=grid4.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Grid #5",
                     "value" => "image=grid5.png&position=0+0&repeat=repeat"
                 ),
-				
+
 				array(
                     "name" => "Grunge",
                     "value" => "image=grunge.png&position=0+0&repeat=repeat"
                 ),
-				
+
                 array(
                     "name" => "Grunge (Professional)",
                     "value" => "image=grunge-pro.png&position=center+1px&repeat=no-repeat"
                 ),
-                
+
                 array(
                     "name" => "Horizontal (Thick)",
                     "value" => "image=horz2.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Horizontal (Thin)",
                     "value" => "image=horz1.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Kitchen Floor",
                     "value" => "image=kitchen-floor.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Leather",
                     "value" => "image=leather.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Metal",
                     "value" => "image=metal.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Mosaic",
                     "value" => "image=mosaic.png&position=center+0&repeat=no-repeat"
                 ),
-                
+
                 array(
                     "name" => "Noise",
                     "value" => "image=noise.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Ornate",
                     "value" => "image=ornate.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Retro Grunge Stripes",
                     "value" => "image=retro-grunge.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Retro Wallpaper",
                     "value" => "image=retro-wallpaper.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Squares",
                     "value" => "image=squares.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Squares (Nested)",
                     "value" => "image=squares-nested.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Vertical (Thick)",
                     "value" => "image=vert2.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Vertical (Thin)",
                     "value" => "image=vert1.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Wavy",
                     "value" => "image=wavy.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Wood (Old)",
                     "value" => "image=wood-old.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Wood (Simple)",
                     "value" => "image=wood-simple.png&position=0+0&repeat=repeat"
                 ),
-                
+
                 array(
                     "name" => "Wood (Polished)",
                     "value" => "image=wood.png&position=0+0&repeat=repeat"
@@ -278,7 +278,7 @@ $options_general = array (
 
             )
     ),
-    
+
     array(  "name" => __("Accent Color", $shortname),
             "desc" => __("Enter in a color hex value. This color will be applied in several key areas of your site including most notably the <strong>main menu</strong>.<br />Ex: 000000", $shortname),
             "id" => $shortname."_accent_color",
@@ -292,14 +292,14 @@ $options_general = array (
             "std" => "0074a1",
             "type" => "color_picker"
     ),
-    
+
     array(  "name" => __("Link Hover Color", $shortname),
             "desc" => __("Enter in a link color hex value.<br />Ex: 000000", $shortname),
             "id" => $shortname."_link_hover_color",
             "std" => "004c69",
             "type" => "color_picker"
     ),
-    
+
     array(  "name" => __("Footer Style", $shortname),
             "desc" => __("Choose your footer style.", $shortname),
             "id" => $shortname."_footer_style",
@@ -316,7 +316,7 @@ $options_general = array (
                     "name" => "Light",
                     "value" => "light"
                 ),
-                
+
                 array(
                     "name" => "Beige",
                     "value" => "beige"
@@ -446,15 +446,15 @@ $options_general = array (
                     "name" => "Show nothing.",
                     "value" => "nothing"
                 )
-                
+
             )
     ),
 
-    array(  "name" => __("Header Twitter Account", $shortname),
-            "desc" => __("If you selected to show a recent tweet above, enter in your Twitter account username.", $shortname),
-            "std" => "jasonbobich",
-            "id" => $shortname."_header_twitter",
-            "type" => "text"
+    array(  "name" => __("Header Twitter Feed", $shortname),
+            "desc" => __("If you've selected above to show a recent tweet, select a Twitter feed to pull the first tweet from.", $shortname),
+            "std" => "",
+            "id" => $shortname."_header_twitter_feed",
+            "type" => "tweeple"
     ),
 
     array(  "name" => __("Header HTML Block", $shortname),
@@ -463,12 +463,12 @@ $options_general = array (
             "std" => "",
             "type" => "textarea"
     ),
-    
+
     array(
             "type" => "description",
             "desc" => __("<h4>Content Area</h4>", $shortname)
     ),
-    
+
     array(  "name" => __("Sidebar on right or left?", $shortname),
             "desc" => __("Choose which side of the page you'd like the sidebar to be positioned on when viewing 2-column pages.", $shortname),
             "id" => $shortname."_sidebar",
@@ -493,19 +493,19 @@ $options_general = array (
             "type" => "description",
             "desc" => __("<h4>Footer</h4>", $shortname)
     ),
-    
+
     array(  "name" => __("How many footer columns?", $shortname),
             "desc" => __("A dynamic widget area will be registered for each column. <strong>Note: If you lessen the number of widget columns, any existing widgets in additional columns will be removed.</strong>", $shortname),
             "id" => $shortname."_footer_columns",
             "std" => "4",
             "type" => "select",
             "data" => array(
-					
+
 					array(
                         "name" => __("Hide Widget Columns", $shortname),
                         "value" => "hide"
                     ),
-					
+
                     array(
                         "name" => __("1 Column", $shortname),
                         "value" => "1"
@@ -715,27 +715,27 @@ $options_general = array (
                     "name" => "None",
                     "value" => "none"
                 ),
-				
+
 				array(
                     "name" => "Allan",
                     "value" => "Allan:bold"
                 ),
-                
+
                 array(
                     "name" => "Allerta",
                     "value" => "Allerta"
                 ),
-                
+
                 array(
                     "name" => "Allerta Stencil",
                     "value" => "Allerta+Stencil"
                 ),
-                
+
                 array(
                     "name" => "Anonymous Pro",
                     "value" => "Anonymous+Pro"
                 ),
-				
+
                 array(
                     "name" => "Arimo",
                     "value" => "Arimo"
@@ -745,22 +745,22 @@ $options_general = array (
                     "name" => "Arvo",
                     "value" => "Arvo"
                 ),
-                
+
                 array(
                     "name" => "Bentham",
                     "value" => "Bentham"
                 ),
-                
+
                 array(
                     "name" => "Buda",
                     "value" => "Buda:light"
                 ),
-                
+
                 array(
                     "name" => "Cabin",
                     "value" => "Cabin:bold"
                 ),
-                
+
                 array(
                     "name" => "Calligraffitti",
                     "value" => "Calligraffitti"
@@ -775,32 +775,32 @@ $options_general = array (
                     "name" => "Cardo",
                     "value" => "Cardo"
                 ),
-                
+
                 array(
                     "name" => "Cherry Cream Soda",
                     "value" => "Cherry+Cream+Soda"
                 ),
-                
+
                 array(
                     "name" => "Chewy",
                     "value" => "Chewy"
                 ),
-                
+
                 array(
                     "name" => "Coda",
                     "value" => "Coda:800"
                 ),
-                
+
                 array(
                     "name" => "Coming Soon",
                     "value" => "Coming+Soon"
                 ),
-                
+
                 array(
                     "name" => "Copse",
                     "value" => "Copse"
                 ),
-                
+
                 array(
                     "name" => "Corben",
                     "value" => "Corben:bold"
@@ -810,12 +810,12 @@ $options_general = array (
                     "name" => "Cousine",
                     "value" => "Cousine"
                 ),
-                
+
                 array(
                     "name" => "Covered By Your Grace",
                     "value" => "Covered+By+Your+Grace"
                 ),
-                
+
                 array(
                     "name" => "Crafty Girls",
                     "value" => "Crafty+Girls"
@@ -825,7 +825,7 @@ $options_general = array (
                     "name" => "Crimson Text",
                     "value" => "Crimson+Text"
                 ),
-                
+
                 array(
                     "name" => "Crushed",
                     "value" => "Crushed"
@@ -850,22 +850,22 @@ $options_general = array (
                     "name" => "Droid Serif",
                     "value" => "Droid+Serif"
                 ),
-                
+
                 array(
                     "name" => "Fontdiner Swanky",
                     "value" => "Fontdiner+Swanky"
                 ),
-                
+
                 array(
                     "name" => "Geo",
                     "value" => "Geo"
                 ),
-                
+
                 array(
                     "name" => "Gruppo",
                     "value" => "Gruppo"
                 ),
-                
+
                 array(
                     "name" => "Homemade Apple",
                     "value" => "Homemade+Apple"
@@ -880,7 +880,7 @@ $options_general = array (
                     "name" => "Inconsolata",
                     "value" => "Inconsolata"
                 ),
-                
+
                 array(
                     "name" => "Irish Growler",
                     "value" => "Irish+Growler"
@@ -895,37 +895,37 @@ $options_general = array (
                     "name" => "Josefin Slab",
                     "value" => "Josefin+Slab:100"
                 ),
-                
+
                 array(
                     "name" => "Just Another Hand",
                     "value" => "Just+Another+Hand"
                 ),
-                
+
                 array(
                     "name" => "Just Me Again Down Here",
                     "value" => "Just+Me+Again+Down+Here"
                 ),
-                
+
                 array(
                     "name" => "Kenia",
                     "value" => "Kenia"
                 ),
-                
+
                 array(
                     "name" => "Kranky",
                     "value" => "Kranky"
                 ),
-                
+
                 array(
                     "name" => "Kristi",
                     "value" => "Kristi"
                 ),
-                
+
                 array(
                     "name" => "Lato",
                     "value" => "Lato"
                 ),
-                
+
                 array(
                     "name" => "Lekton",
                     "value" => "Lekton"
@@ -935,17 +935,17 @@ $options_general = array (
                     "name" => "Lobster",
                     "value" => "Lobster"
                 ),
-                
+
                 array(
                     "name" => "Luckiest Guy",
                     "value" => "Luckiest+Guy"
                 ),
-                
+
                 array(
                     "name" => "Maiden Orange",
                     "value" => "Maiden+Orange"
                 ),
-                
+
                 array(
                     "name" => "Merriweather",
                     "value" => "Merriweather"
@@ -955,7 +955,7 @@ $options_general = array (
                     "name" => "Molengo",
                     "value" => "Molengo"
                 ),
-                
+
                 array(
                     "name" => "Mountains of Christmas",
                     "value" => "Mountains+of+Christmas"
@@ -985,7 +985,7 @@ $options_general = array (
                     "name" => "Old Standard TT",
                     "value" => "Old+Standard+TT"
                 ),
-                
+
                 array(
                     "name" => "Orbitron",
                     "value" => "Orbitron"
@@ -995,7 +995,7 @@ $options_general = array (
                     "name" => "PT Sans",
                     "value" => "PT+Sans"
                 ),
-                
+
                 array(
                     "name" => "Permanent Marker",
                     "value" => "Permanent+Marker"
@@ -1005,12 +1005,12 @@ $options_general = array (
                     "name" => "Philosopher",
                     "value" => "Philosopher"
                 ),
-                
+
                 array(
                     "name" => "Puritan",
                     "value" => "Puritan"
                 ),
-                
+
                 array(
                     "name" => "Raleway",
                     "value" => "Raleway:100"
@@ -1020,67 +1020,67 @@ $options_general = array (
                     "name" => "Reenie Beanie",
                     "value" => "Reenie+Beanie"
                 ),
-				
+
 				array(
                     "name" => "Rock Salt",
                     "value" => "Rock+Salt"
                 ),
-                
+
                 array(
                     "name" => "Schoolbell",
                     "value" => "Schoolbell"
                 ),
-                
+
                 array(
                     "name" => "Slackey",
                     "value" => "Slackey"
                 ),
-                
+
                 array(
                     "name" => "Sniglet",
                     "value" => "Sniglet:800"
                 ),
-                
+
                 array(
                     "name" => "Sunshiney",
                     "value" => "Sunshiney"
                 ),
-                
+
                 array(
                     "name" => "Syncopate",
                     "value" => "Syncopate"
                 ),
-				
+
                 array(
                     "name" => "Tangerine",
                     "value" => "Tangerine"
                 ),
-                
+
                 array(
                     "name" => "Tinos",
                     "value" => "Tinos"
                 ),
-                
+
                 array(
                     "name" => "Ubuntu",
                     "value" => "Ubuntu"
                 ),
-                
+
                 array(
                     "name" => "UnifrakturCook",
                     "value" => "UnifrakturCook:bold"
                 ),
-                
+
                 array(
                     "name" => "UnifrakturMaguntia",
                     "value" => "UnifrakturMaguntia"
                 ),
-                
+
                 array(
                     "name" => "Unkempt",
                     "value" => "Unkempt"
                 ),
-                
+
                 array(
                     "name" => "Vibur",
                     "value" => "Vibur"
@@ -1090,7 +1090,7 @@ $options_general = array (
                     "name" => "Vollkorn",
                     "value" => "Vollkorn"
                 ),
-                
+
                 array(
                     "name" => "Walter Turncoat",
                     "value" => "Walter+Turncoat"
@@ -1132,43 +1132,43 @@ $options_general = array (
             "id" => "homepage",
             "icon" => "home"
     ),
-    
+
     array(  "desc" => __("<h4>Layout Configuration</h4> <p>This section will help you setup which elements should be displayed on your homepage.</p>", $shortname),
             "type" => "description"
     ),
-    
+
     array(  "name" => __("How do you want to setup your homepage?", $shortname),
             "desc" => __('Drag the elements around in the order you\'d like to position them on your homepage.<br /><br /><img src="'.get_template_directory_uri().'/includes/theme_options/images/home-diagram.jpg" />', $shortname),
             "id" => $shortname."_homepage_sort",
             "std" => array("placeholder", "slideshow", "slogan", "widgets"),
             "type" => "sortable",
             "data" => array(
-                
+
                 "slideshow" => array(
                     "name" => __('Slideshow', $shortname),
                     "value" => "slideshow"
                 ),
-                
+
                 "slogan" => array(
                     "name" => __('Slogan', $shortname),
                     "value" => "slogan"
                 ),
-                
+
                 "featured" => array(
                     "name" => __('Featured Posts', $shortname),
                     "value" => "featured"
                 ),
-                
+
                 "widgets" => array(
                     "name" => __('Widget Columns', $shortname),
                     "value" => "widgets"
                 ),
-                
+
                 "page" => array(
                     "name" => __('Content From Page', $shortname),
                     "value" => "page"
                 ),
-				
+
                 "blog" => array(
                     "name" => __('Blog + Sidebar', $shortname),
                     "value" => "blog"
@@ -1353,30 +1353,30 @@ $options_general = array (
             "option2" => __('No, hide them.', $shortname),
             "type" => "true_false_radio"
 	),
-	
+
 	array(  "name" => __("Slideshow overlay color?", $shortname),
             "desc" => __("This is the transparent color that will appear behind descriptions if you place them on a slide in the slideshow.", $shortname),
             "id" => $shortname."_home_color",
             "std" => "000000",
             "type" => "color_picker"
     ),
-    
+
     array(  "desc" => __("<h4>Widget Columns</h4> <p>This section allows you to configure the widget areas on your homepage.</p>", $shortname),
             "type" => "description"
     ),
-	
+
     array(  "name" => __("How many widget columns?", $shortname),
             "desc" => __("A dynamic widget area will be registered for each column. Even if you have widget columns hidden in the Homepage Configuration options, selecting 0 widget columns will clean up Appearance > Widgets page by not having excess widget areas. <strong>Note: If you lessen the number of widget columns, any existing widgets in additional columns will be removed.</strong>", $shortname),
             "id" => $shortname."_homepage_columns",
             "std" => "3",
             "type" => "select",
             "data" => array(
-					
+
 					array(
                         "name" => __("0 Columns", $shortname),
                         "value" => "0"
                     ),
-					
+
                     array(
                         "name" => __("1 Column", $shortname),
                         "value" => "1"
@@ -1399,7 +1399,7 @@ $options_general = array (
 
                 )
     ),
-	
+
 	array(
             "type" => "description",
             "desc" => __("<h4>Featured Posts</h4>", $shortname)
@@ -1424,59 +1424,59 @@ $options_general = array (
     array(  "desc" => __("<h4>Page Content</h4> <p>This section allows you to select a page, which will be used to populate this section of the homepage.</p>", $shortname),
             "type" => "description"
     ),
-    
+
     array(  "name" => __("Use which page's content?", $shortname),
             "desc" => __("If you have the \"Content From Page\" set to show in your Layout Configuration options, here you can select which WordPress page to pull from.", $shortname),
             "id" => $shortname."_homepage_page_id",
             "std" => '',
             "type" => "page_dropdown"
     ),
-    
+
     array(  "desc" => __("<h4>Slogan</h4> <p>This section will help you confgure your slogan and call-to-action button.</p>", $shortname),
             "type" => "description"
     ),
-    
+
     array(  "name" => __("Slogan Text", $shortname),
             "desc" => __("Enter the text that will appear to the left of your call-to-action button.", $shortname),
             "id" => $shortname."_homepage_slogan",
             "std" => "This is the perfect business theme to get your site up and running in no time. It's so sleek, stylish and simple. It's just so Stealth.",
             "type" => "text"
     ),
-    
+
     array(  "name" => __("Button Text", $shortname),
             "desc" => __("Enter the text that will appear in the call-to-action button.<br /><br /><strong>HINT: If you leave this field blank, the button will not show and the slogan will be centered.</strong>", $shortname),
             "id" => $shortname."_homepage_slogan_button",
             "std" => "Get Started Today",
             "type" => "text"
     ),
-    
+
     array(  "name" => __("Button Link", $shortname),
             "desc" => __("Enter where the call-to-action button link. Ex: http://yoursite.com/landing-page", $shortname),
             "id" => $shortname."_homepage_slogan_link",
             "std" => "",
             "type" => "text"
     ),
-    
+
     array(  "desc" => __("<h4>Homepage Blog</h4> <p>Here you can settings for a blog if you have it set to show.</p>", $shortname),
             "type" => "description"
     ),
-    
+
     array(  "name" => __("Show excerpts or full posts?", $shortname),
             "desc" => __("Choose whether you'd like to show the excerpt or the content for a more classic blog feel. <a href=\"#themeblvd_homepage_blog_content\" class=\"jaybich-open\">Learn More</a>", $shortname),
             "more-info" => __('
-            	
+
             	<p>If you\'re new to WordPress, you may be wondering what the difference between showing the excerpt and showing the content is. So, here is some information on both options.</p>
 
 				<h4>1) Show excerpts.</h4>
-				
+
 				<p>The <a href="http://codex.wordpress.org/Excerpt" target="_blank">excerpt</a> is a one paragraph summary of your post that can be up to 55 words long. You can specify the excerpt when creating your posts, and if you do not specify one, WordPress will automatically take the first 55 words of your post and use that. In an excerpt, you cannot have any HTML code; it is plain text only. Any HTML tags (links, images, etc.) that you attempt to put in the excerpt will be stripped by WordPress.</p>
-				
+
 				<p>In this particular theme, when showing the excerpt, a "Read More" button will automatically be displayed below the excerpt that links to the post.</p>
-				
+
 				<h4>2) Show full content.</h4>
-				
+
 				<p>If you\'re looking for more of a classic blog feel, you can choose to show the content on your blog page. This means that the excerpt will not be used at all. All content will be shown from your post with <em>no</em> automatic "Read More" button.</p>
-				
+
 				<p>When using this option, if you\'d like to pick a spot for the post to be cut off and insert a link to the post, this is commonly referred in WordPress as the "teaser". When you\'re writing a post, you can insert <em>&lt;!--more--&gt;</em> anywhere in the post, and it will cut off at that point and a link will be shown that leads to the post. You can also customize what the link says by adding text to that tag like this <em>&lt;!--more But wait, there\'s more!--&gt;</em>. <a href="http://codex.wordpress.org/Customizing_the_Read_More" target="_blank">Learn More</a></p>', $shortname),
             "id" => $shortname."_homepage_blog_content",
             "std" => "excerpt",
@@ -1495,7 +1495,7 @@ $options_general = array (
 
             )
     ),
-    
+
     array(  "name" => __("Show link to blog page at the bottom of posts?", $shortname),
             "desc" => __("This homepage blog does not have pagination, so it might be a good idea to show a link that directs to another page on your site where your full blog is.", $shortname),
             "id" => $shortname."_homepage_blog_link",
@@ -1515,14 +1515,14 @@ $options_general = array (
 
             )
     ),
-    
+
     array(  "name" => __("Link Text", $shortname),
             "desc" => __("This is the text that will be displayed in the link directing to your blog page.", $shortname),
             "id" => $shortname."_homepage_blog_text",
             "std" => "More at the Blog &raquo;",
             "type" => "text"
     ),
-    
+
     array(  "name" => __("Link URL", $shortname),
             "desc" => __("Put in the full URL to your blog page.<br />Ex: http://www.yoursite.com/blog", $shortname),
             "id" => $shortname."_homepage_blog_url",
@@ -1635,7 +1635,7 @@ $options_general = array (
     ),
 
     array(  "type" => "end"),
-    
+
 );
 
 ##############################################################

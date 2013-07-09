@@ -75,4 +75,35 @@ add_filter('widget_text', 'do_shortcode');
 // Make theme available for translation
 // Translations can be filed in the /lang/ directory
 load_theme_textdomain( 'themeblvd', TEMPLATEPATH . '/lang' );
+
+##############################################################
+# Recent Tweet
+##############################################################
+
+function stealth_recent_tweet( $feed_id ) {
+
+	// Check for Tweeple plugin
+	if( ! defined( 'TWEEPLE_PLUGIN_VERSION' ) ) {
+		printf(__('Tweeple plugin is not installed.', 'themeblvd'));
+		return;
+	}
+
+	// Get Tweeple feed
+	$feed = tweeple_get_feed( $feed_id );
+
+	if( ! tweeple_error( $feed ) ) {
+
+		// Display 1st tweet
+    	$tweets = tweeple_get_tweets( $feed );
+    	echo tweeple_tweet_text_default( $tweets[0]['text'] );
+    	tweeple_tweet_meta_fancy( $tweets[0] );
+
+    } else {
+
+		// Display error
+        printf( '<p>%s</p>', tweeple_error( $feed ) );
+
+    }
+
+}
 ?>

@@ -16,7 +16,7 @@ global $themeblvd_font_size;
 global $themeblvd_logo;
 global $themeblvd_logo_image;
 global $themeblvd_header;
-global $themeblvd_header_twitter;
+global $themeblvd_header_twitter_feed;
 global $themeblvd_header_html;
 ?>
 <!DOCTYPE html>   
@@ -151,7 +151,7 @@ global $themeblvd_header_html;
 	            <div id="twitter">
 	                <div class="inner">
 						<div class="twitter_div">
-							<?php echo $themeblvd_header_twitter; // ... ?>
+							<?php stealth_recent_tweet( $themeblvd_header_twitter_feed ); ?>
 						</div>
 	                </div><!-- .inner (end) -->
 	            </div><!-- #twitter (end) -->
