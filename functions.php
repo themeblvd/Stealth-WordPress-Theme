@@ -11,7 +11,7 @@
  */
 
 ##############################################################
-# Include ThemeBlvd WordPress Theme framework
+# Include ThemeBlvd WordPress Theme framework (v1)
 ##############################################################
 
 include_once(TEMPLATEPATH . '/framework/themeblvd_framework.php');
