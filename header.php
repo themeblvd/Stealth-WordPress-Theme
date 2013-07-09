@@ -151,7 +151,7 @@ global $themeblvd_header_html;
 	            <div id="twitter">
 	                <div class="inner">
 						<div class="twitter_div">
-							<?php themeblvd_twitter( 1, $themeblvd_header_twitter ); ?>
+							<?php echo $themeblvd_header_twitter; // ... ?>
 						</div>
 	                </div><!-- .inner (end) -->
 	            </div><!-- #twitter (end) -->

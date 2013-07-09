@@ -23,7 +23,6 @@ include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_news.php");
 include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_recent_posts.php");
 include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_simple_contact.php");
 include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_tabs.php");
-include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_twitter.php");
 include_once(TEMPLATEPATH . "/includes/theme_widgets/widget_video.php");
 
 ##############################################################
